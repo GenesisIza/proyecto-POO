@@ -1,0 +1,150 @@
+.header{
+  padding: 25px;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+.derecha{
+  float: left;
+  padding-right: 10px;
+}
+.izquierda{
+  float: right;
+  padding-right: 10px;
+}
+header .logo{
+   text-align: center;
+
+}
+.contenedor{
+  width: 1400px;
+  margin: 0 auto;
+}
+@media only screen and (max_whidth:480px) {
+  a {
+    display: none;
+  }
+  body{
+    background-color: red;
+  }
+
+}
+/*-----------------------Navagacion-------------------------
+----------------------------------------------------------*/
+.navegacion{
+  padding: 20px;
+  padding-top: 40px;
+  border-top: 0.5px solid black;
+  border-bottom: 1px solid black;
+  }
+a {
+  padding-right: 25px;
+  padding-left:  0;
+  text-decoration: none;
+
+}
+
+.separar{
+  padding-right: 450px
+}
+.tabla{
+  padding: 25px;
+  width: 1400px;
+  border-top: solid black;
+  border-bottom: solid black;
+}
+.tabla td{
+  padding-right: 60px;
+  padding-left:  0;
+  font-size: 0.9em;
+}
+/*-----------------------contenido-------------------------
+----------------------------------------------------------*/
+.contenido{
+  padding: 60px;
+  border-bottom: solid black;
+}
+
+/*-----------------------Formulario -reguistro--------------
+----------------------------------------------------------*/
+.formulario-reguistro{
+  text-align: center;
+  padding: 10px;
+  padding-top: 60px;
+  background-color: white;
+
+}
+.espacio{
+  padding: 10px;
+}
+.btn{
+  padding-left: 80px;
+  padding-right: 80px;
+}
+input{
+width: 350px;
+padding: 5px;
+}
+.inicio{
+  background-color: #037362;
+}
+.facebook{
+  background-color:  #39579A;
+}
+.facebook:hover{
+    background-color:  #39579A;
+}
+p{
+  font-size: 0.7em;
+}
+/*-----------------------Empieza Tu Proyecto--------------
+----------------------------------------------------------*/
+td{
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.titulo{
+  padding-left:  320px;
+  padding-top: 40px;
+}
+.titulo h1{
+  font-size: 3em;
+}
+.anuncio{
+  padding-top:  40px;
+  padding: 20px;
+  background-color: #037362;
+  text-align: center;
+}
+
+.resumen{
+  text-align: center;
+  padding: 20px;
+  padding-top: 60px;
+}
+.tabla-imagenes{
+  padding-bottom: 60px;
+  padding-top: 60px;
+  text-align: center;
+  width: 1200px;
+}
+/*-----------------------Empieza Tu Proyecto.1--------------
+----------------------------------------------------------*/
+.formulario{
+  padding: 100px;
+  text-align: center;
+}
+/*-----------------------Empieza Tu Proyecto.2--------------
+----------------------------------------------------------*/
+.texa{
+  width: 600px;
+  padding: 50px;
+}
+/*-----------------------footer---------------------------
+----------------------------------------------------------*/
+footer .footer > ul{
+    width: 25%:
+    float:left;
+}
+footer{
+  padding-top: 40px;
+}
