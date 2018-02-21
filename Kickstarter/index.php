@@ -26,10 +26,10 @@
       </nav>
 
    <section class="contenedor contenido">
-     <img src="img/foto1.png" alt="foto1">
-
+     <img src="img/foto1.png" alt="foto1"
    </section>
 
+    <h1>Probando para sincronizar</h1>
 
      <?php include 'Plantillas/navegacion.php';   ?>
      <?php include 'Plantillas/footer.php';   ?>
