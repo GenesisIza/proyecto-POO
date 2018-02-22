@@ -33,8 +33,6 @@ header .logo{
 .navegacion{
   padding: 20px;
   padding-top: 40px;
-  border-top: 0.5px solid black;
-  border-bottom: 1px solid black;
   }
 a {
   padding-right: 25px;
@@ -98,35 +96,65 @@ p{
 }
 /*-----------------------Empieza Tu Proyecto--------------
 ----------------------------------------------------------*/
-td{
-  padding: 10px;
-  padding-bottom: 40px;
+.imagenes{
+  white : 90%;
+  padding: 60px;
 }
-.titulo{
-  padding-left:  320px;
-  padding-top: 40px;
-}
-.titulo h1{
-  font-size: 3em;
-}
+
 .anuncio{
-  padding-top:  40px;
-  padding: 20px;
-  background-color: #037362;
-  text-align: center;
+  padding: 80px;
+  padding-left:  360px;
+  background-color: rgb(3, 71, 82);
+  color: white;
 }
 
 .resumen{
+text-align: center;
+padding: 80px;
+}
+
+.espacio-contenido{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 0px;
+  padding-left: 100px;
+}
+.seccion-video{
+  padding: 80px;
+  background-color: rgb(40, 40, 40);
   text-align: center;
+}
+.video{
+  width: 80%;
+}
+
+.anuncio-crea{
+  padding-top: 80px;
+  padding-bottom: 80x;
+  border-top: 0.5px solid black;
+}
+.cuadro{
   padding: 20px;
-  padding-top: 60px;
+  padding-right: 0;
+  border: 1px solid black;
 }
-.tabla-imagenes{
-  padding-bottom: 60px;
-  padding-top: 60px;
-  text-align: center;
-  width: 1200px;
+
+.anuncio-1{
+  padding: 80px;
+  border-top:  solid black;
+  border-bottom: solid black;
+  background-color: rgb(255, 203, 169);
+
 }
+.acomodar{
+  padding-left:  300px;
+}
+
+.arte{
+  padding: 60px;
+}
+
+
 /*-----------------------Empieza Tu Proyecto.1--------------
 ----------------------------------------------------------*/
 .formulario{
@@ -141,10 +169,9 @@ td{
 }
 /*-----------------------footer---------------------------
 ----------------------------------------------------------*/
-footer .footer > ul{
-    width: 25%:
-    float:left;
+.enlace-footer {
+  color: black;
 }
-footer{
-  padding-top: 40px;
-}
+ footer{
+   padding: 60px;
+ }
