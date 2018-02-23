@@ -1,8 +1,8 @@
   <?php include 'Plantillas/header.php';   ?>
 
-  <div class="formulario espacio ">
-    <h3>Pare terminar, comprobemos tu elegibilidad:</h3>
-    <h4>Antes de que procedamos, por favor confirma unos cuantos detalles e <br> indícanos donde resides principalmente.</h4>
+  <div class="formulario ">
+    <h3 id="primero">Pare terminar, comprobemos tu elegibilidad:</h3>
+    <h4 id="segundo">Antes de que procedamos, por favor confirma unos cuantos detalles e <br> indícanos donde resides principalmente.</h4>
     <br><br>
 
         <form class="" action="registrarse.php" method="post">
@@ -23,19 +23,32 @@
               <option value="">peru</option>
               <option value="">Argentina</option>
 </select>
-      <br><br>
-      <div class="container-fluid">
-        <div class="row">
+		<br>
+		  <div class="pregunta"><i class="far fa-question-circle texto">¿Y si mi país no aparece en la lista?</i></div> 
+<br>
+   		<div class=" texto-final">
 
-          <label><input name="chk-gustos[]" type="checkbox">Tengo al menos 18 años</label><br>
-          <label><input name="chk-gustos[]" type="checkbox">Tengo una cuenta bancaria y una identificacion oficial</label><br>
-          <label><input name="chk-gustos[]" type="checkbox">Tengo una tarjeta de credito o dedito</label><br>
-        <div>
+   			<div class="container">
+		        <div class="row">
+			    	<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 bottones">
+			         <input name="chk-gustos[]" type="checkbox" id="edad">
+			          <input name="chk-gustos[]" type="checkbox" id="cuenta">
+			          <input name="chk-gustos[]" type="checkbox" id="tarjeta">
+			        </div>
+       				
+       				<div class="col-xl-6 col-lg-4 col-md-4 col-sm-4 col-4 ">
+       					<label id="edad">Tengo al menos 18 años</label>
+       					<label id="cuenta">Tengo una cuenta bancaria y una identificacion oficial</label>
+       					<label id="tarjeta">Tengo una tarjeta de credito y/o debito</label>
+		        	</div>
+		          </div>
+		     </div>
+		 </div>
           <br><br>
 
-      <input class="btn btn-primary" type="submit" name="" value="continuar">
-    <br>  <a href="empieza-tu-proyecto1.php">idea para el proyecto</a>
+<hr>
+     
+       <a href="empieza-tu-proyecto1.php" class="empieza"> ← idea para el proyecto</a>
 
-    </form>
-
+<a href="registrarse.php"> <button type="button" class="btn btn-dark btn1">Continuar</button></a>
   </div>

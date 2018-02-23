@@ -2,10 +2,12 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kickstarter</title>
-    <link rel="stylesheet" href="css\fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="css/signin.css">
   </head>
   <body>
     <header class="header">
@@ -15,5 +17,4 @@
       <a class="izquierda" href="Iniciar-seccion.php">Reguistrarse</a>
       <a class="izquierda" href="#"><i class="fas fa-search"></i></a>
       <a class="izquierda Busqueda" href="#"> Busqueda  </a>
-
     </header>

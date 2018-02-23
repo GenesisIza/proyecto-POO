@@ -1,26 +1,25 @@
   <?php include 'Plantillas/header.php';   ?>
 
 
-   <div class="formulario-reguistro">
-     <div>
-       <h2 class"inicio"> Iniciar seccion</h2>
-       <br>
-       <input  type="email" name="" value="" placeholder="Correo Elctronico">
-     </div>
-     <br>
-     <div class="espacio">
-       <input  type="text" name="" value="" placeholder="Contraseña" >
-     </div>
-     <a href="#">¿La olvidaste?</a>
-     <div class="espacio">
-        <input  class="btn btn-dark" type="button" value="Iniciar seccion" >
-      </div>
+      <div class="text-center">
 
-      <div class="espacio">
-        <input  class="btn btn-success facebook" type="button" value="Iniciar seccion Con facebook"  >
+    <form class="form-signin">
+      <h1 class="h3 mb-3 font-weight-normal">Iniciar seccion</h1>
+      <label for="inputEmail" class="sr-only form-control">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword " class="sr-only form-control">Password</label>
+      <input type="password" id="inputPassword espacio" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3 ">
+        <label>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Recuérdame
+            <input style="vertical-align: inherit;" type="checkbox" value="remember-me">
+        </label>
       </div>
-      <p>Nunca publicaremos algo en Facebook <br> sin tu permiso  </p>
-      <br><br><br><br>
-      <h6>¿Nuevo usuario en Kickstarter? <a href="reguistrarse.php">Registrarme</a></h6>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017-2018</p>
 
-   </div>
+
+    </form>
+
+
+      </div>
