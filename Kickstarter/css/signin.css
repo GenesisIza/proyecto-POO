@@ -1,7 +1,7 @@
 
 .form-signin {
   width: 100%;
-  max-width: 400px;
+  max-width: 450px;
   padding: 40px;
   margin: 0 auto;
 }
@@ -44,4 +44,33 @@ text-align: left;
 }
 .sr-only{
   padding: 20px;
+  text-decoration: nome;
+}
+.btn-primary{
+  background-color: #009E74;
+  text-decoration: nome;
+}
+
+.btn-primary:hover{
+  background-color: #037362;
+}
+.btn-inicio{
+   text-decoration: nome;
+}
+.btn-facebook{
+  text-align: center;
+  background-color: #39579A;
+  color: #FFFFFF;
+}
+.btn-facebook:hover{
+  background-color: #39579A;
+  color: black;
+}
+.olvidaste{
+  padding-bottom: 3px;
+  padding-bottom: 5px;
+}
+input {
+    width:10px;
+    padding: 5px;
 }
