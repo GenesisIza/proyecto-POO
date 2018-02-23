@@ -172,18 +172,11 @@ padding: 80px;
 .enlace-footer {
   color: black;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
- footer{
-   padding: 60px;
- }
-=======
->>>>>>> 8832d5071eaf260b130cca252e26403118ac0b56
 
  footer{
    padding: 60px;
  }
+
 
 
 /*-----------------------empieza tu proyecto---------------------------
@@ -206,6 +199,7 @@ padding: 80px;
   font-family: "Arial";
   font-size: 14px;
 }
+
 .empieza:hover{
   text-decoration: none;
   color: black
@@ -242,6 +236,9 @@ padding-left: 263px
  
     border-radius: 0%;
 }
+
+
+
 /*-----------------------iniciar seccion---------------------------
 ----------------------------------------------------------*/
 .form-control {
@@ -258,51 +255,11 @@ padding-left: 263px
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
-
-}
-/*-----------------------iniciar seccion---------------------------
-----------------------------------------------------------*/
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-<<<<<<< HEAD
-=======
-}
-/*-----------------------iniciar seccion---------------------------
-----------------------------------------------------------*/
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
->>>>>>> 8832d5071eaf260b130cca252e26403118ac0b56
 
 .form-signin {
     width: 100%;
     max-width: 330px;
     padding: 15px;
     margin: 0 auto;
-<<<<<<< HEAD
 
-=======
->>>>>>> 8832d5071eaf260b130cca252e26403118ac0b56
 }
