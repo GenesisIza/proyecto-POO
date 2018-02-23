@@ -54,10 +54,23 @@ text-align: left;
 .btn-primary:hover{
   background-color: #037362;
 }
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+
+}
+
 .btn-inicio{
-   text-decoration: nome;
+  margin-bottom:  0px;
 }
 .btn-facebook{
+ padding: 0;
+  margin: 0;
+  padding: top:25px;
+  padding-bottom: 15px;
+  text-align: center;
   text-align: center;
   background-color: #39579A;
   color: #FFFFFF;
@@ -67,7 +80,7 @@ text-align: left;
   color: black;
 }
 .olvidaste{
-  padding-bottom: 3px;
+  padding-top:  0px;
   padding-bottom: 5px;
 }
 input {
