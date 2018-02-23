@@ -148,3 +148,23 @@ footer .footer > ul{
 footer{
   padding-top: 40px;
 }
+
+/*-----------------------empieza tu proyecto---------------------------
+----------------------------------------------------------*/
+.form-control {
+    display: table-row  ;
+    width: 55%  ;}
+
+.btn{
+      border-radius: 0%;
+    display: block;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #101010;
+    border-color: #060606;
+    display: block;
+
+}
