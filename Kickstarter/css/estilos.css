@@ -172,6 +172,29 @@ padding: 80px;
 .enlace-footer {
   color: black;
 }
+<<<<<<< HEAD
  footer{
    padding: 60px;
  }
+=======
+
+/*-----------------------empieza tu proyecto---------------------------
+----------------------------------------------------------*/
+.form-control {
+    display: table-row  ;
+    width: 55%  ;}
+
+.btn{
+      border-radius: 0%;
+    display: block;
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #101010;
+    border-color: #060606;
+    display: block;
+
+}
+>>>>>>> c59e9787af513764e6a19d4106fa5ddd7f052222

@@ -14,14 +14,14 @@
      <input class="btn btn-success inicio" type="submit" name="Empieza tu proyecto" value="Empieza tu proyecto">
   </form>
 
-    <div class="container imagenes">
+    <div class="container imagenes  ">
       <div class="row">
         <div class="col">
-          <img src="img/img1.png" alt="">
+          <img class="img-fluid" src="img/img1.png" alt="">
         </div>
-        <div class="col">
-          <img src="img/img2.png" alt="">
-          <img src="img/img3.png" alt="">
+        <div class="col img-fluid">
+          <img class="img-fluid" src="img/img2.png" alt="">
+          <img class="img-fluid" src="img/img3.png" alt="">
         </div>
       </div>
     </div>
@@ -127,7 +127,7 @@
 
     <div class="seccion-video">
       <div class="contenedor">
-        <video  class="video" src="video/wed.mp4"  > </video>
+        <video  class="video" src="video/wed.mp4" > </video>
       </div>
    </div>
 
