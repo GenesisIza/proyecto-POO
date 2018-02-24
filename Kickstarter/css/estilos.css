@@ -181,9 +181,7 @@ padding: 80px;
 
 /*-----------------------empieza tu proyecto---------------------------
 ----------------------------------------------------------*/
-.form-control {
-    display: table-row  ;
-    width: 55%  ;}
+
 
 .btn1{
       border-radius: 0%;
@@ -214,7 +212,7 @@ padding-left: 263px
 
 .texto-final{
   text-align: left;
- padding-left: 200px;
+ padding-left: 130px;
   font-size: 16px;
   font-family: "Arial"
 
@@ -262,4 +260,9 @@ padding-left: 263px
     padding: 15px;
     margin: 0 auto;
 
+}
+
+.forma{
+      width: 50%;
+    margin-left: 250px;                                                        
 }
