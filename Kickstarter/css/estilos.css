@@ -206,7 +206,7 @@ padding: 80px;
 
 .pregunta{
 text-align: left;
-padding-left: 263px
+padding-left: 295px
 }
 
 
@@ -239,6 +239,12 @@ padding-left: 263px
 
 /*-----------------------iniciar seccion---------------------------
 ----------------------------------------------------------*/
+.form-control:hover{
+  border: 1px solid #111111;
+}
+
+
+
 .form-control {
     display: block;
     width: 100%;
@@ -249,7 +255,7 @@ padding-left: 263px
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
-    border-radius: .25rem;
+    border-radius: 0px;   
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -264,5 +270,5 @@ padding-left: 263px
 
 .forma{
       width: 50%;
-    margin-left: 250px;                                                        
+    margin-left: 295px;                                                        
 }
