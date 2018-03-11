@@ -177,6 +177,7 @@
                     <img class="card-img-top" src="img/h1.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="">LERR MAS-></a>
                     </div>
                </div>
             </div>
@@ -185,7 +186,8 @@
                 <div class="card" >
                    <img class="card-img-top" src="img/h2.png" alt="Card image cap">
                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">MAs alla de las fronteras a traves de la optica de <br> Yoshua Akon  </p>
+                        <a href="">LERR MAS-></a>
                    </div>
                 </div>
             </div>
@@ -194,15 +196,76 @@
                  <div class="card" >
                      <img class="card-img-top" src="img/h3.png" alt="Card image cap">
                        <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">Voz Conyta es un homenaje a las obras de <br> grandes muralistas mexicanos atraves del rap</p>
+                          <a href="">LERR MAS-></a>
                        </div>
                  </div>   
            </div>
         </div>
+        <br><br>
+
+        <div class="row">
+          <div class="col-md-4">
+                <a href="">
+                  <div class="card" style="width: 400px;">
+                      <div class="card-body">
+                        <h6 class="card-title">Salon Acme-- un espacio que amplifica a artistas <br> emerguentes en CDMX</h6>
+                        <br>
+                        <h6>LERR MAS</h6>
+                        <br>
+                        <img src="img/cat-09">                
+                    </div>
+                  </div>
+                </a>
+          </div>
+        
+
+       
+          <div class="col-md-4">
+                <a href="">
+                  <div class="card" style="width: 400px;">
+                      <div class="card-body">
+                        <h6 class="card-title">Cuatro historias que exploran el interminable viaje de artista</h6>
+                        <br>
+                        <h6>LERR MAS</h6>
+                        <br>
+                        <img src="img/cat-10">                
+                    </div>
+                  </div>
+                </a>
+          </div>
+       
+          <div class="col-md-4">
+                <a href="">
+                  <div class="card" style="width: 400px;">
+                      <div class="card-body">
+                        <h6 class="card-title">Cinco años de la principal feria de arte independiente  de latinoamerica</h6>
+                        <br>
+                        <h6>LERR MAS</h6>
+                        <br>
+                        <img src="img/cat-11">                
+                    </div>
+                  </div>
+                </a>
+          </div>
+        <br> <br>       
     </div>
 
-  
+    <div class="contenedor ">
+          <hr style="border: 0.4px solid gray;">
+         <form class="top-center">
+          <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
 
+              <div class="form-group mx-sm-3 mb-2 align-baseline ">
+                  <label for="inputPassword2" class="sr-only">Password</label>
+                  <input style="width: 400px;" type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              </div>
+          <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+        </form>
+    </div>
+    
+  
+      <hr style="border: 0.4px solid gray;">
      <div class="contenedor">
            <ul class="nav">
              <li class="nav-item">
@@ -232,6 +295,9 @@
           </ul>
           
     </div>
+    <hr style="border: 0.4px solid gray;">
+
+    <br><br>
     
 
 
