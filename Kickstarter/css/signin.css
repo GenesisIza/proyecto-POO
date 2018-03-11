@@ -15,7 +15,7 @@
   height: auto;
   padding: 8px;
   font-size: 16px;
-  text-align: center;
+  
 
 }
 .checkbox .mb-3{
@@ -25,24 +25,13 @@ text-align: left;
 .form-signin .form-control:focus {
   z-index: 2;
 }
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
-  border-bottom-right-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.form-signin input[type="password"] {
-  margin-bottom: 10px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
+
+
 .h3{
   text-align: left;
   padding-bottom: 0px;
 }
-.inputPassword{
-  padding-top: 15px:
-  padding-bottom: 15px;
-}
+
 .sr-only{
   padding: 20px;
   text-decoration: nome;
@@ -85,7 +74,17 @@ text-align: left;
   padding-top:  0px;
   padding-bottom: 5px;
 }
+.formulario-reguistro{
+  background-color: #F0F0F0;
+}
+
+
 input {
-    width:10px;
+    width: 350px;
     padding: 5px;
+}
+
+.text-inicio{
+  text-align: left;
+  font-family: Helvetica;
 }
