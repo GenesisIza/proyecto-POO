@@ -22,7 +22,7 @@
       <br>
       <a class="" href="#"> <button class="btn-facebook btn btn-lg btn-primary btn-block" type="submit"><i class="fab fa-facebook-square"></i> Iniciar Seccion con facebook</button></a>
       <br><br><br>
-      ¿Nuevo usuario en Kickstarter? <a href="#">¡Regístrame!</a>
+      ¿Nuevo usuario en Kickstarter? <a href="registrarse.php">¡Regístrame!</a>
       <br><br>
     </form>
 
