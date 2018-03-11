@@ -300,16 +300,7 @@
     </div>
     <hr style="border: 0.4px solid gray;">
 
-    <br><br>
-    
-
-
-
-
-
-
-
-
+  
      <?php include 'Plantillas/footer.php';   ?>
   </body>
 </html>

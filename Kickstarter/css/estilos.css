@@ -38,6 +38,7 @@ a {
   padding-right: 25px;
   padding-left:  0;
   text-decoration: none;
+  color: black;
 
 }
 
@@ -93,6 +94,7 @@ padding: 5px;
 }
 p{
   font-size: 0.7em;
+  color: black;
 }
 /*-----------------------Empieza Tu Proyecto--------------
 ----------------------------------------------------------*/
@@ -280,4 +282,7 @@ padding-left: 295px
   padding:  10px !important;
  
 }
+
+a{
+  color: black !important;
 }
