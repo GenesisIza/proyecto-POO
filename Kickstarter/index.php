@@ -70,16 +70,24 @@
                 <table class="table col-md-6">
                     <tbody>
                       <tr >
-                       <td><a href=""> <img src="img/cat-01.png"> </a>  </td>    
+                       <td><a href=""> <img src="img/cat-01.png"> </a>  </td>  
+                       <td> <a href="">Pandora </a> <br> 22 % financiado </td>
+                    
                       </tr >
                       <tr>   
                          <td><a href=""> <img src="img/cat-02.jpg" > </a></td>
+                          <td> <a href="">Knock Down The House: A Documentary</a> <br>52 % financiado</td> 
+                          
                       </tr>
                       <tr >
-                       <td><a href=""> <img src="img/cat-03.png"> </a>  </td>    
+                       <td><a href=""> <img src="img/cat-03.png"> </a>  </td>  
+                        <td> <a href="">The Grind - Pilot and Mini Series</a> <br> 0 % financiado</td>   
+                      
                       </tr >
                       <tr>   
                          <td><a href=""> <img src="img/cat-04.jpg" > </a></td>
+                          <td> <a href="">El Proyeccionista - Documentary</a> <br> 11 % financiado</td> 
+                          
                       </tr>
                   </tbody>
                 </table>
@@ -133,8 +141,8 @@
                    <a href="">
                      <img src="img/cat-08.jpg">
                      <p>           
-                       A sorcerer saves a girl from flesh-eating <br>
-                       demons. After trying to use magic to find <br>
+                        A sorcerer saves a girl from flesh-eating <br>
+                        demons. After trying to use magic to find <br>
                         her friends, he’s trapped in a vision of the past. <br><br>
                         81 % financiado
                      </p>
@@ -149,7 +157,7 @@
     <br>
   
     <div class="contenedor align-baseline">
-        <img style="font-size: 1.2em;" src="img/logo2.png">
+        <img style="font-size: 1.2em; font-style: Cooper Light ;" src="img/logo2.png">
         <h1 style="text-align: center;display: inline-flex;padding-left: 60px;">Lo unicos que puedes hacer es hacer todo lo <br> que puedas</h1>
     </div>
     <br><br>
@@ -186,7 +194,7 @@
                 <div class="card" >
                    <img class="card-img-top" src="img/h2.png" alt="Card image cap">
                    <div class="card-body">
-                        <p class="card-text">MAs alla de las fronteras a traves de la optica de <br> Yoshua Akon  </p>
+                        <p class="card-text">Mas alla de las fronteras a traves de la optica de <br> Yoshua Akon  </p>
                         <a href="">LERR MAS-></a>
                    </div>
                 </div>

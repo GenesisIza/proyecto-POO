@@ -1,7 +1,7 @@
   <?php include 'Plantillas/header.php';   ?>
 
   <div class=" acomodar espacio contenedor">
-    <div class="container">
+    <div class="">
        <div class="row">
          <div class="col">
            <h1>Convierte tu proyecto <br> creativo en realidad.</h1>
@@ -14,20 +14,21 @@
      <input class="btn btn-success inicio" type="submit" name="Empieza tu proyecto" value="Empieza tu proyecto">
   </form>
 
-    <div class="container imagenes  ">
+    <div class="contenedor imagenes  ">
       <div class="row">
         <div class="col">
           <img class="img-fluid" src="img/img1.png" alt="">
         </div>
         <div class="col img-fluid">
           <img class="img-fluid" src="img/img2.png" alt="">
+          <br>
           <img class="img-fluid" src="img/img3.png" alt="">
         </div>
       </div>
     </div>
 
     <section class="anuncio">
-         <div class="container">
+         <div class="contenedor">
             <div class="row">
               <div class="col">
                 <h1 >
@@ -40,11 +41,11 @@
          </div>
     </section>
 
-   <div class="resumen container">
+   <div class="resumen contenedor">
       <h3>Un proyecto de Kickstarter hace mucho más <br> que simplemente recaudar dinero. <br> Genera una comunidad en torno a tu trabajo.</h3>
    </div>
 
-   <div class="container espacio-contenido">
+   <div class="contenedor espacio-contenido">
      <div class=" row">
        <div class=" col">
            <h4>¿Qué tipo de proyectos <br> puedo financiar <br> con Kickstarter?</h4>
@@ -63,7 +64,7 @@
      </div>
    </div>
 
-   <div class="container espacio-contenido ">
+   <div class="contenedor espacio-contenido ">
      <div class=" row">
        <div class=" col">
 
@@ -82,7 +83,7 @@
    </div>
 
 
-   <div class="container espacio-contenido ">
+   <div class="contenedor espacio-contenido ">
      <div class=" row">
        <div class=" col">
 
@@ -108,7 +109,7 @@
      </div>
    </div>
 
-   <div class="container espacio-contenido">
+   <div class="contenedor espacio-contenido">
      <div class="row">
            <div class="col">
              <h4>¿Cómo me comunico <br> si tengo preguntas?</h4>
@@ -133,7 +134,7 @@
 
 
 
-      <div class="container espacio-contenido">
+      <div class="contenedor espacio-contenido">
         <div class="row">
           <div class="col">
             <h4>1 <br>
@@ -153,7 +154,7 @@
       </div>
 
 
-      <div class="container espacio-contenido">
+      <div class="contenedor espacio-contenido">
         <div class="row">
           <div class="col">
             <h4>2 <br>
@@ -174,7 +175,7 @@
         </div>
       </div>
 
-      <div class="container espacio-contenido">
+      <div class="contenedor espacio-contenido">
         <div class="row">
           <div class="col">
             <h4>3 <br>
@@ -193,13 +194,15 @@
         </div>
       </div>
 
-      <div class="container anuncio-crea">
+      <div class="contenedor anuncio-crea">
         <h1>Crea un proyecto en una de <br> las siguientes categorías</h1>
       </div>
+      <br>
 
      <?php include 'Plantillas/navegacion.php';   ?>
+     <br>
 
-     <div class="container espacio">
+     <div class="contenedor espacio">
        <div class="row ">
            <div class="col">
              <h6>Desde postales pintadas a mano hasta murales enormes - <br>
@@ -224,7 +227,7 @@
        </div>
      </div>
 
-      <section class="container arte">
+      <section class="contenedor arte">
         <div class="container">
           <div class="row">
             <div class="col">

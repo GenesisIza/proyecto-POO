@@ -1,4 +1,9 @@
   <?php include 'Plantillas/header.php';   ?>
+<<<<<<< HEAD
+
+      
+     
+=======
   <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >
@@ -43,3 +48,4 @@
 </table>
 </div>
     
+>>>>>>> d5e556d9340ba6f724f2c23aef6fea1ac43c3b1f

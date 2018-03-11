@@ -1,4 +1,39 @@
 
+<<<<<<< HEAD
+=======
+.form-signin {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+  text-align: left;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 8px;
+  font-size: 16px;
+  
+
+}
+.checkbox .mb-3{
+text-align: left;
+    vertical-align: baseline;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+
+.h3{
+  text-align: left;
+  padding-bottom: 0px;
+}
+>>>>>>> 742de6e0f33bfdb76d5b2fde197ec52fba8126e8
 
 .btn-primary{
   background-color: #009E74;
