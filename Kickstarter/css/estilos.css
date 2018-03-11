@@ -16,7 +16,7 @@ header .logo{
 
 }
 .contenedor{
-  width: 1400px;
+  width: 1266px;
   margin: 0 auto;
 }
 @media only screen and (max_whidth:480px) {
@@ -271,4 +271,13 @@ padding-left: 295px
 .forma{
       width: 50%;
     margin-left: 295px;                                                        
+}
+
+/*-----------------------index---------------------------
+----------------------------------------------------------*/
+.btn-light{
+  border: 1px solid  black ;
+  padding:  10px !important;
+ 
+}
 }
