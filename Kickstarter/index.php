@@ -251,21 +251,24 @@
         <br> <br>       
     </div>
 
+    <hr style="border: 0.4px solid gray;"><br>
     <div class="contenedor ">
-          <hr style="border: 0.4px solid gray;">
-         <form class="top-center">
-          <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
+          
+          <form class="">
+               <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
+               <h6 style="text-align: center;">Semanalmente: Unos cuantos proyectos, seleccionados por el equipo de <br> Kickstarter.</h6><br>
 
-              <div class="form-group mx-sm-3 mb-2 align-baseline ">
-                  <label for="inputPassword2" class="sr-only">Password</label>
-                  <input style="width: 400px;" type="password" class="form-control" id="inputPassword2" placeholder="Password">
+              <div style="text-align: center;" class="top-center">
+                  <input style="width: 400px;" type="password" class="" placeholder="Correo electronico">
+                  <button type="submit" class="btn btn-dark">Suscribirte Ahora</button>
+                  <br><br><br>
               </div>
-          <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+              
         </form>
     </div>
     
   
-      <hr style="border: 0.4px solid gray;">
+     <hr style="border: 0.4px solid gray;">
      <div class="contenedor">
            <ul class="nav">
              <li class="nav-item">
