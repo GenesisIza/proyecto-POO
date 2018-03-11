@@ -1,43 +1,9 @@
 
-.form-signin {
-  width: 100%;
-  max-width: 450px;
-  padding: 40px;
-  margin: 0 auto;
-}
-.form-signin .checkbox {
-  font-weight: 400;
-  text-align: left;
-}
-.form-signin .form-control {
-  position: relative;
-  box-sizing: border-box;
-  height: auto;
-  padding: 8px;
-  font-size: 16px;
 
-}
-.checkbox .mb-3{
-text-align: left;
-    vertical-align: baseline;
-}
-.form-signin .form-control:focus {
-  z-index: 2;
-}
-
-
-.h3{
-  text-align: left;
-  padding-bottom: 0px;
-}
-
-.sr-only{
-  padding: 20px;
-  text-decoration: nome;
-}
 .btn-primary{
   background-color: #009E74;
   text-decoration: nome;
+   border-radius: 0%;
 }
 
 .btn-primary:hover{
@@ -53,6 +19,7 @@ text-align: left;
 
 .btn-inicio{
   margin-bottom:  0px;
+   border-radius: 0%;
 }
 
 .btn-facebook{
@@ -64,15 +31,13 @@ text-align: left;
   text-align: center;
   background-color: #39579A;
   color: #FFFFFF;
+   border-radius: 0%;
 }
 .btn-facebook:hover{
   background-color: #39579A;
   color: black;
 }
-.olvidaste{
-  padding-top:  0px;
-  padding-bottom: 5px;
-}
+
 .formulario-reguistro{
   background-color: #F0F0F0;
 }
@@ -86,4 +51,21 @@ input {
 .text-inicio{
   text-align: left;
   font-family: Helvetica;
+}
+
+.table-iniciar{
+  width: 400px;
+  background-color: white;
+}
+.chk-recordar{
+
+  width: 25px;
+  padding-right: 0px;
+  margin-left: 8px;
+}
+
+.olvidar{
+  font-size: 11px;
+  color: blue;
+  margin-left: 20px;
 }

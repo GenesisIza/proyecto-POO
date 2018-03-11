@@ -34,7 +34,7 @@
       <td> <p>Al registrarte, confirmas aceptación de nuestros términos de uso, <br> política de privacidad y política de cookies.</p></td>
     </tr>   
     <tr>
-      <td>   <input  class="btn btn-success facebook" type="button"   value= " Iniciar seccion Con facebook"  ></td>
+      <td><button class="btn btn-success facebook"> <i class="fab fa-facebook"></i>&nbsp iniciar sesion con Facebook</button></td>
     </tr>
       <tr>
       <td>     <p>Nunca publicaremos algo en Facebook sin tu permiso.</p></td>
