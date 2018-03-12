@@ -128,7 +128,7 @@
 
     <div class="seccion-video">
       <div class="contenedor">
-        <video  class="video" src="video/wed.mp4" > </video>
+        <video  class="video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" autoplay="1" >  </video>
       </div>
    </div>
 
