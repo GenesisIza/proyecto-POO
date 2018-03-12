@@ -29,7 +29,7 @@
       <td>     <p>Nunca publicaremos algo en Facebook sin tu permiso.</p></td>
     </tr>
      <tr>
-        <td style="background-color:#FCFCFB;"> ¿Nuevo usuario en Kickstarter? <a href="#">¡Regístrame!</a></td>
+        <td style="background-color:#FCFCFB;"> ¿Nuevo usuario en Kickstarter? <a href="registrarse">¡Regístrame!</a></td>
     </tr>
     <tr>        
 </table>
