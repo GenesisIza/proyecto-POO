@@ -1,0 +1,104 @@
+
+/*header*/
+.header{
+  padding: 25px;
+  color:gray;
+}
+.header:hover{
+  text-decoration: none;
+  color: #037362;  
+}
+.derecha{
+  float: left;
+  padding-right: 10px;
+}
+.izquierda{
+  float: right;
+  padding-right: 10px;
+}
+header .logo{
+   text-align: center;}
+
+/*pagina principal*/
+
+.texto{
+	font-family: Georgia;
+	color:##1B2355;
+	font-size: 19px;
+	
+}
+
+.Cuadros{
+    text-align: center;
+    color: white;
+    padding: 100px;
+    font-family: maison neue book;
+    font-size: 25px;
+
+}
+
+.tabla td{
+  padding-right: 60px;
+  padding-left:  0;
+  font-size: 0.9em;
+
+
+}
+
+tr a{
+   color:gray;
+   font-weight: bold;
+}
+
+a:hover {
+  color: #373F6B;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.tabla{
+  padding: 25px;
+  width: 1400px;
+  border-top: solid black;
+  text-align: center;
+  margin: 0 auto;
+ }
+
+ a {
+  padding-right: 25px;
+  padding-left:  0;
+  text-decoration: none;
+}
+
+.img{
+	width: 100%;
+	margin:auto;
+  margin: 0px;
+  padding: 0px;
+
+}
+.containers{
+padding-left: 180px;
+padding-right: 180px;
+
+}
+
+#my-style-button{
+   border-color: white;
+   color: #FF687B;
+   color: white;
+}
+
+.my-styles{
+  padding: 15px 200px 15px  20px;
+  border-color:#2752FF;
+  color:#2752FF;
+}
+
+
+.my-styles:hover{
+  color:black;
+  border-color:black;
+  background-color: white;
+}
+

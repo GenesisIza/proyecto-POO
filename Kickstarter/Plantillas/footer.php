@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col">
            <h6>Acerta de nosotros</h6>
-           <a class=" enlace-footer nav-link active" href="#">Acerta de nosotros</a>
+           <a class=" enlace-footer nav-link active" href="acerca-de-nosotros">Acerta de nosotros</a>
            <a class=" enlace-footer nav-link" href="#">nuestra Acta</a>
            <a class=" enlace-footer nav-link" href="#">Estadisticas</a>
            <a class=" enlace-footer nav-link" href="#">Prensa</a>

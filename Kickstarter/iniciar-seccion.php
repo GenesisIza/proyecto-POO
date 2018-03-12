@@ -34,4 +34,5 @@
     <tr>        
 </table>
 </div>
+     <?php include 'Plantillas/footer.php';   ?>
     

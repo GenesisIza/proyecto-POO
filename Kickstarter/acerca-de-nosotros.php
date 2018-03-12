@@ -9,16 +9,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<?php include 'Plantillas/header.php';   ?>
 <body>
 
- <header class="header">
-      <a class="derecha" href="#">Explorar</a>
-      <a class="derecha separar" href="#">Empieza Tu Proyecto</a>
-      <a class="logo" href="index.html"> <img src="img/logo.png" alt="Logo"></a>
-      <a class="izquierda" href="#"> Busqueda <i class="fas fa-search"></i> </a>
-      <a class="izquierda" href="#">Registrarse</a>
-  </header>
+<?php include 'Plantillas/header.php';   ?>
 
 <section class=" containers tabla">
   <div style="text-align: center;">
