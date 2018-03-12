@@ -1,6 +1,6 @@
   <?php include 'Plantillas/header.php';   ?>
 
-  <div class=" acomodar espacio contenedor">
+  <div class="acomodar espacio contenedor">
     <div class="">
        <div class="row">
          <div class="col">
