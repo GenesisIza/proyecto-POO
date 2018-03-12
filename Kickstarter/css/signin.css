@@ -64,7 +64,7 @@ text-align: left;
   padding-bottom: 15px;
   text-align: center;
   text-align: center;
-  background-color: #39579A;
+  background-color: #39579A !important;
   color: #FFFFFF;
    border-radius: 0%;
 }

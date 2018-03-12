@@ -15,7 +15,7 @@
     <tr>
       <td style="  text-align: left;" class="olvidar"><a href="#">¿La olvidaste?</a></td>
     </tr>
-      <td >  <input  class="btn btn-success inicio" type="button" value="Iniciar sesión" ></td>
+      <td >  <input  class=" btn btn-success inicio " type="button" value="Iniciar sesión" ></td>
     </tr>
     <tr>
       <td style="  text-align: left;" >
@@ -23,7 +23,7 @@
       </td>
     </tr>   
     <tr>
-      <td>  <button class="btn btn-success facebook"> <i class="fab fa-facebook"></i>&nbsp Iniciar sesion con Facebook</button></td>
+      <td>  <button class=" btn btn-success facebook "> <i class="fab fa-facebook"></i>&nbsp Iniciar sesion con Facebook</button></td>
     </tr>
       <tr>
       <td>     <p>Nunca publicaremos algo en Facebook sin tu permiso.</p></td>
