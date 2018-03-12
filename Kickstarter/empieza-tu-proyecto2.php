@@ -2,17 +2,20 @@
 
 
   <div class="formulario espacio ">
-    <h3>Pare terminar, comprobemos tu elegibilidad:</h3>
-    <h4>Antes de que procedamos, por favor confirma unos cuantos detalles e <br> indícanos donde resides principalmente.</h4>
+  <h3 id="primero">Describe lo que estás creando.</h3>
+    <h4 id="segundo">No te preocupes - puedes modificarlo más adelante.</h4>
+    <br><br>
     <br><br>
 
-    <form class="" action="empieza-tu-proyect3.php" method="post">
+  
 
       <input class="texa" type="texa" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano"><br><br>
+<hr>
 
-      <input class="btn btn-success siguiente" type="submit" name="" value="Siguiente:Idea para tu proyecto"><br>
-      <a href="empieza-tu-proyecto1.php">Reguesar</a>
 
-    </form>
+         <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>
 
+<a href="empieza-tu-proyect3.php"> <button type="button" class="btn btn-dark btn1">Siguiente: Ubicacion</button></a>
+
+ 
   </div>

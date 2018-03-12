@@ -11,7 +11,7 @@
   </div>
 
   <form class="acomodar espacio contenedor" action="empieza-tu-proyecto1.php" method="post">
-     <input class="btn btn-success inicio" type="submit" name="Empieza tu proyecto" value="Empieza tu proyecto">
+     <input class="btn btn-success inicio1" type="submit" name="Empieza tu proyecto" value="Empieza tu proyecto">
   </form>
 
     <div class="contenedor imagenes  ">

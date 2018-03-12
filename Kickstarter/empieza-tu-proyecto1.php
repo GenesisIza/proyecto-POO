@@ -7,7 +7,7 @@
 
     <form class="" action="empieza-tu-proyecto2.php" method="post">
 
-      <select class="espacio">
+      <select class="forma form-control form-control-lg">
               <option value="0">Selecione su categoria</option>
               <option value="1">Arte</option>
              <option value="2">Artesanias</option>
@@ -24,8 +24,8 @@
               <option value="">Tecnología</option>
       </select>
       <br><br>
-
-      <input class="btn btn-success siguiente" type="submit" name="" value="Siguiente:Idea para tu proyecto">
+<hr>
+      <input class="btn btn-dark btn1" type="submit" name="" value="Siguiente:Idea para tu proyecto">
 
     </form>
 
