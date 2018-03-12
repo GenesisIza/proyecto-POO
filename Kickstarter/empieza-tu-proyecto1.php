@@ -1,7 +1,7 @@
   <?php include 'Plantillas/header.php';   ?>
 
   <div class="formulario espacio ">
-      <h3 id="primero">Primero Hay que definir tu proyecto</h3>
+      <h3 id="primero">Primero hay que definir tu proyecto</h3>
     <h4 id="segundo">Escoge una categoría para que puedas llegar a la audiencia deseada.</h4>
     
     <br><br>
