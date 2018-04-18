@@ -38,23 +38,6 @@
   </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
          <td>
            <ul class="nav flex-column">
              <li class="nav-item">
