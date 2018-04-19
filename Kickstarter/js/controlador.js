@@ -1,7 +1,8 @@
 function validar(){
 	alert("entra");
 	validarCampoVacio("txt-nombre");		
-	validarCampoVacio("txt-correo");	
+	validarCampoVacio("txt-correo");
+
 }
 
 
@@ -19,13 +20,13 @@ var validarCampoVacio = function(id){
 
 
 
-
-
 function validarCorreo(email) {
+
     var patron = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     if (patron.test(String(email.value).toLowerCase())){
     	email.classList.remove("is-invalid");
-    	email.classList.add("is-valid");
+		email.classList.add("is-valid");
+		alert("funciona");
     	
     }
     else{
@@ -44,3 +45,27 @@ function validarContrasena(etiqueta){
 		etiqueta.classList.add("is-valid");
 	}
 }
+
+$("#crear_cuenta").click(function(){
+   alert("funciona");
+	   
+	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" + 
+					 'txt-correo ='+ $("#txt-correo").val() + "&" +
+					 'txt-contraseña='+ $("#txt-contraseña").val();
+
+   $.ajax({ 
+	   url: 'guardarUsuario.php',
+	   method: 'POST',
+	   data: parametros, //URLEncoded
+	   success: function (respuesta) {
+		   //Instrucciones a ejecutar cuando responda el servidor
+		   $("#respuesta").html(respuesta);
+
+	   }
+   })
+
+
+
+
+   
+});

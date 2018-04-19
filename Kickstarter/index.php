@@ -1,6 +1,21 @@
 
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="img/logo3.png">
+    
+    <title>Kickstarter</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="css/signin.css">
+  </head>
+    <body>
     <?php include 'Plantillas/header.php';   ?>
-
     <div class"clearfix"> </div>
     <br>
     <div class="contenedor">
@@ -309,6 +324,9 @@
     <hr style="border: 0.4px solid gray;">
 
   
-     <?php include 'Plantillas/footer.php';   ?>
+     <?php include 'Plantillas/footer.php'; ?>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/controlador.js"></script>
   </body>
 </html>
