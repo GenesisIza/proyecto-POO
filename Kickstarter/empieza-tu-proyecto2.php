@@ -1,21 +1,60 @@
-  <?php include 'Plantillas/header.php';   ?>
-
-
-  <div class="formulario espacio ">
-  <h3 id="primero">Describe lo que estás creando.</h3>
-    <h4 id="segundo">No te preocupes - puedes modificarlo más adelante.</h4>
-    <br><br>
-    <br><br>
-
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="img/logo3.png">
+    
+    <title>Kickstarter</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="css/signin.css">
+  </head>
+  <body>
+     <?php include 'Plantillas/header.php';   ?>
+     <div class="formulario espacio ">
+         <h3 id="primero">Describe lo que estás creando.</h3>
+        <h4 id="segundo">No te preocupes - puedes modificarlo más adelante.</h4>
+        <br><br>
+        <br><br>
+        <input class="texa" type="texa" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano"><br><br>
+        <hr>
+        <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>
+        <a href="empieza-tu-proyect3.php"> <button type="button" class="btn btn-dark btn1">Siguiente: Ubicacion</button></a>
+     </div>   
+  </body>
+  </html>
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
 
-      <input class="texa" type="texa" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano"><br><br>
-<hr>
-
-
-         <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>
-
-<a href="empieza-tu-proyect3.php"> <button type="button" class="btn btn-dark btn1">Siguiente: Ubicacion</button></a>
 
  
-  </div>
