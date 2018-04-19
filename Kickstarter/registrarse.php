@@ -24,12 +24,20 @@
                 <td><h2 class="text-inicio is-valid" >Registrarse</h2></td>
               </tr>
            <tr>
+<<<<<<< HEAD
               <td> <input class="is-valid"  type="text" name="tex-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);"></td>
+=======
+              <td> <input  type="text" id="txt-nombre" class="form-control " placeholder="Nombre" >
+					<div class="invalid-feedback">Campo obligatorio</div></t>
+              </td>
+>>>>>>> cb725a0be574a4ccaaaf2ea783ab6e399fa94f53
            </tr>    
            <tr>
-             <td><input type="email" name="txt-correo"  id="txt-correo" placeholder="Correo Electronico" onkeydown="validarCorreo(this);"></t>
+             <td><input type="email" name="txt-correo"  id="txt-correo" class="form-control " placeholder="Correo Electronico" onkeydown="validarCorreo(this);">
+             <div class="invalid-feedback">Campo obligatorio</div></t>
            </tr>
            <tr>
+<<<<<<< HEAD
               <td><input type="email" name="txt-correo2" id="txt-correo2"  placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);"></td>
            </tr>
            <tr>   
@@ -37,6 +45,21 @@
            </tr>   
            <tr>
              <td><input type="password" name="txt-contraseña2" id="txt-contraseña2"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);"></td>
+=======
+              <td><input type="email" name="tex-correo2" id="txt-correo2" class="form-control " placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);">
+              <div class="invalid-feedback">Campo obligatorio</div>
+          	</td>
+           </tr>
+           <tr>   
+             <td><input type="password" id="txt-contraseña" class="form-control " placeholder="Contraseña" onkeydown="validarContrasena(this);">
+				<div class="invalid-feedback">Al menos 7 caracteres</div>
+             </td>
+           </tr>   
+           <tr>
+             <td><input type="password" name="tex-contraseña2" id="txt-contraseña2"  class="form-control "  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);">
+			<div class="invalid-feedback">Al menos 7 caracteres</div>
+             </td>
+>>>>>>> cb725a0be574a4ccaaaf2ea783ab6e399fa94f53
            </tr>  
           <tr>
              <td><input id="crear_cuenta"  class="btn btn-success inicio" type="button" value="Crear cuenta" onclick="validar();"></td>
@@ -56,8 +79,17 @@
 
 
   <?php include 'Plantillas/footer.php';   ?>
+<<<<<<< HEAD
   <script src="js/jquery-3.3.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/controlador.js"></script>
+=======
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/controlador.js"></script>
+
+    
+>>>>>>> cb725a0be574a4ccaaaf2ea783ab6e399fa94f53
 </body>
 </html>
