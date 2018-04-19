@@ -2,9 +2,8 @@ function validar(){
 	alert("entra");
 	validarCampoVacio("txt-nombre");		
 	validarCampoCorreo("txt-correo");
-	validarCampoCorreo("txt-correo2");
 	validarContrasena("txt-contraseña");
-	validarContrasena("txt-contraseña2");
+
 	
 }
 

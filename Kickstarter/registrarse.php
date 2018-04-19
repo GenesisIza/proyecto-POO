@@ -24,20 +24,21 @@
                 <td><h2 class="text-inicio is-valid" >Registrarse</h2></td>
               </tr>
            <tr>
-              <td> <input class="is-valid"  type="text" name="tex-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);"></td>
+              <td> <input class="form-control" type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);"></td>
            </tr>    
            <tr>
              <td><input type="email" name="txt-correo"  id="txt-correo" class="form-control " placeholder="Correo Electronico" onkeydown="validarCorreo(this);">
-             <div class="invalid-feedback">Campo obligatorio</div></t>
+             
            </tr>
            <tr>
-              <td><input type="email" name="txt-correo2" id="txt-correo2"  placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);"></td>
+              <td><input type="email" name="txt-correo" id="txt-correo" class="form-control " placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);"></td>
+              
            </tr>
            <tr>   
-             <td><input type="password" name="txt-contraseña" id="txt-contraseña" placeholder="Contraseña" onkeydown="validarContrasena(this);"></td>
+             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña" placeholder="Contraseña" onkeydown="validarContrasena(this);"></td>
            </tr>   
            <tr>
-             <td><input type="password" name="txt-contraseña2" id="txt-contraseña2"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);"></td>
+             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);"></td>
            </tr>  
           <tr>
              <td><input id="crear_cuenta"  class="btn btn-success inicio" type="button" value="Crear cuenta" onclick="validar();"></td>
