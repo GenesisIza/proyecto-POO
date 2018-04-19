@@ -69,7 +69,8 @@ a {
   text-align: center;
   padding: 10px;
   padding-top: 60px;
-  background-color: white;
+ /* background-color: white;*/
+  background-color: #f0f0f0;
 
 }
 .espacio{
