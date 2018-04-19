@@ -6,7 +6,7 @@ function validar(){
 
 
 var validarCampoVacio = function(id){
-	alert("entra");
+	alert("entra validar campos");
 	if (document.getElementById(id).value == ""){
 		document.getElementById(id).classList.remove('is-valid');
 		document.getElementById(id).classList.add('is-invalid');
