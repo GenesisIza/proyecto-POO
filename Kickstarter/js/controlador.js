@@ -52,7 +52,7 @@ $("#crear_cuenta").click(function(){
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" + 
 					 'txt-correo ='+ $("#txt-correo").val() + "&" +
 					 'txt-contraseña='+ $("#txt-contraseña").val();
-alert("parametros");
+alert(parametros);
    $.ajax({ 
 	   url: 'guardarUsuario.php',
 	   method: 'POST',
