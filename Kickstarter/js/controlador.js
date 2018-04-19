@@ -1,8 +1,11 @@
 function validar(){
 	alert("entra");
 	validarCampoVacio("txt-nombre");		
-	validarCampoVacio("txt-correo");
-
+	validarCampoCorreo("txt-correo");
+	validarCampoCorreo("txt-correo2");
+	validarContrasena("txt-contraseña");
+	validarContrasena("txt-contraseña2");
+	
 }
 
 
@@ -59,7 +62,7 @@ $("#crear_cuenta").click(function(){
 	   data: parametros, //URLEncoded
 	   success: function (respuesta) {
 		   //Instrucciones a ejecutar cuando responda el servidor
-		   $("#respuesta").html(respuesta);
+		 //  $("#respuesta").html(respuesta);
 
 	   }
    })
