@@ -25,21 +25,27 @@
                 <td><h2 class="text-inicio is-valid" >Registrarse</h2></td>
               </tr>
            <tr>
-              <td> <input class="form-control" type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);"></td>
+              <td> <input class="form-control" type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);">
+                  <div class="invalid-feedback">Campo obligatorio</div>
+              </td>
            </tr>    
            <tr>
              <td><input type="email" name="txt-correo"  id="txt-correo" class="form-control " placeholder="Correo Electronico" onkeydown="validarCorreo(this);">
-             
+             <div class="invalid-feedback">Correo incorrecto</div>
            </tr>
            <tr>
-              <td><input type="email" name="txt-correo" id="txt-correo" class="form-control " placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);"></td>
-              
+              <td><input type="email" name="txt-correo" id="txt-correo2" class="form-control " placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);"></td>
+              <div class="invalid-feedback">Correo incorrecto</div>
            </tr>
            <tr>   
-             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña" placeholder="Contraseña" onkeydown="validarContrasena(this);"></td>
+             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña" placeholder="Contraseña" onkeydown="validarContrasena(this);">
+                <div class="invalid-feedback">Al menos 7 caracteres</div>
+             </td>
            </tr>   
            <tr>
-             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);"></td>
+             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña2"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);">
+                  <div class="invalid-feedback">Al menos 7 caracteres</div>
+             </td>
            </tr>  
           <tr>
              <td><input id="crear_cuenta"  class="btn btn-success inicio" type="button" value="Crear cuenta" onclick="validar();"></td>
