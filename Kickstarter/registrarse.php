@@ -15,6 +15,7 @@
      <?php include 'Plantillas/header.php';   ?>
         
       <form class="formulario-reguistro" >
+        <div class="formulario-reguistro" >
          <table align="center" cellpadding="15" style="background-color: white;">
              <tr>
                <td style="background-color:#FCFCFB;"><h6>¿Tienes una cuenta?  <a href="iniciar-seccion"> Inicia Sesion</a>  </h6>
@@ -53,6 +54,7 @@
              <td><p>Nunca publicaremos algo en Facebook sin tu permiso.</p></td>
            </tr>      
          </table>
+       </div>
       </form> 
       <div id="respuesta" ></div>
 
