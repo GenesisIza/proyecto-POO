@@ -1,6 +1,22 @@
-  <?php include 'Plantillas/header.php';   ?>
 
-  <div class="acomodar espacio contenedor">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="img/logo3.png">
+    
+    <title>Kickstarter</title>
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" href="css/signin.css">
+  </head>
+<body>
+   <?php include 'Plantillas/header.php';   ?>
+   <div class="acomodar espacio contenedor">
     <div class="">
        <div class="row">
          <div class="col">
@@ -261,5 +277,14 @@
           </div>
         </div>
       </section>
+      <?php include 'Plantillas/footer.php';   ?>  
+</body>
+</html>
 
-      <?php include 'Plantillas/footer.php';   ?>
+
+
+
+
+
+
+  
