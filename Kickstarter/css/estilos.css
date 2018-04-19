@@ -14,6 +14,7 @@
 header .logo{
    text-align: center;
 
+
 }
 .contenedor{
   width: 1266px;
@@ -43,7 +44,7 @@ a {
 }
 
 .separar{
-  padding-right: 450px
+  padding-right: 350px
 }
 .tabla{
   padding: 25px;
