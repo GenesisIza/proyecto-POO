@@ -88,6 +88,7 @@ function validarProyecto(etiqueta){
 	if (etiqueta.value.length<20) {
 		etiqueta.classList.remove("is-valid");
 		etiqueta.classList.add("is-invalid");
+		document.getElementById("btn-ubicacion").setAttribute("disabled", "disabled");
 	}
 	else{
 
