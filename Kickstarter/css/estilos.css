@@ -186,8 +186,9 @@ padding: 80px;
 /*-----------------------Empieza Tu Proyecto.2--------------
 ----------------------------------------------------------*/
 .texa{
-  width: 600px;
-  padding: 50px;
+  width: 600px !important;
+  padding: 50px !important; 
+  margin-left: 280px;
 }
 /*-----------------------footer---------------------------
 ----------------------------------------------------------*/
@@ -210,7 +211,6 @@ padding: 80px;
           padding-left: 10px;
     padding-right: 10px;
         margin-left: 700px;
-        background-color: rgba(206, 204, 204,0.5);
         color: white;
         border-color:  rgba(206, 204, 204,0.5);
 }
