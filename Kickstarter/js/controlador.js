@@ -1,8 +1,9 @@
 function validar(){
-	alert("entra");
+
 	validarCampoVacio("txt-nombre");		
 	validarCampoCorreo("txt-correo");
 	validarContrasena("txt-contraseña");
+	ValidarCategoria("slc-categoria");
 
 	
 }
@@ -65,9 +66,34 @@ alert(parametros);
 
 	   }
    })
-
-
-
-
    
 });
+
+/*function ValidarCategoria (id){
+     if (document.getElementById(id).value == ""){
+		document.getElementById(id).classList.remove('is-valid');
+		document.getElementById(id).classList.add('is-invalid');
+	}
+	else{
+	
+		document.getElementById(id).classList.remove('is-invalid');
+		document.getElementById(id).classList.add('is-valid');
+		document.getElementById("btn-idea").removeAttribute("disabled");
+	}
+      
+}*/
+
+
+function validarProyecto(etiqueta){
+	if (etiqueta.value.length<20) {
+		etiqueta.classList.remove("is-valid");
+		etiqueta.classList.add("is-invalid");
+		document.getElementById("btn-ubicacion").setAttribute("disabled", "disabled");
+	}
+	else{
+
+		etiqueta.classList.remove("is-invalid");
+		etiqueta.classList.add("is-valid");
+		document.getElementById("btn-ubicacion").removeAttribute("disabled");
+	}
+}

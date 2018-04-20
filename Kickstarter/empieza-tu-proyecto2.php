@@ -20,11 +20,14 @@
         <h4 id="segundo">No te preocupes - puedes modificarlo más adelante.</h4>
         <br><br>
         <br><br>
-        <input class="texa" type="texa" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano"><br><br>
+        <input class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" onkeydown="validarProyecto(this);"><br><br>
         <hr>
         <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>
-        <a href="empieza-tu-proyect3.php"> <button type="button" class="btn btn-dark btn1">Siguiente: Ubicacion</button></a>
-     </div>   
+        <a href="empieza-tu-proyect3.php"> <button type="button" class="btn btn-dark btn1" disabled="disabled" id="btn-ubicacion">Siguiente: Ubicacion</button></a>
+     </div> 
+     <script src="js/jquery-3.3.1.min.js"></script>  
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/controlador.js"></script>  
   </body>
   </html>
   
