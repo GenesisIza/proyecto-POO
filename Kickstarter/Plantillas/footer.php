@@ -2,37 +2,37 @@
 
   <div class="contanedor">
     <div class="row">
-      <div class="col">
+      <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
            <h6>Acerta de nosotros</h6>
-           <a class=" enlace-footer nav-link active" href="acerca-de-nosotros">Acerta de nosotros</a>
-           <a class=" enlace-footer nav-link" href="#">nuestra Acta</a>
-           <a class=" enlace-footer nav-link" href="#">Estadisticas</a>
-           <a class=" enlace-footer nav-link" href="#">Prensa</a>
-           <a class=" enlace-footer nav-link" href="#">Empleos</a>
+           <a class=" enlace-footer " href="acerca-de-nosotros">Acerta de nosotros</a><br>
+           <a class=" enlace-footer " href="#">nuestra Acta</a><br>
+           <a class=" enlace-footer " href="#">Estadisticas</a><br>
+           <a class=" enlace-footer " href="#">Prensa</a><br>
+           <a class=" enlace-footer " href="#">Empleos</a><br><br>
       </div>
 
-      <div class="col">
+      <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
         <h6>Ayuda</h6>
-        <a class="enlace-footer nav-link active" href="#">Atencion Al cliente</a>
-        <a class="enlace-footer nav-link" href="#">Centro de ayuda</a>
-        <a class="enlace-footer nav-link" href="#">nuestras reglas</a>
-        <a class="enlace-footer nav-link" href="#">manual del creador</a>
-        <a class="enlace-footer nav-link" href="#">campus</a>
+        <a class="enlace-footer " href="#">Atencion Al cliente</a><br>
+        <a class="enlace-footer " href="#">Centro de ayuda</a><br>
+        <a class="enlace-footer " href="#">nuestras reglas</a><br>
+        <a class="enlace-footer " href="#">manual del creador</a><br>
+        <a class="enlace-footer " href="#">campus</a><br><br>
       </div>
 
-      <div class="col">
+      <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
         <h6>Hola</h6>
-        <a class="enlace-footer nav-link active" href="#">Blog de Kickstarter</a>
-        <a class="enlace-footer nav-link" href="#">Blog de ingeniería</a>
-        <a class="enlace-footer nav-link" href="#">Boletines</a>
+        <a class="enlace-footer " href="#">Blog de Kickstarter</a><br>
+        <a class="enlace-footer" href="#">Blog de ingeniería</a><br>
+        <a class="enlace-footer" href="#">Boletines</a><br><br>
       </div>
 
-      <div class="col">
+      <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
         <h6>MÁS DE KICKSTARTER</h6>
-        <a class="enlace-footer nav-link active" href="#">Drip</a>
-        <a class="enlace-footer nav-link" href="#">Kickstarter Live</a>
-        <a class="enlace-footer nav-link" href="#">The Creative</a>
-        <a class="enlace-footer nav-link" href="#">Independent</a>
+        <a class="enlace-footer " href="#">Drip</a><br>
+        <a class="enlace-footer " href="#">Kickstarter Live</a><br>
+        <a class="enlace-footer " href="#">The Creative</a><br>
+        <a class="enlace-footer " href="#">Independent</a><br><br>
       </div>
     </div>
   </div>
