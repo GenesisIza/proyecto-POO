@@ -21,9 +21,13 @@ header .logo{
 
 }
 .contenedor{
-  width: 1266px;
-  margin: 0 auto;
+     width: 80%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
+
 @media only screen and (max_whidth:480px) {
   a {
     display: none;
@@ -36,7 +40,7 @@ header .logo{
 /*-----------------------Navagacion-------------------------
 ----------------------------------------------------------*/
 .navegacion{
-  padding: 20px;
+  padding: 0px;
   padding-top: 40px;
   }
 a {
@@ -66,6 +70,10 @@ a {
 .contenido{
   padding: 60px;
   border-bottom: solid black;
+}
+.imagendetabla{
+  width : 100%;
+  margin: 0%;
 }
 
 /*-----------------------Formulario -reguistro--------------
@@ -123,7 +131,7 @@ p{
 /*-----------------------Empieza Tu Proyecto--------------
 ----------------------------------------------------------*/
 .imagenes{
-  white : 90%;
+  width: 90%;
   padding: 60px;
 }
 
