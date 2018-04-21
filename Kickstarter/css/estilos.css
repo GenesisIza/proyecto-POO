@@ -198,10 +198,12 @@ padding: 80px;
 /*-----------------------Empieza Tu Proyecto.2--------------
 ----------------------------------------------------------*/
 .texa{
-  width: 600px !important;
-  height: 70px !important;
+  width: 100% !important;
+  height: 60% !important;
   padding: 50px !important; 
-  margin-left: 280px;
+   border: 1px solid black !important;
+  border-radius: 0px !important;
+ 
 }
 /*-----------------------footer---------------------------
 ----------------------------------------------------------*/

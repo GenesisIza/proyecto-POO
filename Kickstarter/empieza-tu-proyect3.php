@@ -92,7 +92,7 @@
         <hr>
         <div class="row">
           <div class="col-xl-3   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
-            <a href="empieza-tu-proyecto1.php" class="empieza"> ← idea para el proyecto</a>
+            <a href="empieza-tu-proyecto2.php" class="empieza"> ← idea para el proyecto</a>
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
             <form action="registrarse.php">

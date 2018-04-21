@@ -14,17 +14,43 @@
     <link rel="stylesheet" href="css/signin.css">
   </head>
   <body>
-     <?php include 'Plantillas/header.php';   ?>
-     <div class="formulario espacio ">
-         <h3 class= "primero">Describe lo que estás creando.</h3>
-        <h4 class= "segundo">No te preocupes - puedes modificarlo más adelante.</h4>
-        <br>        
-        <input class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" onkeydown="validarProyecto(this);"><br><br>
-        <hr>
-        <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>
-        <a href="empieza-tu-proyect3.php"> <button type="button" class="btn btn-dark btn1" disabled="disabled" id="btn-ubicacion">Siguiente: Ubicacion</button></a>
-     </div> 
-     <script src="js/jquery-3.3.1.min.js"></script>  
+    <?php include 'Plantillas/headerEmpieza.php';?>
+    <br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-center textInicios">
+           <h3 class= "primero">Describe lo que estás creando.</h3><br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-center textInicios">
+           <h4 class= "segundo">No te preocupes - puedes modificarlo más adelante.</h4><br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
+          <input class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" onkeydown="validarProyecto(this);"><br><br>
+        </div>
+      </div>
+<hr>
+      <div class="row">
+          <div class="col-xl-2   col-lg-2  col-md-2  col-sm-12 col-12 col-center">
+            <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>
+          </div>
+          <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
+            <form action="empieza-tu-proyect3.php">
+               <input class="btn btn-dark btn1" type="submit" value="Siguiente: Ubicacion" type="button" />
+            </form>
+          </div>
+         </div>
+
+
+      
+    </div>
+     
+  <script src="js/jquery-3.3.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/controlador.js"></script>  
   </body>

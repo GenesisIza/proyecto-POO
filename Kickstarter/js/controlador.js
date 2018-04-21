@@ -100,6 +100,11 @@ function validarProyecto(etiqueta){
 
 
 function validarChecks(id){
-	document.getElementById(id).setAttribute("src", "img/success2.svg");
+	var cadena = document.getElementById(id).getAttribute("src");
+	
+	if(cadena=="img/success.svg")
+		document.getElementById(id).setAttribute("src", "img/success2.svg");
+	else
+		document.getElementById(id).setAttribute("src", "img/success.svg");
 
 }
