@@ -95,7 +95,9 @@
             <a href="empieza-tu-proyecto1.php" class="empieza"> ← idea para el proyecto</a>
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
-            <a href="registrarse.php"> <button type="button" class="btn btn-dark btn1">Continuar</button></a>
+            <form action="registrarse.php">
+               <input class="btn btn-dark btn1" type="submit" value="Continuar" type="button"   />
+            </form>
           </div>
          </div>
     </div>   

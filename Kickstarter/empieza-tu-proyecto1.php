@@ -14,14 +14,23 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/signin.css">
   </head>
-  <body onunload="validar();">
-    <?php include 'Plantillas/header.php';   ?>
-    <div class="formulario espacio ">
-         <h3 class="primero">Primero hay que definir tu proyecto</h3>
-         <h4 class="segundo">Escoge una categoría para que puedas llegar a la audiencia deseada.</h4>
-         <br><br>
-         <form class="form-group" action="empieza-tu-proyecto2.php" method="post">
-            <select class=" custom-select forma form-control form-control-lg " require>
+  <body>
+    <?php include 'Plantillas/headerEmpieza.php';?>
+    <br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-center textInicios">
+          <h3 class="primero">Primero hay que definir tu proyecto</h3>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-center textInicios">
+          <h4 class="segundo">Escoge una categoría para que puedas llegar a la audiencia deseada.</h4>
+        </div>
+      </div><br>
+      <div class="row">
+        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
+           <select class="forma form-control col-center">
               <option value="">Selecione su categoria</option>
               <option value="1">Arte</option>
               <option value="2">Artesanias</option>
@@ -37,13 +46,22 @@
               <option value="12">Teatro</option>
               <option value="13">Tecnología</option>
            </select>
+
            <div class="invalid-feedback">Campo Obligatorio</div>
-           <br><br>
+           <br><br><br>
            <hr>
-           <input class="btn btn-dark btn1" type="submit" name="" value="Siguiente:Idea para tu proyecto"  id="btn-idea">
-       </form>
-  </div>
-   <script src="js/jquery-3.3.1.min.js"></script>  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  " ></div>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" >
+          <form action="empieza-tu-proyecto2.php">
+               <input class="btn btn-dark btn1" type="submit" value="Siguiente: Idea para el proyecto" type="button"/>
+            </form>
+        </div>
+      </div>
+    </div>
+  <script src="js/jquery-3.3.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/controlador.js"></script>
   </body>
