@@ -97,3 +97,9 @@ function validarProyecto(etiqueta){
 		document.getElementById("btn-ubicacion").removeAttribute("disabled");
 	}
 }
+
+
+function validarChecks(id){
+	document.getElementById(id).setAttribute("src", "img/success2.svg");
+
+}

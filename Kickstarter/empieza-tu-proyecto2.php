@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="img/logo3.png">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">    
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -16,10 +16,9 @@
   <body>
      <?php include 'Plantillas/header.php';   ?>
      <div class="formulario espacio ">
-         <h3 id="primero">Describe lo que estás creando.</h3>
-        <h4 id="segundo">No te preocupes - puedes modificarlo más adelante.</h4>
-        <br><br>
-        <br><br>
+         <h3 class= "primero">Describe lo que estás creando.</h3>
+        <h4 class= "segundo">No te preocupes - puedes modificarlo más adelante.</h4>
+        <br>        
         <input class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" onkeydown="validarProyecto(this);"><br><br>
         <hr>
         <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>

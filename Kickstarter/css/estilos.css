@@ -14,6 +14,10 @@
 header .logo{
    text-align: center;
 
+@font-face {
+    font-family: "MaisonNeue-Book";
+    src:  url("../webfonts/MaisonNeue-Bold.ttf") ;
+}
 
 }
 .contenedor{
@@ -187,6 +191,7 @@ padding: 80px;
 ----------------------------------------------------------*/
 .texa{
   width: 600px !important;
+  height: 70px !important;
   padding: 50px !important; 
   margin-left: 280px;
 }
@@ -208,10 +213,9 @@ padding: 80px;
 
 .btn1{
       border-radius: 0%;
-          padding-left: 10px;
-    padding-right: 10px;
-        margin-left: 700px;
-        color: white;
+    
+ 
+      
         border-color:  rgba(206, 204, 204,0.5);
 }
 .empieza{
@@ -226,32 +230,35 @@ padding: 80px;
 }
 
 
-.pregunta{
-text-align: left;
-padding-left: 295px
-}
-
 
 .texto-final{
-      padding-left: 80px;
   text-align: left;
- 
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif; 
+}
+.texChek{
+  font-family: 'Roboto', sans-serif; 
   font-size: 16px;
-  font-family: "Arial"
+}
 
+.primero{
+font-family: 'Roboto', sans-serif; 
+font-size: 28px;
+ color: black !important;
+
+}
+.segundo{
+font-family: 'Roboto', sans-serif;
+ font-size: 18px !important;
+ color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.texto-top{
+ font-family: 'Roboto', sans-serif; 
 }
 
 
-#primero{
- font-family: "Arial";
- font-size: 28px;
- color: black;
-}
-#segundo{
- font-family: "Arial";
- font-size: 18px;
- color: rgba(0, 0, 0, 0.6);
-}
+
 
 .form-control-lg {
  
@@ -292,14 +299,13 @@ padding-left: 295px
 }
 
 .forma{
-      width: 50%;
-    margin-left: 295px;                                                        
+      width: 511px;                                                       
 }
 
 /*-----------------------reguistrarme---------------------------
 ----------------------------------------------------------*/
 
-.form-signin .form-control {
+.form-signin  { /*le quite .form-control*/
   position: relative;
   box-sizing: border-box;
   height: auto;
@@ -314,6 +320,7 @@ padding-left: 295px
 
 
 
+
 /*-----------------------index---------------------------
 ----------------------------------------------------------*/
 .btn-light{
@@ -325,3 +332,32 @@ padding-left: 295px
 a{
   color: black !important;
 }
+
+
+.iconos-check{
+  width :26px ;
+  height:26px ;
+}
+
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
+
+.divCheck:hover{
+  border:  solid 1px;
+
+  border-color: rgba(116, 122, 121, 0.5);
+
+
+}
+
+
+.divCheck{
+
+  padding: 15px;
+
+}
+
+

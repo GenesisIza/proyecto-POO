@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="img/logo3.png">
-    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,8 +17,8 @@
   <body onunload="validar();">
     <?php include 'Plantillas/header.php';   ?>
     <div class="formulario espacio ">
-         <h3 id="primero">Primero hay que definir tu proyecto</h3>
-         <h4 id="segundo">Escoge una categoría para que puedas llegar a la audiencia deseada.</h4>
+         <h3 class="primero">Primero hay que definir tu proyecto</h3>
+         <h4 class="segundo">Escoge una categoría para que puedas llegar a la audiencia deseada.</h4>
          <br><br>
          <form class="" action="empieza-tu-proyecto2.php" method="post">
             <select class="forma form-control form-control-lg" id="slc-categoria">
