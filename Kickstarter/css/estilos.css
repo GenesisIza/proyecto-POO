@@ -228,15 +228,19 @@ padding: 80px;
 }
 .empieza{
   color:#aaa9a9;
-  font-family: "Arial";
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
+
 }
 
 .empieza:hover{
   text-decoration: none;
   color: black
 }
-
+.textInicios{
+  text-align: center;
+  font-family: 'Roboto', sans-serif; 
+}
 
 
 .texto-final{
@@ -307,7 +311,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 .forma{
-      width: 511px;                                                       
+      width: 100%;                                                       
 }
 
 /*-----------------------reguistrarme---------------------------
@@ -358,13 +362,6 @@ a{
 
   border-color: rgba(116, 122, 121, 0.5);
 
-
-}
-
-
-.divCheck{
-
-  padding: 15px;
 
 }
 
