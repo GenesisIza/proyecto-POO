@@ -65,8 +65,8 @@
        <h6>Proyectos Destacados</h6>
 	        <div class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
-	         		      	 <div class="img-fliud col-lg-6 col-md-6 col-sm-12">
-                         <img class="imagendetabla " src="img/img01.jpg" alt="foto1">
+	         		      	 <div>
+                         <img class="imagendetabla img-fliud" src="img/01.png" alt="foto1">
                        </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-8 col-12">
@@ -258,14 +258,15 @@
        <h6 style="text-align: center;">Semanalmente: Unos cuantos proyectos, seleccionados por el equipo de <br> Kickstarter.</h6><br>
        <form  class="">    
             <div class="row">   
-            <div class="col-lg-2 col-md-12 col-sm-12 "></div>      
-              <div class="col-lg-8 col-md-12 col-sm-12 ">
-                  <input style="width: 350px;" type="email" class="" placeholder="Correo electronico">
-                  <button type="submit" class="col-xl-3 col-lg-3 col-sm-12 btn btn-dark" onkeydown="validarCorreo(this);">Suscribirte Ahora</button>
+            <div class=" col-lg-2 col-md-12 col-sm-12"></div>      
+              <div style="display: inline-block;" class="col-lg-8 col-md-12 col-sm-12 ">
+                  <input  class=" col-lg-5 col-md-5 col-sm-12 col-12 " name="txt-suscribir" id="txt-suscribir" style="width:400px;" type="email"  placeholder="Correo electronico" onkeydown="validarCorreo(this);">
+                  <button name="btn-suscribir" id="btn-suscribir" type="submit" class="col-lg-3 col-md-3 col-sm-12  col-12 btn btn-dark" >Suscribirte Ahora</button>
               </div>  
             <div class="col-lg-2 col-md-12 col-sm-12 "></div>  
        </form>   
 </div>
+<br><br>
        
 <hr style="border: 0.4px solid gray;">
      <div class="container">

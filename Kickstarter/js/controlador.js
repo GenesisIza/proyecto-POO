@@ -108,3 +108,88 @@ function validarChecks(id){
 		document.getElementById(id).setAttribute("src", "img/success.svg");
 
 }
+
+$("#iniciar").click(function(){
+	alert("funciona bien");
+		
+	 var parametros = 'txt-correo ='+ $("#txt-correo").val() + "&" +
+						 'txt-contraseña='+ $("#txt-contraseña").val();
+	
+	alert(parametros);
+
+	$.ajax({ 
+		url: 'iniciarsesion.php',
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
+ });
+
+ function ValidarSelec(valor){
+    var respuesta;
+	switch ( valor ) {
+		case 1:
+			 respuesta = Arte 
+			 break;
+		case 2:
+		     respuesta = Artesanias;
+			 break;
+		case 3:
+		     respuesta = Cine y videos;
+			 break;
+		case 4:
+		     respuesta = comics;
+			 break;
+		case 5:
+	         respuesta = comida;
+			 break;
+		case 6:
+	         respuesta = diseño;
+			 break;
+		case 7:
+			 respuesta = juegos;
+			 break; 
+		case 8:
+			 respuesta = modas;
+			 break;
+		case 9:
+			 respuesta = musica;
+			 break;
+		case 10:
+			 respuesta = periodismo;
+			 break;
+		case 11:
+			 respuesta = publicaciones;
+			 break;
+		case 12:
+		    respuesta = teatro;
+			 break;
+		case 13:
+		    respuesta = tecnologia;
+			 break;
+		 return respuesta;
+ }
+ 
+ $("#categoria").click(function(){
+	alert("funciona bien");
+	var categoria = ValidarSelec($("#categoria").val());	
+	alert(categoria);
+	 var parametros =  'slc-categoria='+ categoria;
+	
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})
+
+
+
+ });

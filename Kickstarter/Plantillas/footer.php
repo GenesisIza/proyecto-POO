@@ -1,6 +1,5 @@
 <footer class="contenedor">
-
-  <div class="contanedor">
+ 
     <div class="row">
       <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
            <h6>Acerta de nosotros</h6>
@@ -34,7 +33,6 @@
         <a class="enlace-footer " href="#">The Creative</a><br>
         <a class="enlace-footer " href="#">Independent</a><br><br>
       </div>
-    </div>
   </div>
 
 

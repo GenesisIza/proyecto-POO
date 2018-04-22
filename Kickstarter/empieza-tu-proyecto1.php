@@ -17,6 +17,7 @@
   <body>
     <?php include 'Plantillas/headerEmpieza.php';?>
     <br><br><br>
+   
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-center textInicios">
@@ -28,9 +29,10 @@
           <h4 class="segundo">Escoge una categoría para que puedas llegar a la audiencia deseada.</h4>
         </div>
       </div><br>
+  <form action="empieza-tu-proyecto2.php"> 
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
-           <select class="forma form-control col-center">
+           <select name="categoria" class="forma form-control col-center">
               <option value="">Selecione su categoria</option>
               <option value="1">Arte</option>
               <option value="2">Artesanias</option>
@@ -54,13 +56,14 @@
       </div>
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  " ></div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" >
-          <form action="empieza-tu-proyecto2.php">
-               <input class="btn btn-dark btn1" type="submit" value="Siguiente: Idea para el proyecto" type="button"/>
-            </form>
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" >     
+               <input type="submit"  id="categoria" class="btn btn-dark btn1" value="Siguiente: Idea para el proyecto">
         </div>
       </div>
+
+    </form>  
     </div>
+   
   <script src="js/jquery-3.3.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script>
   <script type="text/javascript" src="js/controlador.js"></script>
