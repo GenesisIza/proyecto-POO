@@ -8,63 +8,83 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
   </head>
-  <body>
+  <body style="background-color: #F0F0F0;">
      <?php include 'Plantillas/header.php';   ?>
-        
-      <form class="formulario-reguistro" >
-        <div class="formulario-reguistro" >
-         <table align="center" cellpadding="15" style="background-color: white;">
-             <tr>
-               <td style="background-color:#FCFCFB;"><h6>¿Tienes una cuenta?  <a href="iniciar-seccion"> Inicia Sesion</a>  </h6>
-              <br></td>
-           </tr>
-              <tr>
-                <td><h2 class="text-inicio is-valid" >Registrarse</h2></td>
-              </tr>
-           <tr>
-              <td> <input class="form-control" type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);">
+     <br><br><br>
+     <div>
+        <div class="container-fluid" >
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center textInicios">
+              
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 textInicios" style="background-color:#FCFCFB; padding: 20px;">
+                  <h6>¿Tienes una cuenta?  <a href="iniciar-seccion"> Inicia </a>  </h6>
+                </div>
+              <div class="onlyColor ">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center textoIniciosFormularios" style="padding: 23px" >
+                  <div >Registrarse</div>
+                </div>
+              
+              
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                  <input class="form-control cuadrado " type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);">
                   <div class="invalid-feedback">Campo obligatorio</div>
-              </td>
-           </tr>    
-           <tr>
-             <td><input type="email" name="txt-correo"  id="txt-correo" class="form-control " placeholder="Correo Electronico" onkeydown="validarCorreo(this);">
-             <div class="invalid-feedback">Correo incorrecto</div>
-           </tr>
-           <tr>
-              <td><input type="email" name="txt-correo" id="txt-correo2" class="form-control " placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);"></td>
-              <div class="invalid-feedback">Correo incorrecto</div>
-           </tr>
-           <tr>   
-             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña" placeholder="Contraseña" onkeydown="validarContrasena(this);">
-                <div class="invalid-feedback">Al menos 7 caracteres</div>
-             </td>
-           </tr>   
-           <tr>
-             <td><input type="password" name="txt-contraseña" class="form-control " id="txt-contraseña2"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);">
+                </div><br>
+            
+            
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                  <input type="email" name="txt-correo"  id="txt-correo" class="form-control cuadrado" placeholder="Correo Electronico" onkeydown="validarCorreo(this);">
+                  <div class="invalid-feedback">Correo incorrecto</div>
+                </div><br>
+              
+              
+              
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                 <input type="email" name="txt-correo" id="txt-correo2" class="form-control cuadrado" placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);">
+                 <div class="invalid-feedback">Correo incorrecto</div>
+                </div><br>
+            
+              
+              
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                  <input type="password" name="txt-contraseña" class="form-control cuadrado " id="txt-contraseña" placeholder="Contraseña" onkeydown="validarContrasena(this);">
                   <div class="invalid-feedback">Al menos 7 caracteres</div>
-             </td>
-           </tr>  
-          <tr>
-             <td><input id="crear_cuenta"  class="btn btn-success inicio" type="button" value="Crear cuenta" onclick="validar();"></td>
-           </tr>
-           <tr>
-             <td> <p>Al registrarte, confirmas aceptación de nuestros términos de uso, <br> política de privacidad y política de cookies.</p></td>
-           </tr>   
-           <tr>
-             <td><button class="btn btn-success facebook"> <i class="fab fa-facebook"></i>&nbsp iniciar sesion con Facebook</button></td>
-           </tr>
-             <tr>
-             <td><p>Nunca publicaremos algo en Facebook sin tu permiso.</p></td>
-           </tr>      
-         </table>
-       </div>
-      </form> 
-      <div id="respuesta" ></div>
+                </div><br>
+             
+             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                  <input type="password" name="txt-contraseña" class="form-control cuadrado" id="txt-contraseña2"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);">
+                  <div class="invalid-feedback">Al menos 7 caracteres</div>
+                </div><br>
+             
+             <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 ">
+                  <label class="mensaje" ><input type="checkbox" name="chk-boletin"> Recibirás nuestro boletín semanal y otras<br> actualizaciones esporádicas</label>
+                </div><br>
 
 
+
+             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                  <input id="crear_cuenta"  class="btn btn-success " style="width: 100%" type="button" value="Crear cuenta" onclick="validar();">
+                </div><br>
+             
+             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                  <p>Al registrarte, confirmas aceptación de nuestros términos de uso, <br> política de privacidad y política de cookies.</p>
+             </div><br>
+             
+             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                  <button class="btn btn-success facebook"> <i class="fab fa-facebook"></i>&nbsp iniciar sesion con Facebook</button>
+             </div><br>
+
+             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+                 <p>Nunca publicaremos algo en Facebook sin tu permiso.</p>
+             </div><br>
+              </div>
+            </div>
+          </div>
+          </div><br><br>
+        </div>
   <?php include 'Plantillas/footer.php';   ?>
   <script src="js/jquery-3.3.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script>

@@ -1,3 +1,4 @@
+<div style="background-color: white;">
 <footer class="contenedor">
 
   <div class="contanedor">
@@ -60,3 +61,4 @@
 
        </table>
      </footer>
+</div>
