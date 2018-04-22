@@ -32,13 +32,12 @@
 
     <div class="contenedor imagenes  ">
       <div class="row">
-        <div class="col">
-          <img class="img-fluid" src="img/img1.png" alt="">
+          <img style="padding :10px;" class="img-fluid" src="img/img1.png" alt="">
         </div>
-        <div class="col img-fluid">
+        <div style="padding :10px;" class="col img-fluid">
           <img class="img-fluid" src="img/img2.png" alt="">
           <br>
-          <img class="img-fluid" src="img/img3.png" alt="">
+          <img style="padding :10px;" class="img-fluid" src="img/img3.png" alt="">
         </div>
       </div>
     </div>
