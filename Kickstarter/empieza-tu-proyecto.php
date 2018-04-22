@@ -273,10 +273,12 @@
       <section class=" anuncio-1">
         <div class="contenedor">
           <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 ">
+            <div class="col-lg-12 col-md-12 col-sm-12  ">
+              <div class="anchura">
               <h3 class="rosa">“Una forma de que las personas<br> creativas controlen su destino.”</h3>
               <h6 class="pagBegin2" style="text-align: center;">— Brian Fargo, creador de un proyecto exitoso en Kickstarter</h6> 
               <button type="submit" class="btn btn-dark">Empieza tu proyecto</button>
+            </div>
             </div>
           </div>
         </div>

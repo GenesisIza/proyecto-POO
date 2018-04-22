@@ -13,8 +13,10 @@ font-family: 'Dosis', sans-serif;
 }
 
 .rosa{
+
     font-family: 'Libre Baskerville', serif;
     font-size: 38px;
+    color: black;
     font-weight: bold;
     text-align: center;
 }
@@ -22,7 +24,12 @@ font-family: 'Dosis', sans-serif;
     font-family: 'Libre Baskerville', serif;
     font-size: 38px;
     text-align: left;
-    
+
+}
+
+.anchura{
+  padding-top: 50px;
+  padding-bottom:50px;
 }
 .form-signin {
   width: 100%;
