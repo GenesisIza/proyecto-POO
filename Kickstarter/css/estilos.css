@@ -7,6 +7,14 @@
   float: left;
   padding-right: 10px;
 }
+
+.textoIniciosFormularios{
+  font-size: 32px;
+font-family: 'Roboto', sans-serif !important;
+font-weight: lighter !important;
+text-align: left;
+}
+
 .izquierda{
   float: right;
   padding-right: 10px;
@@ -49,7 +57,12 @@ header .logo{
 }
 
 /*-----------------------Navagacion-------------------------
-----------------------------------------------------------*/
+----------------------------------------------------------*/\
+.padding {
+    padding-top:50px !important;
+    padding-bottom:50px !important;
+}
+
 .navegacion{
   padding: 0px;
   padding-top: 40px;
@@ -105,30 +118,38 @@ a {
   padding: 10px;
 }
 
+/*-----------------------Formulario -reguistro--------------
+--------------------------------------------------------
 input{
 width: 350px;
-padding: 5px;
+padding: 5px;--*/
 }
-.inicio{
-  background-color: #037362;
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  border-radius: 0px;
-    
-}
+
 .inicio1{
   background-color: #037362;
+
+
+  font-size: 1rem;
+
   padding: .750rem .75rem;
   
   width: 190px;
+
   border-radius: 0px;
     
 }
 
+.mensaje{
+   font-family: 'Roboto', sans-serif;
+   font-size: 14px;
+   text-align: left;
+}
+
+
+
 .facebook{
   background-color:  #39579A;
   width: 100%;
-  padding: .375rem .75rem;
   font-size: 1rem;
   border-radius: 0px;
     
@@ -138,8 +159,10 @@ padding: 5px;
     color: black;
 }
 p{
+
   font-size: 0.7em;
   color: black;
+  font-family: 'Roboto', sans-serif !important;
 }
 /*-----------------------Empieza Tu Proyecto--------------
 ----------------------------------------------------------*/
@@ -258,6 +281,7 @@ padding: 80px;
 .textInicios{
   text-align: center;
   font-family: 'Roboto', sans-serif; 
+  font-weight: normal;
 }
 
 
@@ -287,14 +311,19 @@ font-family: 'Roboto', sans-serif;
  font-family: 'Roboto', sans-serif; 
 }
 
-
-
-
-.form-control-lg {
- 
-    border-radius: 0%;
+.cuadrado:hove{
+  border-color: #009E74;
 }
 
+
+.cuadrado {
+ 
+    border-radius: 0% !important;
+}
+
+.quitarEspaciado{
+  padding: 0%;
+}
 
 
 /*-----------------------iniciar seccion---------------------------
@@ -305,20 +334,9 @@ font-family: 'Roboto', sans-serif;
 
 
 
-.form-control {
-    display: block;
-    width: 100%;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    
-    border-radius: 0px;   
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+.onlyColor{
+  background-color: white;
 }
-
 
 .form-signin {
     width: 100%;
