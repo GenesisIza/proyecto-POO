@@ -7,3 +7,4 @@
       <a class="izquierda" href="#"><i class="fas fa-search"></i></a>
       <a class="izquierda Busqueda" href="#"> Busqueda  </a>
     </header>
+    <br>

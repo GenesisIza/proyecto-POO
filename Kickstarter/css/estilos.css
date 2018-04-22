@@ -29,14 +29,14 @@ header .logo{
 
 }
 .contenedor{
-     width: 80%;
+    width: 80%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
-@media only screen and (max_whidth:480px) {
+@media only screen and (max-whidth:480px) {
   a {
     display: none;
   }
@@ -45,6 +45,17 @@ header .logo{
   }
 
 }
+
+
+.espacio-contenido {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* padding-right: 0px; */
+  /* padding-left: 100px; */
+}
+
+}
+
 /*-----------------------Navagacion-------------------------
 ----------------------------------------------------------*/\
 .padding {
@@ -88,6 +99,9 @@ a {
   width : 100%;
   margin: 0%;
 }
+.nav-menu1{
+    border-bottom: solid 1px gray;
+}
 
 /*-----------------------Formulario -reguistro--------------
 ----------------------------------------------------------*/
@@ -113,7 +127,13 @@ padding: 5px;--*/
 .inicio1{
   background-color: #037362;
 
+
   font-size: 1rem;
+
+  padding: .750rem .75rem;
+  
+  width: 190px;
+
   border-radius: 0px;
     
 }
@@ -123,6 +143,7 @@ padding: 5px;--*/
    font-size: 14px;
    text-align: left;
 }
+
 
 
 .facebook{
@@ -150,8 +171,8 @@ p{
 }
 
 .anuncio{
-  padding: 80px;
-  padding-left:  360px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   background-color: rgb(3, 71, 82);
   color: white;
 }
@@ -166,6 +187,7 @@ padding: 80px;
   padding-bottom: 50px;
   padding-right: 0px;
   padding-left: 100px;
+  margin: 0;
 }
 .seccion-video{
   padding: 80px;
@@ -188,10 +210,12 @@ padding: 80px;
 }
 
 .anuncio-1{
-  padding: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;  
   border-top:  solid black;
   border-bottom: solid black;
   background-color: rgb(255, 203, 169);
+
 
 }
 .acomodar{
@@ -376,4 +400,10 @@ a{
 
 }
 
+media only screen and (max-width:800px){
+    .parrafos{
+      width: 100% ;
+    }
+
+}
 
