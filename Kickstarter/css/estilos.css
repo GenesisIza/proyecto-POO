@@ -21,14 +21,14 @@ header .logo{
 
 }
 .contenedor{
-     width: 80%;
+    width: 80%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
 }
 
-@media only screen and (max_whidth:480px) {
+@media only screen and (max-whidth:480px) {
   a {
     display: none;
   }
@@ -37,6 +37,17 @@ header .logo{
   }
 
 }
+
+
+.espacio-contenido {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /* padding-right: 0px; */
+  /* padding-left: 100px; */
+}
+
+}
+
 /*-----------------------Navagacion-------------------------
 ----------------------------------------------------------*/
 .navegacion{
@@ -109,9 +120,6 @@ padding: 5px;
     
 }
 
-
-
-
 .facebook{
   background-color:  #39579A;
   width: 100%;
@@ -136,8 +144,7 @@ p{
 }
 
 .anuncio{
-  padding: 80px;
-  padding-left:  360px;
+  padding: 20px;
   background-color: rgb(3, 71, 82);
   color: white;
 }
@@ -152,6 +159,7 @@ padding: 80px;
   padding-bottom: 50px;
   padding-right: 0px;
   padding-left: 100px;
+  margin: 0;
 }
 .seccion-video{
   padding: 80px;
@@ -367,4 +375,10 @@ a{
 
 }
 
+media only screen and (max-width:800px){
+    .parrafos{
+      width: 100% ;
+    }
+
+}
 
