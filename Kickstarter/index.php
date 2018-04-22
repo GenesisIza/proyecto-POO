@@ -15,7 +15,7 @@
     <?php include 'Plantillas/header.php';   ?>
     <div class"clearfix"> </div>
     <br>
-    <div class="contenedor">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-3">
               <h6>15 de febrero de 2018 <br> <b>Haciendo realidad proyectos creativos</b></h6>
@@ -33,7 +33,7 @@
     </div>
     <hr style="border: 0.4px solid black;">
     <br>
-    <div class="contenedor">
+    <div class="container-fluid">
            <ul class="nav nav-menu1">
              <li class="nav-item">
                  <a class="nav-link active" href="#">Cine</a>
@@ -59,7 +59,7 @@
           </ul>
     </div><br>
   
-    <div class="contenedor">
+    <div class="container-fluid">
        <h3>Cine</h3>
        <br><br>
        <h6>Proyectos Destacados</h6>
@@ -96,7 +96,7 @@
     <br><br>
     
      
-    <div class="contenedor">
+    <div class="container-fluid">
       <hr style="border: 0.4px solid gray;">
       <h5>Te Recomendamos</h5><br>
 	       	<div class="row">
@@ -155,7 +155,7 @@
     <hr style="border: 0.4px solid gray;">
     <br><br>
     
-    <div class="contenedor">
+    <div class="container-fluid">
       <div class="row">
           <div class="col-xl-2 col-lg-2  col-md-2 col-sm-12 col-12" >
               <img style="font-size: 1.2em; font-style: Cooper Light ;" src="img/logo2.png">
@@ -171,7 +171,7 @@
     <br><br>
     
 
-    <div class="contenedor">
+    <div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
 				<img class="img-fluid" src="img/A.jpeg">
@@ -187,7 +187,7 @@
     <hr style="border: 0.4px solid gray;">
     <br><br>
     
-<div class="contenedor">
+<div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
 				 <img class="card-img-top" src="img/h1.png" alt="Card image cap">
@@ -214,7 +214,7 @@
 	</div>
 <br><br>
       
-<div class="contenedor">
+<div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
 				  <div class="card-body">
@@ -253,7 +253,7 @@
 <hr style="border: 0.4px solid gray;">
 <br><br>
 
-<div class="contenedor">     
+<div class="container-fluid">     
       <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
        <h6 style="text-align: center;">Semanalmente: Unos cuantos proyectos, seleccionados por el equipo de <br> Kickstarter.</h6><br>
        <form  class="">    
