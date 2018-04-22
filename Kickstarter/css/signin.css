@@ -1,5 +1,29 @@
+.pagBegin{
+ font-family: 'Libre Baskerville', serif;
+  font-size: 20px;
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+}
 
+.pagBegin2{
+font-family: 'Dosis', sans-serif;
+  font-size: 18px;
 
+  color: rgb(40, 40, 40);
+}
+
+.rosa{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+}
+.aqua{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 38px;
+    text-align: left;
+    
+}
 .form-signin {
   width: 100%;
   max-width: 450px;
