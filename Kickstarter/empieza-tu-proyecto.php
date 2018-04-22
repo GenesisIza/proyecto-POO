@@ -6,8 +6,7 @@
     <meta name="author" content="">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="img/logo3.png">
-    
+    <link rel="icon" type="image/png" href="img/logo3.png">   
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -16,19 +15,19 @@
   </head>
 <body>
    <?php include 'Plantillas/header.php';   ?>
-   <div class="acomodar espacio contenedor">
-    <div class="">
+   <br>
+   <div class=" clearfix contenedor">  
        <div class="row">
-         <div class="col">
-           <h1>Convierte tu proyecto <br> creativo en realidad.</h1>
+         <div class="col-lg-6 col-md-6 col-sm-6">
+           <h3>Convierte tu proyecto <br> creativo en realidad.</h3><br>
+           <form class="" action="empieza-tu-proyecto1.php" method="post">
+               <input  class=" btn btn-success inicio1 " type="submit" value="Empieza tu proyecto" >    
+            </form>
          </div>
        </div>
-    </div>
   </div>
 
-  <form class="acomodar espacio contenedor" action="empieza-tu-proyecto1.php" method="post">
-     <input class="btn btn-success inicio1" type="submit" name="Empieza tu proyecto" value="Empieza tu proyecto">
-  </form>
+  
 
     <div class="contenedor imagenes  ">
       <div class="row">
@@ -47,10 +46,10 @@
          <div class="contenedor">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
-                <h1 >
-                  We see Kickstarter as a home for creative minds <br> and a wonderful platform; where people who <br> believe,
-                  respect, and see the vision can support an <br> idea and make it a reality.<br><br>
-               </h1>
+                <h3>
+                  We see Kickstarter as a home for creative minds  and a wonderful platform; where people who3 believe,
+                  respect, and see the vision can support an idea and make it a reality.<br><br>
+               </h3>
                <h6>— DE LA SOUL</h6>
               </div>
             </div>
@@ -263,7 +262,7 @@
         <div class="contenedor">
           <div class="row">
             <div class="col ">
-              <h3>“Una forma de que las personas creativas controlen su destino.”</h1>
+              <h3>“Una forma de que las personas creativas controlen su destino.”</h3>
               <h6>— Brian Fargo, creador de un proyecto exitoso en Kickstarter</h6> 
               <button type="submit" class="btn btn-dark">Empieza tu proyecto</button>
             </div>

@@ -34,7 +34,7 @@
     <hr style="border: 0.4px solid black;">
     <br>
     <div class="contenedor">
-           <ul class="nav">
+           <ul class="nav nav-menu1">
              <li class="nav-item">
                  <a class="nav-link active" href="#">Cine</a>
              </li> 
@@ -57,14 +57,16 @@
                 <a class="nav-link" href="#">Diseño & tecnología</a>
              </li>    
           </ul>
-          <hr style="border: 0.4px solid gray;">
-    </div>
+    </div><br>
   
     <div class="contenedor">
+       <h3>Cine</h3>
+       <br><br>
+       <h6>Proyectos Destacados</h6>
 	        <div class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
-	         		      	 <div class="col-lg-6 col-md-6 col-sm-12">
-                         <img class="imagendetabla img-fliud" src="img/img01.jpg" alt="foto1">
+	         		      	 <div class="img-fliud col-lg-6 col-md-6 col-sm-12">
+                         <img class="imagendetabla " src="img/img01.jpg" alt="foto1">
                        </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-8 col-12">
@@ -251,23 +253,22 @@
 <hr style="border: 0.4px solid gray;">
 <br><br>
 
-<div class="contenedor">
-          
-          <form class="col-xl-12 col-lg-12 col-md-12 col-sm-12 center-block">
-               <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
-               <h6 style="text-align: center;">Semanalmente: Unos cuantos proyectos, seleccionados por el equipo de <br> Kickstarter.</h6><br>
-
-              <div style="text-align: center;" class="top-center">
-                  <input style="width: 400px;" type="password" class="" placeholder="Correo electronico">
-                  <button type="submit" class="btn btn-dark">Suscribirte Ahora</button>
-                  <br><br><br>
+<div class="contenedor">     
+      <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
+       <h6 style="text-align: center;">Semanalmente: Unos cuantos proyectos, seleccionados por el equipo de <br> Kickstarter.</h6><br>
+       <form  class="">    
+            <div class="row">   
+            <div class="col-lg-2 col-md-12 col-sm-12 "></div>      
+              <div class="col-lg-8 col-md-12 col-sm-12 ">
+                  <input style="width: 350px;" type="email" class="" placeholder="Correo electronico">
+                  <button type="submit" class="col-xl-3 col-lg-3 col-sm-12 btn btn-dark" onkeydown="validarCorreo(this);">Suscribirte Ahora</button>
               </div>  
-        </form>
-    </div>
-    
-    
+            <div class="col-lg-2 col-md-12 col-sm-12 "></div>  
+       </form>   
+</div>
+       
 <hr style="border: 0.4px solid gray;">
-     <div class="contenedor">
+     <div class="container">
            <ul class="nav">
              <li class="nav-item">
                <a class="nav-link " href="#">Arte</a>
@@ -293,44 +294,11 @@
              <li class="nav-item">
                <a class="nav-link " href="#">Publicaciones</a>
              </li>
-          </ul>
-          <hr style="border: 0.4px solid gray;">
-          
+          </ul>      
     </div>
-     <hr style="border: 0.4px solid gray;">
+    <hr style="border: 0.4px solid gray;">      
      <?php include 'Plantillas/footer.php'; ?>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-  
-    
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
      <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/controlador.js"></script>
