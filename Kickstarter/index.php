@@ -15,23 +15,25 @@
     <?php include 'Plantillas/header.php';   ?>
     <div class"clearfix"> </div>
     <br>
+    <div class="esconder">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
+        <div class="row ">
+            <div class="col-md-3 esconder ">
               <h6>15 de febrero de 2018 <br> <b>Haciendo realidad proyectos creativos</b></h6>
             </div>
-             <div class="col-md-3">
+             <div class="col-md-3 esconder ">
                <h6>TOTAL DE PATROCINADORES <br> <b>100000.</b>  </h6>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 esconder ">
               <h6> FINANCIADOS <br> <b>200000.</b>  </h6>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 esconder ">
              <h6>PROYECTOS ACTIVOS <br> <b>3558.</b> </h6>
             </div>
         </div>
     </div>
-    <hr style="border: 0.4px solid black;">
+    </div>
+    <hr class="esconder" style="border: 0.4px solid black;">
     <br>
     <div class="container-fluid">
            <ul class="nav nav-menu1">

@@ -20,7 +20,7 @@
 <body>
    <?php include 'Plantillas/header.php';   ?>
    <br>
-   <div class=" clearfix contenedor">  
+   <div class="container">  
        <div class="row">
          <div class="col-lg-6 col-md-6 col-sm-6">
            <h3>Convierte tu proyecto <br> creativo en realidad.</h3><br>
@@ -146,10 +146,10 @@
         <video  class=" col-lg-12 col-md-12 col-sm-12 video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" autoplay="1" >  </video>
       </div>
   </div>
-<<<<<<< HEAD
+
   <br><br><br>
     <div class="contenedor">
-=======
+
 
 <div style="background-color: #F7F7F6">
   <br><br>
@@ -159,7 +159,6 @@
            <h4 class="pagBegin" style="font-size: 30px;">¿Por qué Kickstarter?</h4>
           </div><br><br><br><br>
         </div>
->>>>>>> 5499bd201f53c6419d513d3a4f9dfbaab03129ce
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 col-center">
             <h4 class="pagBegin">1 <br>
@@ -219,7 +218,7 @@
       </div>
       <br><br><br>
 
-      <div class="contenedor anuncio-crea">
+      <div class="container anuncio-crea">
         <h3>Crea un proyecto en una de las siguientes categorías</h1>
       </div>
       <br>
@@ -227,10 +226,10 @@
      <?php include 'Plantillas/navegacion.php';   ?>
      <br>
 
-     <div class="contenedor">
+     <div class="container">
        <div class="row ">
            <div class="col-lg-6 col-md-6 col-sm-12">
-               <h6>Desde postales pintadas a mano hasta murales enormes - 
+               <h6 class=oneMore>Desde postales pintadas a mano hasta murales enormes - 
                    miles de proyectos de arte han abierto nuevos caminos e
                    iniciado diálogos importantes, además de darle una una
                    oportunidad a mucha gente de compartir su obra con el
@@ -240,15 +239,18 @@
            <br><br><br>
            <div class="col-lg-6 col-md-6 col-sm-12 cuadro ">
                  <h5> <b>¿Te interesa?</b></h5>
-                 <h6>Simplemente haz click en Inicio y comienza el 
+                 <h6 pagBegin2>Simplemente haz click en Inicio y comienza el 
                  diseño. Chécalo, y si te gusta, ¡compártelo
                  con tus amigos!</h6><br>
-                 <a href="#">Empieza Tu Proyecto</a><br>
-                 <h6>¡Aquí estamos para ayudarte! Nuestro equipo de ayuda a la 
+                 <div class="col-lg-5 col-md-5 col-sm-12" >
+                  <form action="empieza-tu-proyecto1.php">
+                   <input id="texpais" class="btn btn-dark btn1" type="submit" value="Empieza Tu Proyecto" type="button"  />
+                  </form></div>
+                 <p>¡Aquí estamos para ayudarte! Nuestro equipo de ayuda a la 
                  comunidad lo sabe todo sobre los proyectos en marcha en cada 
                  una de nuestras categorías. Déjanos un comentario sobre la ider
                  de tu proyecto: art@kickstarter.com. ¿Tienes alguna otra 
-                 pregunta? Visita nuestro Centro de ayuda.</h6>
+                 pregunta? Visita nuestro Centro de ayuda.</p>
            </div>
        </div>
      </div>

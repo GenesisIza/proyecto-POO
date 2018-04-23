@@ -1,3 +1,12 @@
+@media screen and (max-width: 370px) {
+.esconder {
+    display: none;
+  }
+}
+
+
+
+
 .header{
   padding: 25px;
   border-bottom: 1px solid black;
@@ -19,8 +28,8 @@ text-align: left;
   float: right;
   padding-right: 10px;
 }
-header .logo{
-   text-align: center;
+.logo{
+   text-align: center;}
 
 @font-face {
     font-family: "MaisonNeue-Book";
