@@ -29,7 +29,7 @@ function validarCorreo(email) {
     if (patron.test(String(email.value).toLowerCase())){
     	email.classList.remove("is-invalid");
 		email.classList.add("is-valid");
-		alert("funciona");
+	
     	
     }
     else{
@@ -50,7 +50,7 @@ function validarContrasena(etiqueta){
 }
 
 $("#cuenta").click(function(){
-   alert("funciona");
+  
 	   
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" + 
 					 'txt-correo ='+ $("#txt-correo").val() + "&" +
@@ -113,7 +113,7 @@ function validarChecks(id){
 }
 
 $("#iniciar").click(function(){
-	alert("funciona bien");
+	
 		
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 					  'txt-contraseña='+ $("#txt-contraseña").val();
@@ -179,7 +179,7 @@ $("#iniciar").click(function(){
  
 }
  $("#categoria").click(function(){
-	alert("funciona bien");
+
 	var valor = $("#slc-categoria").val();
 	var categoria = ValidarSelec(valor);		
 	var parametros =  'slc-categoria='+ categoria;
@@ -199,7 +199,7 @@ $("#iniciar").click(function(){
  });
 
  $("#cuenta").click(function(){
-	alert("funciona bien");
+	
 	var parametros = 'txt-nombre ='+ $("#txt-nombre").val() + "&" +
 	                 'txt-correo ='+ $("#txt-correo").val() + "&" +
 	                 'txt-contraseña ='+ $("#txt-contraseña").val();
@@ -218,7 +218,7 @@ $("#iniciar").click(function(){
 
 
  $("#tex").click(function(){
-	alert("funciona bien");
+	
     var parametros = 'texa='+ $("#texa").val();                 
 	alert(parametros);
 
@@ -235,7 +235,7 @@ $("#iniciar").click(function(){
  });
 
  $("#texpais").click(function(){
-	alert("funciona bien");
+	
 	var parametros = 'texp='+ $("#texp").val();   
 	alert($("#texp").val()); 
 	

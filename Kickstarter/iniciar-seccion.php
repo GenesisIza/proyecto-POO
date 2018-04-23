@@ -17,7 +17,7 @@
    <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >
-   
+  
   <table align="center" cellpadding="15"  class="table-iniciar">
         <td><h2 class="text-inicio">Iniciar sesión</h2></td>
     </tr>
