@@ -28,8 +28,8 @@ text-align: left;
   float: right;
   padding-right: 10px;
 }
-header .logo{
-   text-align: center;
+.logo{
+   text-align: center;}
 
 @font-face {
     font-family: "MaisonNeue-Book";
