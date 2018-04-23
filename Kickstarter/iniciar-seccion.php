@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="img/logo3.png">
-    
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -18,28 +17,30 @@
    <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >
-  <form action="">   
+   
   <table align="center" cellpadding="15"  class="table-iniciar">
         <td><h2 class="text-inicio">Iniciar sesión</h2></td>
     </tr>
+    <form action="">   
     <tr>
-       <td> <input type="text" id="txt-correo" name="txt-correo" placeholder="Correo Electronico" </td>
+       <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="text" id="txt-correo" name="txt-correo" placeholder="Correo Electronico" </td>
     </tr>    
     <tr>
-      <td><input type="password" id="txt-contraseña" name="txt-contraseña" value="" placeholder="Contraseña"></t>
+      <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="password" id="txt-contraseña" name="txt-contraseñ" value="" placeholder="Contraseña"></t>
     </tr>
     <tr>
       <td style="text-align: left;" class="olvidar"><a href="#">¿La olvidaste?</a></td>
     </tr>
-      <td ><input type="button" id="iniciar"  class=" btn btn-success inicio "  value="Iniciar sesión" ></td>
+      <td ><input class=" btn btn-success inicio  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="button" id="iniciar"    value="Iniciar sesión" ></td>
     </tr>
+    </form>
     <tr>
       <td style="  text-align: left;" >
         <label><input type="checkbox"  class="chk-recordar" name="chk-recordar">Recordarme</label>
       </td>
     </tr>   
     <tr>
-      <td><button class=" btn btn-success facebook "> <i class="fab fa-facebook"></i>&nbsp Iniciar sesion con Facebook</button></td>
+      <td><button class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center btn btn-success facebook "> <i class="fab fa-facebook"></i>&nbsp Iniciar sesion con Facebook</button></td>
     </tr>
       <tr>
       <td>     <p>Nunca publicaremos algo en Facebook sin tu permiso.</p></td>
@@ -49,7 +50,7 @@
     </tr>
     <tr>        
 </table>
-</form>
+
 </div>
   <?php include 'Plantillas/footer.php';   ?>
   <script src="js/jquery-3.3.1.min.js"></script>  

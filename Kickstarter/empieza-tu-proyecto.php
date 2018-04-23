@@ -143,9 +143,13 @@
 
   <div class="seccion-video">
       <div class=" col-lg-12 col-md-12 col-sm-12 contenedor">
-        <video  class="video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" autoplay="1" >  </video>
+        <video  class=" col-lg-12 col-md-12 col-sm-12 video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" autoplay="1" >  </video>
       </div>
   </div>
+<<<<<<< HEAD
+  <br><br><br>
+    <div class="contenedor">
+=======
 
 <div style="background-color: #F7F7F6">
   <br><br>
@@ -155,6 +159,7 @@
            <h4 class="pagBegin" style="font-size: 30px;">¿Por qué Kickstarter?</h4>
           </div><br><br><br><br>
         </div>
+>>>>>>> 5499bd201f53c6419d513d3a4f9dfbaab03129ce
         <div class="row">
           <div class="col-lg-3 col-md-3 col-sm-12 col-center">
             <h4 class="pagBegin">1 <br>

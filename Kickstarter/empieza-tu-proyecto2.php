@@ -31,7 +31,7 @@
 
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
-          <input class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" onkeydown="validarProyecto(this);"><br><br>
+          <input id="texa" name="texa" class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" onkeydown="validarProyecto(this);"><br><br>
         </div>
       </div>
 <hr>
@@ -41,7 +41,7 @@
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
             <form action="empieza-tu-proyect3.php">
-               <input class="btn btn-dark btn1" type="submit" value="Siguiente: Ubicacion" type="button" />
+               <input id="tex" class="btn btn-dark btn1" type="submit" value="Siguiente: Ubicacion" type="button" />
             </form>
           </div>
          </div>

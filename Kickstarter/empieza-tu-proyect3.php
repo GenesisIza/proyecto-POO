@@ -31,9 +31,9 @@
         </div>
 
         <div class="row">
-          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
+          <div  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
              <form  action="registrarse.php" method="post">
-              <select class="forma form-control col-center">
+              <select name="texp" id="texp" class="forma form-control col-center">
               <option value="0">Selecione su pais</option>
               <option value="1">Honduras</option>
               <option value="2">guatemala</option>
@@ -41,13 +41,13 @@
               <option value="4">españa</option>
               <option value="5">polonia</option>
               <option value="6">portugal</option>
-              <option value="">brazil</option>
-              <option value="">nicaragua</option>
-              <option value="">mexico</option>
-              <option value="">canada</option>
-              <option value="">suiza</option>
-              <option value="">peru</option>
-              <option value="">Argentina</option>
+              <option value="7">brazil</option>
+              <option value="8">nicaragua</option>
+              <option value="9">mexico</option>
+              <option value="10">canada</option>
+              <option value="11">suiza</option>
+              <option value="12">peru</option>
+              <option value="13">Argentina</option>
               </select>
           </div>
         </div>
@@ -97,7 +97,7 @@
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
             <form action="registrarse.php">
-               <input class="btn btn-dark btn1" type="submit" value="Continuar" type="button"   />
+               <input id="texpais" class="btn btn-dark btn1" type="submit" value="Continuar" type="button"   />
             </form>
           </div>
          </div>

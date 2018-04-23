@@ -49,7 +49,7 @@ function validarContrasena(etiqueta){
 	}
 }
 
-$("#crear_cuenta").click(function(){
+$("#cuenta").click(function(){
    alert("funciona");
 	   
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" + 
@@ -102,18 +102,21 @@ function validarProyecto(etiqueta){
 function validarChecks(id){
 	var cadena = document.getElementById(id).getAttribute("src");
 	
-	if(cadena=="img/success.svg")
+	if(cadena=="img/success.svg"){
 		document.getElementById(id).setAttribute("src", "img/success2.svg");
-	else
+		
+	}	
+	else{
 		document.getElementById(id).setAttribute("src", "img/success.svg");
-
+		
+    }
 }
 
 $("#iniciar").click(function(){
 	alert("funciona bien");
 		
 	 var parametros = 'txt-correo ='+ $("#txt-correo").val() + "&" +
-						 'txt-contraseña='+ $("#txt-contraseña").val();
+					  'txt-contraseña='+ $("#txt-contraseña").val();
 	
 	alert(parametros);
 
@@ -133,13 +136,13 @@ $("#iniciar").click(function(){
     var respuesta;
 	switch ( valor ) {
 		case 1:
-			 respuesta = Arte 
+			 respuesta = Arte;
 			 break;
 		case 2:
 		     respuesta = Artesanias;
 			 break;
 		case 3:
-		     respuesta = Cine y videos;
+		     respuesta = Cinevideos;
 			 break;
 		case 4:
 		     respuesta = comics;
@@ -171,14 +174,69 @@ $("#iniciar").click(function(){
 		case 13:
 		    respuesta = tecnologia;
 			 break;
-		 return respuesta;
+	 return respuesta;
  }
  
+}
  $("#categoria").click(function(){
 	alert("funciona bien");
-	var categoria = ValidarSelec($("#categoria").val());	
+	var valor = $("#slc-categoria").val();
+	var categoria = ValidarSelec(valor);		
+	var parametros =  'slc-categoria='+ categoria;
+	alert(valor);
 	alert(categoria);
-	 var parametros =  'slc-categoria='+ categoria;
+
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
+
+ });
+
+ $("#iniciar").click(function(){
+	alert("funciona bien");
+	var parametros = 'txt-correo ='+ $("#txt-correo").val() + "&" +
+	                 'txt-contraseña='+ $("#txt-contraseña").val();
+	alert(categoria);
+
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
+		
+ });
+
+ $("#tex").click(function(){
+	alert("funciona bien");
+    var parametros = 'texa='+ $("#texa").val();                 
+	alert(parametros);
+
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
+		
+ });
+
+ $("#texpais").click(function(){
+	alert("funciona bien");
+	var parametros = 'texp='+ $("#texp").val();   
+	alert($("#texp").val()); 
 	
 	$.ajax({ 
 		method: 'POST',
@@ -188,8 +246,6 @@ $("#iniciar").click(function(){
 		  //  $("#respuesta").html(respuesta);
  
 		}
-	})
-
-
+	})	
 
  });
