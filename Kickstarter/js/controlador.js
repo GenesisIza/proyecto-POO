@@ -186,14 +186,33 @@ $("#iniciar").click(function(){
 	alert(valor);
 	alert(categoria);
 
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
+
  });
 
  $("#iniciar").click(function(){
 	alert("funciona bien");
-
 	var parametros = 'txt-correo ='+ $("#txt-correo").val() + "&" +
 	                 'txt-contraseña='+ $("#txt-contraseña").val();
 	alert(categoria);
+
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
 		
  });
 
@@ -201,6 +220,16 @@ $("#iniciar").click(function(){
 	alert("funciona bien");
     var parametros = 'texa='+ $("#texa").val();                 
 	alert(parametros);
+
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
 		
  });
 
@@ -209,5 +238,14 @@ $("#iniciar").click(function(){
 	var parametros = 'texp='+ $("#texp").val();   
 	alert($("#texp").val()); 
 	
+	$.ajax({ 
+		method: 'POST',
+		data: parametros, //URLEncoded
+		success: function (respuesta) {
+			//Instrucciones a ejecutar cuando responda el servidor
+		  //  $("#respuesta").html(respuesta);
+ 
+		}
+	})	
 
  });
