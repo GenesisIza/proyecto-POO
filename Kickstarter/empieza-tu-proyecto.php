@@ -218,7 +218,7 @@
       </div>
       <br><br><br>
 
-      <div class="contenedor anuncio-crea">
+      <div class="container anuncio-crea">
         <h3>Crea un proyecto en una de las siguientes categorías</h1>
       </div>
       <br>
@@ -226,10 +226,10 @@
      <?php include 'Plantillas/navegacion.php';   ?>
      <br>
 
-     <div class="contenedor">
+     <div class="container">
        <div class="row ">
            <div class="col-lg-6 col-md-6 col-sm-12">
-               <h6>Desde postales pintadas a mano hasta murales enormes - 
+               <h6 class=oneMore>Desde postales pintadas a mano hasta murales enormes - 
                    miles de proyectos de arte han abierto nuevos caminos e
                    iniciado diálogos importantes, además de darle una una
                    oportunidad a mucha gente de compartir su obra con el
@@ -239,15 +239,18 @@
            <br><br><br>
            <div class="col-lg-6 col-md-6 col-sm-12 cuadro ">
                  <h5> <b>¿Te interesa?</b></h5>
-                 <h6>Simplemente haz click en Inicio y comienza el 
+                 <h6 pagBegin2>Simplemente haz click en Inicio y comienza el 
                  diseño. Chécalo, y si te gusta, ¡compártelo
                  con tus amigos!</h6><br>
-                 <a href="#">Empieza Tu Proyecto</a><br>
-                 <h6>¡Aquí estamos para ayudarte! Nuestro equipo de ayuda a la 
+                 <div class="col-lg-5 col-md-5 col-sm-12" >
+                  <form action="empieza-tu-proyecto1.php">
+                   <input id="texpais" class="btn btn-dark btn1" type="submit" value="Empieza Tu Proyecto" type="button"  />
+                  </form></div>
+                 <p>¡Aquí estamos para ayudarte! Nuestro equipo de ayuda a la 
                  comunidad lo sabe todo sobre los proyectos en marcha en cada 
                  una de nuestras categorías. Déjanos un comentario sobre la ider
                  de tu proyecto: art@kickstarter.com. ¿Tienes alguna otra 
-                 pregunta? Visita nuestro Centro de ayuda.</h6>
+                 pregunta? Visita nuestro Centro de ayuda.</p>
            </div>
        </div>
      </div>
