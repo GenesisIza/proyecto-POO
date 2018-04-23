@@ -29,7 +29,7 @@ header .logo{
 
 }
 .contenedor{
-    width: 80%;
+    width: 95%;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -46,7 +46,6 @@ header .logo{
 
 }
 
-
 .espacio-contenido {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -54,7 +53,7 @@ header .logo{
   /* padding-left: 100px; */
 }
 
-}
+
 
 /*-----------------------Navagacion-------------------------
 ----------------------------------------------------------*/\
@@ -100,8 +99,7 @@ a {
   margin: 0%;
 }
 .nav-menu1{
-    border-bottom: solid 1px gray;
-    
+    border-bottom: solid 1px gray;  
 }
 
 /*-----------------------Formulario -reguistro--------------

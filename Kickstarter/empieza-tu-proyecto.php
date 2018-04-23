@@ -140,10 +140,10 @@
 
   <div class="seccion-video">
       <div class=" col-lg-12 col-md-12 col-sm-12 contenedor">
-        <video  class="video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" autoplay="1" >  </video>
+        <video  class=" col-lg-12 col-md-12 col-sm-12 video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" autoplay="1" >  </video>
       </div>
   </div>
-
+  <br><br><br>
     <div class="contenedor">
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12">

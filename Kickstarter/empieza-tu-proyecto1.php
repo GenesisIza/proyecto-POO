@@ -32,7 +32,7 @@
   <form action="empieza-tu-proyecto2.php"> 
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
-           <select name="categoria" class="forma form-control col-center">
+           <select id="slc-categoria"  name="slc-categoria" class="forma form-control col-center">
               <option value="">Selecione su categoria</option>
               <option value="1">Arte</option>
               <option value="2">Artesanias</option>
