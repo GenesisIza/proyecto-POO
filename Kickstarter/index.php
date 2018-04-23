@@ -33,7 +33,7 @@
         </div>
     </div>
     </div>
-    <hr style="border: 0.4px solid black;">
+    <hr class="esconder" style="border: 0.4px solid black;">
     <br>
     <div class="container-fluid">
            <ul class="nav nav-menu1">
