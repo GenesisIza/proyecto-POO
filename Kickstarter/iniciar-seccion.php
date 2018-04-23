@@ -50,8 +50,10 @@
     </tr>
     <tr>        
 </table>
-
+ 
 </div>
+
+<div id="respuesta"></div>
   <?php include 'Plantillas/footer.php';   ?>
   <script src="js/jquery-3.3.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script>

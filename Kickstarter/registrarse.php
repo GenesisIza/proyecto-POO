@@ -27,9 +27,9 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center textoIniciosFormularios" style="padding: 23px" >
                   <div >Registrarse</div>
                 </div>
-      <form action="">   
+        
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
-                  <input class="form-control cuadrado " type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampo(this);">
+                  <input class="form-control cuadrado " type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampoVacio(this);">
                   <div class="invalid-feedback">Campo obligatorio</div>
                 </div><br>
           
@@ -58,9 +58,9 @@
                 </div><br>
          
              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
-                  <input id="cuenta"  class="btn btn-success " style="width: 100%"  value="Crear cuenta">
+                  <input id="cuenta"  class="btn btn-success " style="width: 100%"  value="Crear cuenta" onclick="validar(this);" >
                 </div><br>
-      </form>       
+           
                              
              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
                   <p>Al registrarte, confirmas aceptación de nuestros términos de uso, <br> política de privacidad y política de cookies.</p>
@@ -78,6 +78,7 @@
           </div>
           </div><br><br>
         </div>
+        <div id="respuesta2"></div>
   <?php include 'Plantillas/footer.php';   ?>
   <script src="js/jquery-3.3.1.min.js"></script>  
   <script src="js/bootstrap.min.js"></script>

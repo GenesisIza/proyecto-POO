@@ -10,8 +10,8 @@ function validar(){
 
 
 var validarCampoVacio = function(id){
-	alert("entra validar campos");
-	if (document.getElementById(id).value == ""){
+	//alert("entra validar campos");
+	if (document.getElementById(id).value == " "){
 		document.getElementById(id).classList.remove('is-valid');
 		document.getElementById(id).classList.add('is-invalid');
 	}
@@ -115,18 +115,18 @@ function validarChecks(id){
 $("#iniciar").click(function(){
 	alert("funciona bien");
 		
-	 var parametros = 'txt-correo ='+ $("#txt-correo").val() + "&" +
+	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 					  'txt-contraseña='+ $("#txt-contraseña").val();
 	
 	alert(parametros);
 
 	$.ajax({ 
-		url: 'iniciarsesion.php',
-		method: 'POST',
+		url: 'ajax/leer-usuario.php',
+		method: 'GET',
 		data: parametros, //URLEncoded
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
-		  //  $("#respuesta").html(respuesta);
+		    $("#respuesta").html(respuesta);
  
 		}
 	})	
@@ -198,23 +198,24 @@ $("#iniciar").click(function(){
 
  });
 
- $("#iniciar").click(function(){
+ $("#cuenta").click(function(){
 	alert("funciona bien");
-	var parametros = 'txt-correo ='+ $("#txt-correo").val() + "&" +
-	                 'txt-contraseña='+ $("#txt-contraseña").val();
-	alert(categoria);
-
+	var parametros = 'txt-nombre ='+ $("#txt-nombre").val() + "&" +
+	                 'txt-correo ='+ $("#txt-correo").val() + "&" +
+	                 'txt-contraseña ='+ $("#txt-contraseña").val();
+	
 	$.ajax({ 
+		url: 'ajax/guardarUsuario.php',
 		method: 'POST',
 		data: parametros, //URLEncoded
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
-		  //  $("#respuesta").html(respuesta);
+		    $("#respuesta2").html(respuesta);
  
 		}
 	})	
-		
  });
+
 
  $("#tex").click(function(){
 	alert("funciona bien");
