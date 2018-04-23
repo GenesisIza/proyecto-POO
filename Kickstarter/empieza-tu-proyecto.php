@@ -10,7 +10,11 @@
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <link rel="stylesheet" type="text/css" href="css/signin.css">
     <link rel="stylesheet" href="css/signin.css">
   </head>
 <body>
@@ -43,12 +47,11 @@
 
 <section class="parrafos" >
        <section class="anuncio">
-         <div class="contenedor">
+         <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
-                <h3>
-                  We see Kickstarter as a home for creative minds  and a wonderful platform; where people who3 believe,
-                  respect, and see the vision can support an idea and make it a reality.<br><br>
+                <h3 class="aqua">
+                  We see Kickstarter as a home for creative minds<br> and a wonderful platform; where people who<br> believe, respect, and see the vision can support an<br> idea and make it a reality..<br><br>
                </h3>
                <h6>— DE LA SOUL</h6>
               </div>
@@ -56,20 +59,20 @@
          </div>
        </section>
        <br><br><br>
-       <div class="contenedor">
-           <div class="col-lg-12 col-md-12 col-sm-12">
-              <h3>Un proyecto de Kickstarter hace mucho más que simplemente recaudar dinero.  Genera una comunidad en torno a tu trabajo.</h3>       
+       <div class="container">
+           <div class="col-lg-10 col-md-10 col-sm-12 col-center">
+              <h3  class="pagBegin" style="font-size: 30px;" >Un proyecto de Kickstarter hace mucho<br> más que simplemente recaudar dinero.<br>  Genera una comunidad en torno a tu <br>trabajo.</h3>       
            </div>
        </div>
        <br><br><br>
-       <div class="contenedor ">
+       <div class="container ">
             <div class=" row">
-               <div class="col-lg-6 col-md-6 col-sm-12">
-                  <h4>¿Qué tipo de proyectos  puedo financiar con Kickstarter?</h4>
+               <div class="col-lg-3 col-md-6 col-sm-12 col-center">
+                  <h4 class="pagBegin">¿Qué tipo de proyectos  puedo financiar con Kickstarter?</h4>
                </div>
                <br><br><br>
-               <div class="col-lg-6 col-md-6 col-sm-12">
-                 <h6>Kickstarter está diseñado específicamente para proyectos
+               <div class="col-lg-5 col-md-6 col-sm-12 col-center">
+                 <h6 class="pagBegin2">Kickstarter está diseñado específicamente para proyectos
                    creativos en las siguientes categorías: Arte, Comics,
                    Artesanías, Baile, Diseño, Moda, Cine y vídeo, Comida, 
                    Juegos, Periodismo, Música, Fotografía, Publicaciones, 
@@ -79,15 +82,15 @@
                </div>
             </div>
        </div>
-       <br><br>br
-       <div class="contenedor">
+       <br><br>
+       <div class="container">
             <div class="row">
-                  <div class=" col-lg-6 col-md-6 col-sm-12">
-                      <h4>¿Quién puede contribuir  a mi proyecto??</h4>
+                  <div class=" col-lg-3 col-md-6 col-sm-12 col-center">
+                      <h4 class="pagBegin">¿Quién puede contribuir  a mi proyecto??</h4>
                   </div>
                   <br>
-                  <div class="col-lg-6 col-md-6 col-sm-12">
-                     <h6>Millones de personas visitan Kickstarter cada semana, pero el 
+                  <div class="col-lg-5 col-md-6 col-sm-12 col-center">
+                     <h6 class="pagBegin2">Millones de personas visitan Kickstarter cada semana, pero el 
                      apoyo empieza siempre con la gente que conoces. Los amigos,
                      los fans y las comunidades de las cuales formas parte 
                      no sólo serán tus primeros patrocinadores, sino también tu 
@@ -96,37 +99,37 @@
             </div>
        </div>
        <br><br><br>
-       <div class="contenedor">
+       <div class="container">
            <div class=" row">
-                 <div class=" col-lg-6 col-md-6 col-sm-12">
-                     <h4>¿Es mucho trabajo llevar un proyecto? </h4>
+                 <div class=" col-lg-3 col-md-6 col-sm-12 col-center">
+                     <h4 class="pagBegin">¿Es mucho trabajo llevar un proyecto? </h4>
                  </div><br>          
-                 <div class="col-lg-6 col-md-6 col-sm-12">
-                      <h6> Cada proyecto de Kickstarter tiene momentos excitantes y 
+                 <div class="col-lg-5 col-md-6 col-sm-12 col-center">
+                      <h6 class="pagBegin2"> Cada proyecto de Kickstarter tiene momentos excitantes y 
                       desafiantes, pero la cantidad de trabajo, generalmente, 
                       depende del tamaño y de la complejidad del proyecto.<br>
              
-                      <h6>Por lo general, los primeros días son los que más trabajo 
+                      <h6 class="pagBegin2">Por lo general, los primeros días son los que más trabajo 
                       requieren - tienes que correr la voz, contestar preguntas de 
                       potenciales patrocinadores, etc. También en los últimos días 
                       puede ser que estés muy ocupado promoviendo tu proyecto 
                       en las redes sociales para alcanzar la meta.</h6>
              
-                      <h6>En ocasiones, algunos proyectos cobran vida propia. Si éste
+                      <h6 class="pagBegin2">En ocasiones, algunos proyectos cobran vida propia. Si éste
                       es el caso, aprovecha el tiempo para concentrarte más en la creación y la <br>
                       entrega de las recompensas.</h6>
                  </div>         
            </div>
    </div>
    <br><br><br>
-   <div class="contenedor ">
+   <div class="container ">
      <div class="row">
-           <div class="col-lg-6 col-md-6 col-sm-12">
-             <h4>¿Cómo me comunico  si tengo preguntas?</h4>
+           <div class="col-lg-3 col-md-6 col-sm-12 col-center">
+             <h4 class="pagBegin">¿Cómo me comunico  si tengo preguntas?</h4>
            </div>
 
-           <div class="col-lg-6 col-md-6 col-sm-12">
-             <h6>Si tienes preguntas, puedes ponerte en contacto con nosotros 
+           <div class="col-lg-5 col-md-6 col-sm-12 col-center">
+             <h6 class="pagBegin2">Si tienes preguntas, puedes ponerte en contacto con nosotros 
              cuando gustes, usando este formulario de contacto. También 
              te recomendamos que eches un vistazo a nuestras preguntas 
              frecuentes, donde se explican varios temas con más detalle. 
@@ -143,11 +146,23 @@
         <video  class=" col-lg-12 col-md-12 col-sm-12 video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" autoplay="1" >  </video>
       </div>
   </div>
+<<<<<<< HEAD
   <br><br><br>
     <div class="contenedor">
+=======
+
+<div style="background-color: #F7F7F6">
+  <br><br>
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-10 col-md-12 col-sm-12 col-center ">
+           <h4 class="pagBegin" style="font-size: 30px;">¿Por qué Kickstarter?</h4>
+          </div><br><br><br><br>
+        </div>
+>>>>>>> 5499bd201f53c6419d513d3a4f9dfbaab03129ce
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <h4>1 <br>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-center">
+            <h4 class="pagBegin">1 <br>
             Kickstarter es una 
             plataforma 
             exclusivamente para 
@@ -155,8 +170,8 @@
           </div>
           <br><br><br>
 
-           <div class="col-lg-6 col-md-6 col-sm-12">
-             <h6>Creamos Kickstarter como una herramienta para artistas, 
+           <div class="col-lg-5 col-md-5 col-sm-12 col-center">
+             <h6 class="pagBegin2">Creamos Kickstarter como una herramienta para artistas, 
              diseñadores, makers, músicos y gente creativa en todo el 
              mundo. Nos enorgullece ser la única plataforma dedicada 
              exclusivamente a la comunidad creativa.</h6>
@@ -166,14 +181,15 @@
     <br><br><br>
 
 
-      <div class="contenedor ">
+      <div class="container">
+       
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <h4>2 <br>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-center">
+            <h4 class="pagBegin">2 <br>
             Todo o nada - un  modelo de financiamiento que funciona.</h4>
           </div><br><br><br>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <h6>Nuestro modelo permite a los creadores establecer una meta 
+          <div class="col-lg-5 col-md-5 col-sm-12 col-center">
+            <h6 class="pagBegin2">Nuestro modelo permite a los creadores establecer una meta 
               de financiamiento y un margen de tiempo en el cual lo quieren 
               conseguir. De esta manera no corren el riesgo de tener que 
               llevar a cabo un proyecto sin haber conseguido todos los 
@@ -185,20 +201,21 @@
       </div>
       <br><br><br>
 
-      <div class="contenedor">
+      <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <h4>3 <br>
-              Hay toda una comunidad que quiere apoyarte.</h4>
+          <div class="col-lg-3 col-md-3 col-sm-12 col-center">
+            <h4 class="pagBegin">3 <br>
+              Hay toda una<br> comunidad que quiere <br>apoyarte.</h4>
           </div><br><br><br>
-          <div class="col-lg-6 col-md-6 col-sm-12">
-            <h6>Millions of backers agree — helping to create something new 
+          <div class="col-lg-5 col-md-5 col-sm-12 col-center">
+            <h6 class="pagBegin2">Millions of backers agree — helping to create something new 
               is exciting. People love peeking behind the creative curtain 
               and directly supporting the creative process. In fact, 13.9 
               million people have pledged more than $3.39 billion to bring 
-              Kickstarter projects to life over the years.</h6>
+              Kickstarter projects to life over the years.</h6><br><br>
           </div>
         </div>
+      </div>
       </div>
       <br><br><br>
 
@@ -261,10 +278,12 @@
       <section class=" anuncio-1">
         <div class="contenedor">
           <div class="row">
-            <div class="col ">
-              <h3>“Una forma de que las personas creativas controlen su destino.”</h3>
-              <h6>— Brian Fargo, creador de un proyecto exitoso en Kickstarter</h6> 
+            <div class="col-lg-12 col-md-12 col-sm-12  ">
+              <div class="anchura">
+              <h3 class="rosa">“Una forma de que las personas<br> creativas controlen su destino.”</h3>
+              <h6 class="pagBegin2" style="text-align: center;">— Brian Fargo, creador de un proyecto exitoso en Kickstarter</h6> 
               <button type="submit" class="btn btn-dark">Empieza tu proyecto</button>
+            </div>
             </div>
           </div>
         </div>
