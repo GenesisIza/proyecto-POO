@@ -124,7 +124,7 @@
    <br><br><br>
    <div class="container ">
      <div class="row">
-           <div class="col-lg-3 col-md-6 col-sm-12 col-center">
+           <div class=" col-lg-3 col-md-6 col-sm-12 col-center">
              <h4 class="pagBegin">¿Cómo me comunico  si tengo preguntas?</h4>
            </div>
 
