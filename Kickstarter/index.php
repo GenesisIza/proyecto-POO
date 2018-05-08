@@ -4,7 +4,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" href="img/logo3.png">   
+    <link rel="icon" type="image/png" href="img/logo3.png">
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -39,7 +39,7 @@
            <ul class="nav nav-menu1">
              <li class="nav-item">
                  <a class="nav-link active" href="#">Cine</a>
-             </li> 
+             </li>
              <li class="nav-item">
                <a class="nav-link " href="#">Publicaciones</a>
              </li>
@@ -57,10 +57,10 @@
              </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Diseño & tecnología</a>
-             </li>    
+             </li>
           </ul>
     </div><br>
-  
+
     <div class="container-fluid">
        <h3>Cine</h3>
        <br><br>
@@ -75,29 +75,31 @@
 	         		  	<table class="table ">
                     <tbody>
                         <tr >
-                          <td><a href=""> <img src="img/cat-01.png"> </a>  </td>  
+                          <td><a href=""> <img class="img-fliud" src="img/cat-01.png"> </a>  </td>
                           <td> <a href="">Pandora </a> <br> 22 % financiado </td>
                       </tr >
-                      <tr>   
-                         <td><a href=""> <img src="img/cat-02.jpg" > </a></td>
-                         <td> <a href="">Knock Down The House: A Documentary</a> <br>52 % financiado</td>                        
+                      <tr>
+                         <td><a href=""> <img class="img-fliud" src="img/cat-02.jpg" > </a></td>
+                         <td> <a href="">Knock Down The House: A Documentary</a> <br>52 % financiado</td>
                       </tr>
                       <tr >
-                         <td><a href=""> <img src="img/cat-03.png"> </a>  </td>  
-                         <td> <a href="">The Grind - Pilot and Mini Series</a> <br> 0 % financiado</td>                        
+                         <td><a href=""> <img class="img-fliud" src="img/cat-03.png"> </a>  </td>
+                         <td> <a href="">The Grind - Pilot and Mini Series</a> <br> 0 % financiado</td>
                       </tr >
-                      <tr>   
-                        <td><a href=""> <img src="img/cat-04.jpg" > </a></td>
-                        <td> <a href="">El Proyeccionista - Documentary</a> <br> 11 % financiado</td>            
+                      <tr>
+                        <td><a href=""> <img class="img-fliud" src="img/cat-04.jpg" > </a></td>
+                        <td> <a href="">El Proyeccionista - Documentary</a> <br> 11 % financiado</td>
                       </tr>
                     </tbody>
                   </table>
-	        </div>	
-          </div>              
+                  <button  class="btn btn-outline-dark" type="button" name="button">Ver Todos</button>
+	        </div>
+
+          </div>
     </div>
     <br><br>
-    
-     
+
+
     <div class="container-fluid">
       <hr style="border: 0.4px solid gray;">
       <h5>Te Recomendamos</h5><br>
@@ -112,7 +114,7 @@
                     75 % financiado
                     </p>
                </a>
-	       			
+
 	       			</div>
 	       	    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
 	       		    	 <a href="">
@@ -125,10 +127,10 @@
 
                      78 % financiado
                     </p>
-                </a> 
-	       			
+                </a>
+
 	       		  </div>
-           
+
 	       		<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
 	       		   	<a href="">
                   <img class="img-fluid " src="img/cat-07.jpg">
@@ -138,25 +140,25 @@
                       think like innovators. <br><br>
                      79 % financiado
                   </p>
-                </a>	
+                </a>
 	       		</div>
 	       	  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
 	       		    	<a href="">
                      <img class="img-fluid " src="img/cat-08.jpg">
-                     <p>           
+                     <p>
                         A sorcerer saves a girl from flesh-eating <br>
                         demons. After trying to use magic to find <br>
                         her friends, he’s trapped in a vision of the past. <br><br>
                         81 % financiado
                      </p>
-                   </a> 
+                   </a>
 	       	  </div>
 	      </div>
     </div>
     <br><br>
     <hr style="border: 0.4px solid gray;">
     <br><br>
-    
+
     <div class="container-fluid">
       <div class="row">
           <div class="col-xl-2 col-lg-2  col-md-2 col-sm-12 col-12" >
@@ -165,13 +167,13 @@
           <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12" >
               <h1 style="text-align: center;display: inline-flex;padding-left: 60px;">Lo unicos que puedes hacer es hacer todo lo <br> que puedas</h1>
           </div>
-      </div>  
+      </div>
     </div>
-    
+
     <br><br>
     <hr style="border: 0.4px solid gray;">
     <br><br>
-    
+
 
     <div class="container-fluid">
 		<div class="row">
@@ -188,7 +190,7 @@
 <br><br>
     <hr style="border: 0.4px solid gray;">
     <br><br>
-    
+
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -215,7 +217,7 @@
 		</div>
 	</div>
 <br><br>
-      
+
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -224,7 +226,7 @@
                         <br>
                         <h6>LERR MAS</h6>
                         <br>
-                        <img src="img/cat-09">                
+                        <img src="img/cat-09">
                     </div>
 			</div>
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -233,7 +235,7 @@
                         <br>
                         <h6>LERR MAS</h6>
                         <br>
-                        <img src="img/cat-10">                
+                        <img src="img/cat-10">
                     </div>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -244,7 +246,7 @@
                         <br>
                         <h6>LERR MAS</h6>
                         <br>
-                        <img src="img/cat-11">                
+                        <img src="img/cat-11">
                     </div>
                   </div>
                 </a>
@@ -255,21 +257,21 @@
 <hr style="border: 0.4px solid gray;">
 <br><br>
 
-<div class="container-fluid">     
+<div class="container-fluid">
       <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
        <h6 style="text-align: center;">Semanalmente: Unos cuantos proyectos, seleccionados por el equipo de <br> Kickstarter.</h6><br>
-       <form  class="">    
-            <div class="row">   
-            <div class=" col-lg-2 col-md-12 col-sm-12"></div>      
+       <form  class="">
+            <div class="row">
+            <div class=" col-lg-2 col-md-12 col-sm-12"></div>
               <div style="display: inline-block;" class="col-lg-8 col-md-12 col-sm-12 ">
                   <input  class=" col-lg-5 col-md-5 col-sm-12 col-12 " name="txt-suscribir" id="txt-suscribir" style="width:400px;" type="email"  placeholder="Correo electronico" onkeydown="validarCorreo(this);">
                   <button name="btn-suscribir" id="btn-suscribir" type="submit" class="col-lg-3 col-md-3 col-sm-12  col-12 btn btn-dark" >Suscribirte Ahora</button>
-              </div>  
-            <div class="col-lg-2 col-md-12 col-sm-12 "></div>  
-       </form>   
+              </div>
+            <div class="col-lg-2 col-md-12 col-sm-12 "></div>
+       </form>
 </div>
 <br><br>
-       
+
 <hr style="border: 0.4px solid gray;">
      <div class="container">
            <ul class="nav">
@@ -281,10 +283,10 @@
              </li>
              <li class="nav-item">
                 <a class="nav-link" href="#">Diseño & tecnología</a>
-             </li>    
+             </li>
              <li class="nav-item">
                  <a class="nav-link active" href="#">Cine</a>
-             </li> 
+             </li>
              <li class="nav-item">
                <a class="nav-link " href="#">Comida & creaciones</a>
              </li>
@@ -297,9 +299,9 @@
              <li class="nav-item">
                <a class="nav-link " href="#">Publicaciones</a>
              </li>
-          </ul>      
+          </ul>
     </div>
-    <hr style="border: 0.4px solid gray;">      
+    <hr style="border: 0.4px solid gray;">
      <?php include 'Plantillas/footer.php'; ?>
 
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

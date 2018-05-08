@@ -1,6 +1,6 @@
 
     <header class="header">
-    	 <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    	<link rel="stylesheet" type="text/css" href="css/estilos.css">
       <a class="derecha esconder" href="#">Explorar</a>
       <a class="derecha separar esconder" href="empieza-tu-proyecto.php">Empieza Tu Proyecto</a>
       <a class="logo" href="index.php"> <img src="img/logo.png" alt="Logo" ></a>
