@@ -32,9 +32,10 @@
   <form action="empieza-tu-proyecto2.php"> 
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
-           <select id="slc-categoria"  name="slc-categoria" class="forma form-control col-center">
+          <div id="probando"></div>
+           <select id="slc-categoria"  class="forma form-control col-center">
               <option value="">Selecione su categoria</option>
-              <option value="1">Arte</option>
+             <!-- <option value="1">Arte</option>
               <option value="2">Artesanias</option>
               <option value="3">Cine y videos</option>
               <option value="4">Comisc</option>
@@ -46,7 +47,7 @@
               <option value="10">Periodismo</option>
               <option value="11">Publicaciones</option>
               <option value="12">Teatro</option>
-              <option value="13">Tecnología</option>
+              <option value="13">Tecnología</option>-->
            </select>
 
            <div class="invalid-feedback">Campo Obligatorio</div>
