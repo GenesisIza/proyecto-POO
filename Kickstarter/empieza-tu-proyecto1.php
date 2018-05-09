@@ -35,6 +35,7 @@
           <div id="probando"></div>
            <select id="slc-categoria"  class="forma form-control col-center">
               <option value="">Selecione su categoria</option>
+              
              <!-- <option value="1">Arte</option>
               <option value="2">Artesanias</option>
               <option value="3">Cine y videos</option>
