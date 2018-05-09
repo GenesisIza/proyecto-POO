@@ -3,7 +3,7 @@
 		private $host = "localhost";
 		private $usuario = "root";
 		private $password = "";
-		private $baseDatos = "db_login";
+		private $baseDatos = "kickstarter_db";
 		private $puerto = 3306;
 		private $link;
 

@@ -92,7 +92,7 @@
                       </tr>
                     </tbody>
                   </table>
-                  <button  class="btn btn-outline-dark" type="button" name="button">Ver Todos</button>
+                  <button id="mas" class="btn btn-outline-dark" type="button" name="button">Ver Todos</button>
 	        </div>
 
           </div>
@@ -304,8 +304,9 @@
     <hr style="border: 0.4px solid gray;">
      <?php include 'Plantillas/footer.php'; ?>
 
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
      <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/controlador.js"></script>
+     <script type="text/javascript" src="js/controlador.js"></script>
+     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
   </body>
 </html>

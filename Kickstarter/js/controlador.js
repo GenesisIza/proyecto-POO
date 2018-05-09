@@ -1,32 +1,30 @@
-
 $(document).ready(function(){
-		$.ajax({ 
-		url:"ajax/mostrar-categorias.php",
-		dataType:'json',	
-		success: function (respuesta) {
+	//Esta funcion se ejecutar cuando todo el DOM se haya cargado
+	$.ajax({
+			url:"ajax/mostrar-categorias.php",
+			dataType:'json',
+			success: function (respuesta) {
 			console.log(respuesta);
-		/*	 for (var i=0; i<respuesta.length ; i++){
-			$("#slc-categoria").append(
-                      '<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'
-                     
-				    );
-				}*/
-			
- 
-		}
-	});
+	/*	 for (var i=0; i<respuesta.length ; i++){
+		$("#slc-categoria").append(
+										'<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'
+
+					);
+			}*/
+	}
+});
 });
 
 
 
 function validar(){
 
-	validarCampoVacio("txt-nombre");		
+	validarCampoVacio("txt-nombre");
 	validarCampoCorreo("txt-correo");
 	validarContrasena("txt-contraseña");
 	ValidarCategoria("slc-categoria");
 
-	
+
 }
 
 
@@ -50,8 +48,8 @@ function validarCorreo(email) {
     if (patron.test(String(email.value).toLowerCase())){
     	email.classList.remove("is-invalid");
 		email.classList.add("is-valid");
-	
-    	
+
+
     }
     else{
     	email.classList.remove("is-valid");
@@ -71,13 +69,13 @@ function validarContrasena(etiqueta){
 }
 
 $("#cuenta").click(function(){
-  
-	   
-	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" + 
+
+
+	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					 'txt-correo ='+ $("#txt-correo").val() + "&" +
 					 'txt-contraseña='+ $("#txt-contraseña").val();
 alert(parametros);
-   $.ajax({ 
+   $.ajax({
 	   url: 'guardarUsuario.php',
 	   method: 'POST',
 	   data: parametros, //URLEncoded
@@ -87,7 +85,7 @@ alert(parametros);
 
 	   }
    })
-   
+
 });
 
 /*function ValidarCategoria (id){
@@ -96,12 +94,12 @@ alert(parametros);
 		document.getElementById(id).classList.add('is-invalid');
 	}
 	else{
-	
+
 		document.getElementById(id).classList.remove('is-invalid');
 		document.getElementById(id).classList.add('is-valid');
 		document.getElementById("btn-idea").removeAttribute("disabled");
 	}
-      
+
 }*/
 
 
@@ -122,35 +120,35 @@ function validarProyecto(etiqueta){
 
 function validarChecks(id){
 	var cadena = document.getElementById(id).getAttribute("src");
-	
+
 	if(cadena=="img/success.svg"){
 		document.getElementById(id).setAttribute("src", "img/success2.svg");
-		
-	}	
+
+	}
 	else{
 		document.getElementById(id).setAttribute("src", "img/success.svg");
-		
+
     }
 }
 
 $("#iniciar").click(function(){
-	
-		
+
+
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 					  'txt-contraseña='+ $("#txt-contraseña").val();
-	
+
 	alert(parametros);
 
-	$.ajax({ 
+	$.ajax({
 		url: 'ajax/leer-usuario.php',
 		method: 'GET',
 		data: parametros, //URLEncoded
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
 		    $("#respuesta").html(respuesta);
- 
+
 		}
-	})	
+	})
  });
 
  function ValidarSelec(valor){
@@ -176,7 +174,7 @@ $("#iniciar").click(function(){
 			 break;
 		case 7:
 			 respuesta = juegos;
-			 break; 
+			 break;
 		case 8:
 			 respuesta = modas;
 			 break;
@@ -197,79 +195,95 @@ $("#iniciar").click(function(){
 			 break;
 	 return respuesta;
  }
- 
+
 }
  $("#categoria").click(function(){
 
 	var valor = $("#slc-categoria").val();
-	var categoria = ValidarSelec(valor);		
+	var categoria = ValidarSelec(valor);
 	var parametros =  'slc-categoria='+ categoria;
 	alert(valor);
 	alert(categoria);
 
-	$.ajax({ 
+	$.ajax({
 		method: 'POST',
 		data: parametros, //URLEncoded
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
 		  //  $("#respuesta").html(respuesta);
- 
+
 		}
-	})	
+	})
 
  });
 
  $("#cuenta").click(function(){
-	
+
 	var parametros = 'txt-nombre ='+ $("#txt-nombre").val() + "&" +
 	                 'txt-correo ='+ $("#txt-correo").val() + "&" +
 	                 'txt-contraseña ='+ $("#txt-contraseña").val();
-	
-	$.ajax({ 
+
+	$.ajax({
 		url: 'ajax/guardarUsuario.php',
 		method: 'POST',
 		data: parametros, //URLEncoded
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
 		    $("#respuesta2").html(respuesta);
- 
+
 		}
-	})	
+	})
  });
 
 
  $("#tex").click(function(){
-	
-    var parametros = 'texa='+ $("#texa").val();                 
+
+    var parametros = 'texa='+ $("#texa").val();
 	alert(parametros);
 
-	$.ajax({ 
+	$.ajax({
 		method: 'POST',
 		data: parametros, //URLEncoded
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
 		  //  $("#respuesta").html(respuesta);
- 
+
 		}
-	})	
-		
+	})
+
  });
 
  $("#texpais").click(function(){
-	
-	var parametros = 'texp='+ $("#texp").val();   
-	alert($("#texp").val()); 
-	
-	$.ajax({ 
+
+	var parametros = 'texp='+ $("#texp").val();
+	alert($("#texp").val());
+
+	$.ajax({
 		method: 'POST',
 		data: parametros, //URLEncoded
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
 		  //  $("#respuesta").html(respuesta);
- 
+
 		}
-	})	
+	})
 
  });
 
 
+ $("#mas").click(function(){
+
+	 $.ajax({
+	 url:"ajax/mostrar-categorias.php",
+	 dataType:'json',
+	 success: function (respuesta) {
+	console.log(respuesta);
+	 /*	 for (var i=0; i<respuesta.length ; i++){
+		 $("#slc-categoria").append(
+											'<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'
+
+					 );
+			 }*/
+	 }
+ });
+});
