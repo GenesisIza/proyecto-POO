@@ -2,7 +2,7 @@ $(document).ready(function(){
 	alert("el dom se ha cargado");
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
-			dataType:'html',
+			dataType:'json',
 			success: function (respuesta) {
 			console.log(respuesta);
 			//alert(respuesta);
