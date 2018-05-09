@@ -1,10 +1,11 @@
 $(document).ready(function(){
-	//Esta funcion se ejecutar cuando todo el DOM se haya cargado
+	alert("el dom se ha cargado");
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
 			dataType:'json',
 			success: function (respuesta) {
 			console.log(respuesta);
+			//alert(respuesta);
 	/*	 for (var i=0; i<respuesta.length ; i++){
 		$("#slc-categoria").append(
 										'<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'
