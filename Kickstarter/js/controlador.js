@@ -1,3 +1,5 @@
+var parametrosGlobalesProyecto;
+ 
 $(document).ready(function(){
 //	alert("el dom se ha cargado");
 	$.ajax({
@@ -7,7 +9,7 @@ $(document).ready(function(){
 			console.log(respuesta);
 			//alert(respuesta);
           for (var i=0; i<respuesta.length ; i++){
-		  $("#slc-categoria").append('<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>');
+		  $("#slc-categoria").append('<option class="elementoLista" value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>');
 			}
 	}
      });
@@ -21,6 +23,7 @@ function validar(){
 	validarCampoCorreo("txt-correo");
 	validarContrasena("txt-contraseña");
 	ValidarCategoria("slc-categoria");
+
 
 
 }
@@ -149,71 +152,39 @@ $("#iniciar").click(function(){
 	})
  });
 
- function ValidarSelec(valor){
-    var respuesta;
-	switch ( valor ) {
-		case 1:
-			 respuesta = Arte;
-			 break;
-		case 2:
-		     respuesta = Artesanias;
-			 break;
-		case 3:
-		     respuesta = Cinevideos;
-			 break;
-		case 4:
-		     respuesta = comics;
-			 break;
-		case 5:
-	         respuesta = comida;
-			 break;
-		case 6:
-	         respuesta = diseño;
-			 break;
-		case 7:
-			 respuesta = juegos;
-			 break;
-		case 8:
-			 respuesta = modas;
-			 break;
-		case 9:
-			 respuesta = musica;
-			 break;
-		case 10:
-			 respuesta = periodismo;
-			 break;
-		case 11:
-			 respuesta = publicaciones;
-			 break;
-		case 12:
-		    respuesta = teatro;
-			 break;
-		case 13:
-		    respuesta = tecnologia;
-			 break;
-	 return respuesta;
- }
+$("#slc-categoria").change(function(){
+    if($("#slc-categoria").val() != 0)
+     document.getElementById("btn-categoria").removeAttribute("disabled");
+    else{
+    	if($("#slc-categoria").val() == 0)
+      document.getElementById("btn-categoria").setAttribute("disabled", "disabled");
+    } 
 
-}
- $("#categoria").click(function(){
+});
 
-	var valor = $("#slc-categoria").val();
-	var categoria = ValidarSelec(valor);
-	var parametros =  'slc-categoria='+ categoria;
-	alert(valor);
-	alert(categoria);
-
-	$.ajax({
-		method: 'POST',
-		data: parametros, //URLEncoded
-		success: function (respuesta) {
-			//Instrucciones a ejecutar cuando responda el servidor
-		  //  $("#respuesta").html(respuesta);
-
-		}
-	})
-
+$("#btn-categoria").click(function(){
+      parametrosGlobalesProyecto = "categoria="+$("#slc-categoria").val()+"&";
+      alert(parametrosGlobalesProyecto);
+	
  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  $("#cuenta").click(function(){
 

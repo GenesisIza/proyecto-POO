@@ -33,9 +33,9 @@
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
           <div id="probando"></div>
-           <select id="slc-categoria"  class="forma form-control col-center">
-              <option value="">Selecione su categoria</option>
-              
+           <select id="slc-categoria"  name="slc-categoria" class="forma form-control col-center" >
+              <option value="0">Selecione su categoria</option>
+
              <!-- <option value="1">Arte</option>
               <option value="2">Artesanias</option>
               <option value="3">Cine y videos</option>
@@ -59,7 +59,7 @@
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  " ></div>
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" >     
-               <input type="submit"  id="categoria" class="btn btn-dark btn1" value="Siguiente: Idea para el proyecto">
+               <input type="submit" disabled="disabled" id="btn-categoria" class="btn btn-dark btn1" value="Siguiente: Idea para el proyecto">
         </div>
       </div>
 
