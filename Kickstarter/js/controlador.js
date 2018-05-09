@@ -5,7 +5,7 @@ $(document).ready(function(){
 			dataType:'html',
 			success: function (respuesta) {
 			console.log(respuesta);
-			alert(respuesta);
+			//alert(respuesta);
 	/*	 for (var i=0; i<respuesta.length ; i++){
 		$("#slc-categoria").append(
 										'<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'
