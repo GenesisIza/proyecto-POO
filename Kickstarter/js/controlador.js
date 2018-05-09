@@ -2,10 +2,10 @@ $(document).ready(function(){
 	alert("el dom se ha cargado");
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
-			dataType:'json',
+			dataType:'html',
 			success: function (respuesta) {
 			console.log(respuesta);
-			alert("respuesta");
+			alert(respuesta);
 	/*	 for (var i=0; i<respuesta.length ; i++){
 		$("#slc-categoria").append(
 										'<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'

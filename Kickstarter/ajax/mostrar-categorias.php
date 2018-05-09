@@ -10,6 +10,6 @@ include("../class/class-conexion.php");
             }
 
             echo json_encode($resultadoUsuarios);
-            //echo $sql;
+            echo $sql;
             $conexion->cerrarConexion();
 ?>
