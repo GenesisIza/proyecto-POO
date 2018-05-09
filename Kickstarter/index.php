@@ -304,9 +304,8 @@
     <hr style="border: 0.4px solid gray;">
      <?php include 'Plantillas/footer.php'; ?>
 
-
-     <script src="js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="js/controlador.js"></script>
-     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
   </body>
 </html>

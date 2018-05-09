@@ -3,7 +3,7 @@ include("../class/class-conexion.php");
 	$conexion = new Conexion();
 
 	$sql = "SELECT codigoCategoria, nombre FROM tbl_categoria ";
-             $resultado = $conexion->ejecutarInstruccion($sql);
+             $resultado = $conexion->ejecutarConsulta($sql);
              $resultadoUsuarios = array();
              while($fila = $conexion->obtenerFila($resultado)){
                 $resultadoUsuarios[] = $fila;
