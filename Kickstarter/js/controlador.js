@@ -163,12 +163,12 @@ $("#slc-categoria").change(function(){
 });
 
 $("#btn-categoria").click(function(){
-      concatenar( "categoria="+$("#slc-categoria").val()+"&");
+      
       
 	
  });
 
-$("#texa").change(function(){//ob se activa y se desactiva al hacer click
+$("#texa").change(function(){//OB: se activa y se desactiva al hacer click
     if($("#texa").val() != "")
      document.getElementById("btn-descripcion").removeAttribute("disabled");
     else{

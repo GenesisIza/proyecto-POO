@@ -58,8 +58,11 @@
       </div>
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  " ></div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" >     
-               <input type="submit" disabled="disabled" id="btn-categoria" class="btn btn-dark btn1" value="Siguiente: Idea para el proyecto">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" > 
+        <form action="empieza-tu-proyecto2.php">
+              <input type="submit" disabled="disabled" id="btn-categoria" class="btn btn-dark btn1" value="Siguiente: Idea para el proyecto">
+         </form>    
+               
         </div>
       </div>
 
