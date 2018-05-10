@@ -130,7 +130,6 @@ function validarProyecto(etiqueta){
 		document.getElementById("btn-ubicacion").setAttribute("disabled", "disabled");
 	}
 	else{
-
 		etiqueta.classList.remove("is-invalid");
 		etiqueta.classList.add("is-valid");
 		document.getElementById("btn-ubicacion").removeAttribute("disabled");
@@ -154,26 +153,32 @@ function validarChecks(id){
 
 $("#iniciar").click(function(){
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
-				            'txt-contrasenia='+ $("#txt-contrasena").val();
+				            'txt-contrasenia='+ $("#txt-contrasenia").val();
 	alert(parametros);
 	$.ajax({
-		url: 'ajax/loginUsuario',
+
 		method: 'POST',
+		url: 'ajax/loginUsuario.php',
 		data: parametros, //URLEncoded
 		dataType:'json',
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
+			console.log(respuesta);
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
             localStorage.setItem("codigoUsuario", codigoUsuario);
             concatenar();
-            if (respuesta.codigoResultado ==0 && respuesta.codigoTipoUsuario == 1)
+            if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){
                 window.location.href = "creandoProyecto.php";//console.log("Usuario autorizado");
-            else if (respuesta.codigoResultado==0 && respuesta.codigoTipoUsuario == 2)
-                window.location.href = "administradores.php";//console.log("Usuario autorizado");
+								alert("Usuario correcto");
+            }else{
+							 if (respuesta.codigoResultado==0 && respuesta.codigoTipoUsuario == 2){
+								 window.location.href = "administradores.php";//console.log("Usuario autorizado");
+							 }else {
+                  	alert("Usuario Incorrecto");
+               }
+            }
 
-         
-
-		}
+						}
 	});
  });
 

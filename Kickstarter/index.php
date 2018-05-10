@@ -1,5 +1,3 @@
-    <?php include("ajax/usuario.php")  ?>
-    
 
     <!DOCTYPE html>
     <html lang="en">

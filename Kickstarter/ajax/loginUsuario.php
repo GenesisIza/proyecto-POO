@@ -6,8 +6,6 @@
     $correo = $_POST["txt-correo"];
 
     //  $nombre = "leonard";
-     
-
 
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
                   "nombre, correo, contrasenia FROM tbl_usuario ".
@@ -23,7 +21,7 @@
         $respuesta = $conexion->obtenerFila($resultado);
         $respuesta["codigoResultado"] = 0;
         $respuesta["mensajeResultado"] = "El usuario si existe";
-        $_SESSION["usr"] = $respuesta["correo"];
+        $_SESSION["email"] = $respuesta["correo"];
         $_SESSION["psw"] = $contrasenia;
     }else {
         $respuesta["codigoResultado"] = 1;
@@ -33,5 +31,3 @@
     echo json_encode($respuesta);
 
 ?>
-
-

@@ -26,7 +26,7 @@
        <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="text" id="txt-correo" name="txt-correo" placeholder="Correo Electronico" </td>
     </tr>
     <tr>
-      <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="password" id="txt-contrasena" name="txt-contrasena" value="" placeholder="Contraseña"></t>
+      <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="password" id="txt-contrasenia" name="txt-contrasenia" value="" placeholder="Contraseña"></t>
     </tr>
     <tr>
       <td style="text-align: left;" class="olvidar"><a href="#">¿La olvidaste?</a></td>

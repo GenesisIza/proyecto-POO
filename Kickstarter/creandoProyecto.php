@@ -1,3 +1,28 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
+        header("Location: index.php");
+
+    include("class/class-conexion.php");
+    $conexion = new Conexion();
+    $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
+            "nombre, correo, contrasenia FROM tbl_usuario ".
+            "WHERE correo = '%s' and contrasenia = '%s' and codigoTipoUsuario = 1 ",
+        $_SESSION["email"],
+        $_SESSION["psw"]
+    );
+    //echo $sql;
+    //exit;
+    $resultado = $conexion->ejecutarConsulta($sql);
+    $respuesta = array();
+    if ($conexion->cantidadRegistros($resultado)<=0){
+           header("Location: iniciar-seccion.php");
+    }
+
+?>
+
+
+<input type="text" name="" value="">
 <!DOCTYPE html>
 <html>
   <head>
@@ -27,7 +52,7 @@
                 <br><br>
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center ">
                    <div class="row">
-                    
+
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding-top: 30px;  border-radius: 0px">
                      <h4 class="segundo">Imagen Del Proyecto:</h4>
                   </div>
@@ -35,7 +60,7 @@
                   <select id="slc-urlImagen"  name="slc-urlImagen" class="forma form-control col-center" >
               <option value="0">aqui iran urls de imagen segun categoria :(</option>
 
-            
+
             </select><br>
                      <p>Esta es la primera cosa que la gente ve al abrir tu proyecto, así que escoge una imagen nítida y sin texto. Aquí unos consejos.</p>
                   </div>
@@ -110,5 +135,3 @@ Estas palabras facilitarán la búsqueda de tu proyecto, ¡así que elígelas sa
     <script src="js/controlador.js"></script>
 </body>
 </html>
-
-
