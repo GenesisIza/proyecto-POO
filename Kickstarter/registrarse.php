@@ -44,12 +44,12 @@
                 </div><br>
 
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
-                  <input type="password" name="txt-contrasena2" class="form-control cuadrado " id="txt-contrasena2" placeholder="Contraseña" onkeydown="validarContrasena(this);">
+                  <input type="password" name="txt-contrasena" class="form-control cuadrado " id="txt-contrasena" placeholder="Contraseña" onkeydown="validarContrasena(this);">
                   <div class="invalid-feedback">Al menos 7 caracteres</div>
                 </div><br>
 
              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
-                  <input type="password" name="txt-contrasena" class="form-control cuadrado" id="txt-contrasena"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);">
+                  <input type="password" name="txt-contrasena2" class="form-control cuadrado" id="txt-contrasena2"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);">
                   <div class="invalid-feedback">Al menos 7 caracteres</div>
                 </div><br>
 
@@ -78,7 +78,7 @@
           </div>
           </div><br><br>
         </div>
-        <div id="respuesta2"></div>
+
   <?php include 'Plantillas/footer.php';   ?>
 <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

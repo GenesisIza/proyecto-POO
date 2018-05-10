@@ -1,11 +1,7 @@
-<<<<<<< HEAD
+
 var categoria = $("#slc-categoria").val();
 
-=======
 
-
- 
->>>>>>> 04a6fa2a1023c1672eb16e57425e465def1f5649
 $(document).ready(function(){
 //	alert("el dom se ha cargado");
 
@@ -23,9 +19,10 @@ $(document).ready(function(){
 });
 
   function validar(){
+
 	validarCampoVacio("txt-nombre");
 	validarCampoCorreo("txt-correo");
-	validarContrasena("txt-contraseña");
+	validarContrasena("txt-contrasena");
 	ValidarCategoria("slc-categoria");
 }
 
@@ -189,10 +186,9 @@ $("#slc-categoria").change(function(){
 });
 
 $("#btn-categoria").click(function(){
-<<<<<<< HEAD
       parametrosGlobalesProyecto = "categoria="+$("#slc-categoria").val()+"&";
       alert(parametrosGlobalesProyecto);
-=======
+
      var categoria= "codigoCategoria="+$("#slc-categoria").val()+"&";
 	 localStorage.setItem("categoria", categoria);
  });
@@ -206,14 +202,14 @@ $("#texa").change(function(){//OB: se activa y se desactiva al hacer click en cu
     else{
     	if($("#slc-categoria").val() == null)
       document.getElementById("btn-descripcion").setAttribute("disabled", "disabled");
-    } 
+    }
 
 });
 
 $("#btn-descripcion").click(function(){
 	var descripcion = "descripcion="+$("#texa").val()+"&";
       localStorage.setItem("descripcion", descripcion);
-      
+
  });
 ////////////////////////////////////////////////////////
 ///////////////////empiezatu proyecto3/////////////////////
@@ -224,7 +220,7 @@ $("#texp").change(function(){
     else{
     	if($("#texp").val() == 0)
       document.getElementById("btn-pais").setAttribute("disabled", "disabled");
-    } 
+    }
 
 });
 
@@ -233,23 +229,8 @@ $("#btn-pais").click(function(){
       localStorage.setItem("codigoPais", codigoPais);
       concatenar();
  });
- //////////////////////////////////////////////
+ /////////////////////////////////////////////
 
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> 04a6fa2a1023c1672eb16e57425e465def1f5649
-
- });
 
 
  $("#cuenta").click(function(){
@@ -289,14 +270,14 @@ $("#btn-pais").click(function(){
  });
 });
 
-<<<<<<< HEAD
+
 
  $(".menu-programa").click(function(){
 	 var enlace = $(this).attr("href");
 	 console.log(enlace);
 
  });
-=======
+
 function concatenar(){
 	var parametros = localStorage.getItem("categoria")+localStorage.getItem("descripcion")+localStorage.getItem("codigoPais");
 	alert(parametros);
@@ -310,4 +291,3 @@ function concatenar(){
 
     // leer datos
     var miDato = localStorage.getItem("nombre"); */
->>>>>>> 04a6fa2a1023c1672eb16e57425e465def1f5649

@@ -21,7 +21,7 @@
           );
     $resultado = $conexion->ejecutarConsulta($sql);
 
-    echo json_encode($resultado);
+    
 
 
     $conexion->cerrarConexion($conexion);
