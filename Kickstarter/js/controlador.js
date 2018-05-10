@@ -163,11 +163,25 @@ $("#slc-categoria").change(function(){
 });
 
 $("#btn-categoria").click(function(){
-      parametrosGlobalesProyecto = "categoria="+$("#slc-categoria").val()+"&";
-      alert(parametrosGlobalesProyecto);
+      concatenar( "categoria="+$("#slc-categoria").val()+"&");
+      
 	
  });
 
+$("#texa").change(function(){//ob se activa y se desactiva al hacer click
+    if($("#texa").val() != "")
+     document.getElementById("btn-descripcion").removeAttribute("disabled");
+    else{
+    	if($("#slc-categoria").val() == null)
+      document.getElementById("btn-descripcion").setAttribute("disabled", "disabled");
+    } 
+
+});
+
+$("#btn-descripcion").click(function(){
+      concatenar("descripcion="+$("#texa").val()+"&") ;
+	
+ });
 
 
 
@@ -205,22 +219,6 @@ $("#btn-categoria").click(function(){
  });
 
 
- $("#tex").click(function(){
-
-    var parametros = 'texa='+ $("#texa").val();
-	alert(parametros);
-
-	$.ajax({
-		method: 'POST',
-		data: parametros, //URLEncoded
-		success: function (respuesta) {
-			//Instrucciones a ejecutar cuando responda el servidor
-		  //  $("#respuesta").html(respuesta);
-
-		}
-	})
-
- });
 
  $("#texpais").click(function(){
 
@@ -256,3 +254,14 @@ $("#btn-categoria").click(function(){
 	 }
  });
 });
+
+function concatenar(dato){
+	var datos =new Array();
+	while(dato){
+	 datos=dato;
+	}
+	for(var i=0; i< datos.length; i++)
+    parametrosGlobalesProyecto+=datos[i];
+
+
+}

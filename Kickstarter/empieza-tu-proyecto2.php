@@ -41,7 +41,7 @@
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
             <form action="empieza-tu-proyect3.php">
-               <input id="btn-categoria" class="btn btn-dark btn1" type="submit" value="Siguiente: Ubicacion" type="button" />
+               <input id="btn-descripcion" disabled="disabled" class="btn btn-dark btn1" type="submit" value="Siguiente: Ubicacion" type="button" />
             </form>
           </div>
          </div>
