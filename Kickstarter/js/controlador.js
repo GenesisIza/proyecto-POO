@@ -10,12 +10,14 @@ $(document).ready(function(){
 			dataType:'json',
 			success: function (respuesta) {
 			console.log(respuesta);
-			//alert(respuesta);
-          for (var i=0; i<respuesta.length ; i++){
-		  $("#slc-categoria").append('<option class="elementoLista" value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>');
+            for (var i=0; i<respuesta.length ; i++){
+		    $("#slc-categoria").append('<option class="elementoLista" value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>');
 			}
 	}
      });
+
+cargarUrlsSegunCat(localStorage.getItem("categoria"));
+
 });
 
   function validar(){
@@ -69,14 +71,13 @@ $("#cuenta").click(function(){
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					         'txt-correo='+ $("#txt-correo").val() + "&" +
 					         'txt-contrasena='+ $("#txt-contrasena").val();
-alert(parametros);
    $.ajax({
 	   url: 'ajax/guardarUsuario.php',
 	   method: 'POST',
 	   data: parametros,
-     dataType:'json',
-	   success: function (respuesta) {
-		console.log(respuesta);
+       dataType:'json',
+	  success: function (respuesta) {
+		 console.log(respuesta);
 		 var codigoUsuario = "codigoUsuario="+respuesta[0].codigoUsuario;
          localStorage.setItem("codigoUsuario", codigoUsuario);
          concatenar();
@@ -274,9 +275,27 @@ function concatenar(){
 }
 
 
-/*
 
-   localStorage.setItem("nombre", "dato");
 
-    // leer datos
-    var miDato = localStorage.getItem("nombre"); */
+
+function cargarUrlsSegunCat(codigoCategoria){
+		$.ajax({
+			url:"ajax/mostrar-categorias.php",
+			dataType:'json',
+			success: function (respuesta) {
+			console.log(respuesta);
+            for (var i=0; i<respuesta.length ; i++){
+            	if(respuesta[i].codigoCategoria == codigoCategoria){
+            		//aqui es imprimir el slc los url de imagenes, y cuando seleccione obtener la seleccionada y gaurdarla en el local storage
+            		for(){
+		       $("#slc-urlImagen").append( '<option value="../Proyectos/"'+respuesta[i].nombre+'">aqui iran urls de imagen segun categoria :(</option>');}
+
+}
+			}
+	}
+     });
+
+
+
+
+}
