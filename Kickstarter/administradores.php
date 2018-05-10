@@ -1,3 +1,5 @@
+<?php include("ajax/abiministrador.php")  ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -12,7 +14,7 @@
 </head>
   <body>
    <div style=" background-color: black; padding: 100px;" class="">
-     <h1 style="color: white;" >Bienvenido Señor USUARIO</h1>
+     <h1 style="color: white;" >Bienvenido Señor <?php echo $registro["nombre"]; ?></h1>
    </div>
 
 

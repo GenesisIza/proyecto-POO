@@ -1,4 +1,4 @@
-  
+<?php include("ajax/usuario.php")  ?>  
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="img/logo3.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,7 +17,7 @@
   <body>
     <?php include 'Plantillas/headerEmpieza.php';?>
     <br><br><br>
-   
+
     <div class="container">
       <div class="row">
         <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-center textInicios">
@@ -29,7 +29,7 @@
           <h4 class="segundo">Escoge una categoría para que puedas llegar a la audiencia deseada.</h4>
         </div>
       </div><br>
-  <form action="empieza-tu-proyecto2.php"> 
+  <form action="empieza-tu-proyecto2.php">
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
           <div id="probando"></div>
@@ -58,59 +58,19 @@
       </div>
       <div class="row">
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  " ></div>
-        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" > 
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12  col-center" >
         <form action="empieza-tu-proyecto2.php">
               <input type="submit" disabled="disabled" id="btn-categoria" class="btn btn-dark btn1" value="Siguiente: Idea para el proyecto">
-         </form>    
-               
+         </form>
+
         </div>
       </div>
 
-    </form>  
+    </form>
     </div>
-   
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador.js"></script>
   </body>
   </html>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
-    

@@ -1,3 +1,4 @@
+<?php include("ajax/usuario.php")  ?>
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -6,8 +7,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="img/logo3.png">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -52,7 +53,7 @@
         </div>
         <div class="row">
           <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center ">
-           <a class="empieza" href="#"> <div><i class="far fa-question-circle texto">¿Y si mi país no aparece en la lista?</i></div></a>                     
+           <a class="empieza" href="#"> <div><i class="far fa-question-circle texto">¿Y si mi país no aparece en la lista?</i></div></a>
           <br>
           </div>
         </div>
@@ -100,52 +101,10 @@
             </form>
           </div>
          </div>
-    </div>   
+    </div>
   <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador.js"></script>
-   
+
  </body>
  </html>
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  
-
-  
