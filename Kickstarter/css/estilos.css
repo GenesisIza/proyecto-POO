@@ -340,7 +340,9 @@ font-family: 'Roboto', sans-serif;
 }
 
 
-
+.bloquesito{
+  background-color: #F8F9FD;
+}
 .onlyColor{
   background-color: white;
 }
