@@ -18,7 +18,7 @@
     if ($conexion->cantidadRegistros($resultado)<=0){
            header("Location: iniciar-seccion.php");
     }
-
+     $registro = $conexion->obtenerFila($resultado);
 ?>
 
 
@@ -41,7 +41,7 @@
      <?php include 'Plantillas/header.php';   ?>
      <br><br><br>
      <div>
-      <h3 class="primero" style="text-align: center; ">¡Vámonos!</h3>
+      <h3 class="primero" style="text-align: center; ">¡Vámonos! <?php echo $registro["nombre"] ; ?> </h3>
        <h4 class="segundo" style="text-align: center; ">Haz una buena impresión con el título y la imagen del proyecto. Define la meta de <br> financiación, la duración de la campaña y la categoría del proyecto.</h4>
 <br><br>
         <div class="container-fluid" >
@@ -121,13 +121,15 @@ Estas palabras facilitarán la búsqueda de tu proyecto, ¡así que elígelas sa
                  <textarea class="form-control" placeholder="$" ></textarea>
                   </div>
                   </div>
+
                 </div><br>
 
-
+<a href="cerrarsecion.php">Cerrar Seccion</a>
             </div>
           </div>
           </div><br><br>
         </div>
+
 
   <?php include 'Plantillas/footer.php';   ?>
 <script src="js/jquery.min.js"></script>

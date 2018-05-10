@@ -7,7 +7,7 @@
     $conexion = new Conexion();
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
             "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasena = '%s' and codigo_tipo_usuario = 2 ",
+            "WHERE correo = '%s' and contrasenia = '%s' and codigoTipoUsuario = 2 ",
         $_SESSION["email"],
         $_SESSION["psw"]
     );
