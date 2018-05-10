@@ -1,7 +1,9 @@
-var parametrosGlobalesProyecto;
+
+
  
 $(document).ready(function(){
 //	alert("el dom se ha cargado");
+
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
 			dataType:'json',
@@ -130,6 +132,7 @@ function validarChecks(id){
 		document.getElementById(id).setAttribute("src", "img/success.svg");
 
     }
+
 }
 
 $("#iniciar").click(function(){
@@ -152,6 +155,8 @@ $("#iniciar").click(function(){
 	})
  });
 
+////////empieza tu proyecto 1///////////////////////////
+
 $("#slc-categoria").change(function(){
     if($("#slc-categoria").val() != 0)
      document.getElementById("btn-categoria").removeAttribute("disabled");
@@ -163,12 +168,14 @@ $("#slc-categoria").change(function(){
 });
 
 $("#btn-categoria").click(function(){
-      
-      
-	
+     var categoria= "codigoCategoria="+$("#slc-categoria").val()+"&";
+	 localStorage.setItem("categoria", categoria);
  });
+//////////////////////////////////////////////////////////
 
-$("#texa").change(function(){//OB: se activa y se desactiva al hacer click
+////////////////////empieza tu proyecto2//////////////////////
+
+$("#texa").change(function(){//OB: se activa y se desactiva al hacer click en cualquir otra parte de la pagina
     if($("#texa").val() != "")
      document.getElementById("btn-descripcion").removeAttribute("disabled");
     else{
@@ -179,11 +186,29 @@ $("#texa").change(function(){//OB: se activa y se desactiva al hacer click
 });
 
 $("#btn-descripcion").click(function(){
-      concatenar("descripcion="+$("#texa").val()+"&") ;
-	
+	var descripcion = "descripcion="+$("#texa").val()+"&";
+      localStorage.setItem("descripcion", descripcion);
+      
  });
+////////////////////////////////////////////////////////
+///////////////////empiezatu proyecto3/////////////////////
 
+$("#texp").change(function(){
+    if($("#texp").val() != 0 )
+     document.getElementById("btn-pais").removeAttribute("disabled");
+    else{
+    	if($("#texp").val() == 0)
+      document.getElementById("btn-pais").setAttribute("disabled", "disabled");
+    } 
 
+});
+
+$("#btn-pais").click(function(){
+	var codigoPais = "codigoPais="+$("#texp").val()+"&";
+      localStorage.setItem("codigoPais", codigoPais);
+      concatenar();
+ });
+ //////////////////////////////////////////////
 
 
 
@@ -220,23 +245,6 @@ $("#btn-descripcion").click(function(){
 
 
 
- $("#texpais").click(function(){
-
-	var parametros = 'texp='+ $("#texp").val();
-	alert($("#texp").val());
-
-	$.ajax({
-		method: 'POST',
-		data: parametros, //URLEncoded
-		success: function (respuesta) {
-			//Instrucciones a ejecutar cuando responda el servidor
-		  //  $("#respuesta").html(respuesta);
-
-		}
-	})
-
- });
-
 
  $("#mas").click(function(){
 
@@ -255,13 +263,16 @@ $("#btn-descripcion").click(function(){
  });
 });
 
-function concatenar(dato){
-	var datos =new Array();
-	while(dato){
-	 datos=dato;
-	}
-	for(var i=0; i< datos.length; i++)
-    parametrosGlobalesProyecto+=datos[i];
-
-
+function concatenar(){
+	var parametros = localStorage.getItem("categoria")+localStorage.getItem("descripcion")+localStorage.getItem("codigoPais");
+	alert(parametros);
+	console.log(parametros);
 }
+
+
+/*
+
+   localStorage.setItem("nombre", "dato");
+
+    // leer datos
+    var miDato = localStorage.getItem("nombre"); */

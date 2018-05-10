@@ -32,7 +32,6 @@
 
         <div class="row">
           <div  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
-             <form  action="registrarse.php" method="post">
               <select name="texp" id="texp" class="forma form-control col-center">
               <option value="0">Selecione su pais</option>
               <option value="1">Honduras</option>
@@ -97,7 +96,7 @@
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
             <form action="registrarse.php">
-               <input id="texpais" class="btn btn-dark btn1" type="submit" value="Continuar" type="button"   />
+               <input id="btn-pais" class="btn btn-dark btn1" type="submit" disabled="disabled" value="Continuar" type="button"   />
             </form>
           </div>
          </div>

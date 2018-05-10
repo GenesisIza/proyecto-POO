@@ -31,7 +31,7 @@
 
       <div class="row">
         <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
-          <input id="texa" name="texa" class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" onkeydown="validarProyecto(this);"><br><br>
+          <input id="texa" name="texa" class="texa form-control " type="texarea" name="" value="" placeholder="Un juego de targetas, papel, sobras hechos a mano" ><br><br>
         </div>
       </div>
 <hr>
