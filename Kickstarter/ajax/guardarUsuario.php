@@ -22,10 +22,17 @@
     $resultado = $conexion->ejecutarConsulta($sql);
 
     
-
+     $sql2 = sprintf("SELECT codigoUsuario FROM tbl_usuario WHERE nombre='%s'",
+                         $conexion->antiInyeccion($nombre)  );
+    $resultado2 = $conexion->ejecutarConsulta($sql2);
+    $resultadocodigo = array();
+    while($fila = $conexion->obtenerFila($resultado2)){
+                 $resultadocodigo [] = $fila;
+            }
+  echo json_encode($resultadocodigo);
 
     $conexion->cerrarConexion($conexion);
 
-
-
 ?>
+
+

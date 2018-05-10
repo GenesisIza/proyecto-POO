@@ -29,7 +29,7 @@
                 </div>
 
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
-                  <input class="form-control cuadrado " type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre" onkeydown="validarCampoVacio(this);">
+                  <input class="form-control cuadrado " type="text" name="txt-nombre" id="txt-nombre"  placeholder="Nombre"">
                   <div class="invalid-feedback">Campo obligatorio</div>
                 </div><br>
 
@@ -58,7 +58,7 @@
                 </div><br>
 
              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
-                  <input id="cuenta"  class="btn btn-success " style="width: 100%"  value="Crear cuenta" onclick="validar(this);" >
+                  <input id="cuenta"  class="btn btn-success " style="width: 100%"  value="Crear cuenta" >
                 </div><br>
 
 

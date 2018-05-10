@@ -2,21 +2,20 @@
     session_start();
     include("../class/class-conexion.php");
     $conexion = new Conexion();
-    //$contrasenia = $_POST["txt-contrasena"];
-    //$correo = $_POST["txt-correo"];
+    $contrasenia = $_POST["txt-contrasenia"];
+    $correo = $_POST["txt-correo"];
 
     //  $nombre = "leonard";
-     $contrasenia = "asd.456";
-     $correo = "bcalix@gmail.com";
+     
 
 
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
-                  "nombre, correo, contrasenia FROM tbl_usuarios ".
-                  "WHERE correo = '%s' and contrasena = '%s' ",
+                  "nombre, correo, contrasenia FROM tbl_usuario ".
+                  "WHERE correo = '%s' and contrasenia = '%s' ",
                   $correo,
                   $contrasenia
     );
-    //echo $sql;
+   // echo $sql;
     //exit;
     $resultado = $conexion->ejecutarConsulta($sql);
     $respuesta = array();
@@ -34,3 +33,5 @@
     echo json_encode($respuesta);
 
 ?>
+
+

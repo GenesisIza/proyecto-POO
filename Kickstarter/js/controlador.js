@@ -21,7 +21,6 @@ $(document).ready(function(){
   function validar(){
 
 	validarCampoVacio("txt-nombre");
-	validarCampoCorreo("txt-correo");
 	validarContrasena("txt-contrasena");
 	ValidarCategoria("slc-categoria");
 }
@@ -77,16 +76,17 @@ alert(parametros);
 	   data: parametros,
      dataType:'json',
 	   success: function (respuesta) {
-		   //Instrucciones a ejecutar cuando responda el servidor
-		 //  $("#respuesta").html(respuesta);
-     console.log(respuesta);
+		console.log(respuesta);
+		 var codigoUsuario = "codigoUsuario="+respuesta[0].codigoUsuario;
+         localStorage.setItem("codigoUsuario", codigoUsuario);
+         concatenar();
 
 	   }
    });
 
 });
 
-$("#cuentaAbm").click(function(){
+/*$("#cuentaAbm").click(function(){
 
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					 'txt-correo ='+ $("#txt-correo").val() + "&" +
@@ -105,7 +105,7 @@ alert(parametros);
 	   }
    });
 
-});
+});*/
 
 
 /*function ValidarCategoria (id){
@@ -154,7 +154,7 @@ function validarChecks(id){
 
 $("#iniciar").click(function(){
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
-				            'txt-contraseña='+ $("#txt-contraseña").val();
+				            'txt-contrasenia='+ $("#txt-contrasena").val();
 	alert(parametros);
 	$.ajax({
 		url: 'ajax/loginUsuario',
@@ -163,11 +163,15 @@ $("#iniciar").click(function(){
 		dataType:'json',
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
-				console.log(respuesta);
-            if (respuesta.codigoResultado ==0 && respuesta.codigo_tipo_usuario == 1)
-                window.location.href = "index.php";//console.log("Usuario autorizado");
-            else if (respuesta.codigoResultado==0 && respuesta.codigo_tipo_usuario == 2)
+			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
+            localStorage.setItem("codigoUsuario", codigoUsuario);
+            concatenar();
+            if (respuesta.codigoResultado ==0 && respuesta.codigoTipoUsuario == 1)
+                window.location.href = "creandoProyecto.php";//console.log("Usuario autorizado");
+            else if (respuesta.codigoResultado==0 && respuesta.codigoTipoUsuario == 2)
                 window.location.href = "administradores.php";//console.log("Usuario autorizado");
+
+         
 
 		}
 	});
@@ -233,26 +237,6 @@ $("#btn-pais").click(function(){
 
 
 
- $("#cuenta").click(function(){
-
-	var parametros = 'txt-nombre ='+ $("#txt-nombre").val() + "&" +
-	                 'txt-correo ='+ $("#txt-correo").val() + "&" +
-	                 'txt-contraseña ='+ $("#txt-contraseña").val();
-
-	$.ajax({
-		url: 'ajax/guardarUsuario.php',
-		method: 'POST',
-		data: parametros, //URLEncoded
-		success: function (respuesta) {
-			//Instrucciones a ejecutar cuando responda el servidor
-		    $("#respuesta2").html(respuesta);
-
-		}
-	})
- });
-
-
-
  $("#mas").click(function(){
 
 	 $.ajax({
@@ -279,7 +263,7 @@ $("#btn-pais").click(function(){
  });
 
 function concatenar(){
-	var parametros = localStorage.getItem("categoria")+localStorage.getItem("descripcion")+localStorage.getItem("codigoPais");
+	var parametros = localStorage.getItem("categoria")+localStorage.getItem("descripcion")+localStorage.getItem("codigoPais")+localStorage.getItem("codigoUsuario");
 	alert(parametros);
 	console.log(parametros);
 }
