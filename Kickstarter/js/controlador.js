@@ -1,4 +1,4 @@
-var parametrosGlobalesProyecto;
+var categoria = $("#slc-categoria").val();
 
 $(document).ready(function(){
 //	alert("el dom se ha cargado");
@@ -15,17 +15,11 @@ $(document).ready(function(){
      });
 });
 
-
-
-function validar(){
-
+  function validar(){
 	validarCampoVacio("txt-nombre");
 	validarCampoCorreo("txt-correo");
 	validarContrasena("txt-contraseña");
 	ValidarCategoria("slc-categoria");
-
-
-
 }
 
 
@@ -40,8 +34,6 @@ var validarCampoVacio = function(id){
 		document.getElementById(id).classList.add('is-valid');
 	}
 };
-
-
 
 function validarCorreo(email) {
 
@@ -156,23 +148,24 @@ function validarChecks(id){
 }
 
 $("#iniciar").click(function(){
-
-
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
-					  'txt-contraseña='+ $("#txt-contraseña").val();
-
+				            'txt-contraseña='+ $("#txt-contraseña").val();
 	alert(parametros);
-
 	$.ajax({
-		url: 'ajax/leer-usuario.php',
-		method: 'GET',
+		url: 'ajax/loginUsuario',
+		method: 'POST',
 		data: parametros, //URLEncoded
+		dataType:'json',
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
-		    $("#respuesta").html(respuesta);
+				console.log(respuesta);
+            if (respuesta.codigoResultado ==0 && respuesta.codigo_tipo_usuario == 1)
+                window.location.href = "index.php";//console.log("Usuario autorizado");
+            else if (respuesta.codigoResultado==0 && respuesta.codigo_tipo_usuario == 2)
+                window.location.href = "administradores.php";//console.log("Usuario autorizado");
 
 		}
-	})
+	});
  });
 
 $("#slc-categoria").change(function(){
@@ -190,23 +183,6 @@ $("#btn-categoria").click(function(){
       alert(parametrosGlobalesProyecto);
 
  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
  $("#cuenta").click(function(){
@@ -262,7 +238,6 @@ $("#btn-categoria").click(function(){
 
  });
 
-
  $("#mas").click(function(){
 
 	 $.ajax({
@@ -279,3 +254,10 @@ $("#btn-categoria").click(function(){
 	 }
  });
 });
+
+
+ $(".menu-programa").click(function(){
+	 var enlace = $(this).attr("href");
+	 console.log(enlace);
+
+ });

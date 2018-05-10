@@ -18,10 +18,10 @@
     <div class="esconder">
     <div class="container-fluid">
         <div class="row ">
-            <div class="col-md-3 esconder ">
+            <div class="col-md-3 esconder">
               <h6>15 de febrero de 2018 <br> <b>Haciendo realidad proyectos creativos</b></h6>
             </div>
-             <div class="col-md-3 esconder ">
+             <div class="col-md-3 esconder">
                <h6>TOTAL DE PATROCINADORES <br> <b>100000.</b>  </h6>
             </div>
             <div class="col-md-3 esconder ">
@@ -36,36 +36,37 @@
     <hr class="esconder" style="border: 0.4px solid black;">
     <br>
     <div class="container-fluid">
-           <ul class="nav nav-menu1">
-             <li class="nav-item">
-                 <a class="nav-link active" href="#">Cine</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link " href="#">Publicaciones</a>
-             </li>
-             <li class="nav-item">
-                <a class="nav-link" href="#">Juegos</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link " href="#">Cómics & ilustración</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link " href="#">Comida & creaciones</a>
-             </li>
-             <li class="nav-item">
-               <a class="nav-link " href="#">Música</a>
-             </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Diseño & tecnología</a>
-             </li>
-          </ul>
+        <ul class="menu-programa nav nav-menu1">
+          <li class="nav-item">
+              <a class="nav-link active" href="#Cine">Cine</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#publicaciones">Publicaciones</a>
+          </li>
+          <li class="nav-item">
+             <a class="nav-link" href="#juegos">Juegos</a>
+          </li>
+          <li class="nav-item">
+            <a class=" nav-link " href="#comics">Cómics & ilustración</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#comida ">Comida & creaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class=" nav-link " href="#musica">Música</a>
+          </li>
+           <li class="nav-item">
+             <a class=" nav-link" href="#diseño">Diseño & tecnología</a>
+          </li>
+       </ul>
+
     </div><br>
 
-    <div class="container-fluid">
+    <div id="cine" class="container-fluid">
        <h3>Cine</h3>
        <br><br>
        <h6>Proyectos Destacados</h6>
-	        <div class="row">
+	        <div  class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
 	         		      	 <div>
                          <img class="imagendetabla img-fliud" src="img/01.png" alt="foto1">

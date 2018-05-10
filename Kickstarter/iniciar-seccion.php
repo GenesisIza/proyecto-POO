@@ -13,20 +13,20 @@
     <link rel="stylesheet" href="css/signin.css">
   </head>
 <body>
-   <?php include 'Plantillas/header.php';   ?> 
+   <?php include 'Plantillas/header.php';   ?>
    <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >
-  
+
   <table align="center" cellpadding="15"  class="table-iniciar">
         <td><h2 class="text-inicio">Iniciar sesión</h2></td>
     </tr>
-    <form action="">   
+    <form action="">
     <tr>
        <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="text" id="txt-correo" name="txt-correo" placeholder="Correo Electronico" </td>
-    </tr>    
+    </tr>
     <tr>
-      <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="password" id="txt-contraseña" name="txt-contraseñ" value="" placeholder="Contraseña"></t>
+      <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="password" id="txt-contrasena" name="txt-contrasena" value="" placeholder="Contraseña"></t>
     </tr>
     <tr>
       <td style="text-align: left;" class="olvidar"><a href="#">¿La olvidaste?</a></td>
@@ -38,7 +38,7 @@
       <td style="  text-align: left;" >
         <label><input type="checkbox"  class="chk-recordar" name="chk-recordar">Recordarme</label>
       </td>
-    </tr>   
+    </tr>
     <tr>
       <td><button class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center btn btn-success facebook "> <i class="fab fa-facebook"></i>&nbsp Iniciar sesion con Facebook</button></td>
     </tr>
@@ -48,9 +48,9 @@
      <tr>
         <td style="background-color:#FCFCFB;"> ¿Nuevo usuario en Kickstarter? <a href="registrarse">¡Regístrame!</a></td>
     </tr>
-    <tr>        
+    <tr>
 </table>
- 
+
 </div>
 
 <div id="respuesta"></div>
@@ -60,11 +60,3 @@
     <script src="js/controlador.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-  
-  
