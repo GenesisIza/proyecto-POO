@@ -2,14 +2,14 @@
 <?php
     include("../class/class-conexion.php");
     $conexion = new Conexion();
-    $tipoUsuario = 1;
-    $nombre = $_POST["txt-nombre"];
-    $contrasenia = $_POST["txt-contrasena"];
-    $correo = $_POST["txt-correo"];
+    $tipoUsuario = 2;
+  //  $nombre = $_POST["txt-nombre"];
+  //  $contasenia = $_POST["txt-contrasena"];
+  //  $correo = $_POST["txt-correo"];
 
-  //  $nombre = "leonard";
-  //  $contrasenia = "asd.456";
-  //  $correo = "baclixvelasquez@gmail.com";
+    $nombre = "hector lainez";
+    $contrasenia = "asd.456";
+    $correo = "hector lainez@gmail.com";
 
     $sql = sprintf("INSERT INTO tbl_usuario(codigoTipoUsuario, nombre, ".
            "correo, contrasenia) ".
@@ -20,8 +20,6 @@
            $conexion->antiInyeccion($contrasenia)
           );
     $resultado = $conexion->ejecutarConsulta($sql);
-
-    echo json_encode($resultado);
 
 
     $conexion->cerrarConexion($conexion);

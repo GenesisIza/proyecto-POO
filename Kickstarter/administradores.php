@@ -23,7 +23,8 @@
     <h2>Usuarios</h2>
   </div>
 
- <a href="#">Cerrar Seccion</a>
+ <a href="cerrarsecion.php">Cerrar Seccion</a>
+ <a href="ingresarAdministrador.php">Agregar Administrador</a>
 
 
     <?php include 'Plantillas/footer.php'; ?>

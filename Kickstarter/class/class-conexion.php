@@ -17,6 +17,10 @@
             );
 		}
 
+		public function cantidadRegistros($resultado){
+			return mysqli_num_rows($resultado);
+		}
+
 		public function ejecutarConsulta($sql){
 			return mysqli_query($this->link, $sql);
 		}
@@ -40,6 +44,9 @@
 		public function ultimoId(){
 			return mysqli_insert_id($this->link);
 		}
+
+
+
 	}
 
 ?>

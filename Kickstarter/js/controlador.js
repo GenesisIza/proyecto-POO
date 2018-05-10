@@ -1,5 +1,5 @@
 var parametrosGlobalesProyecto;
- 
+
 $(document).ready(function(){
 //	alert("el dom se ha cargado");
 	$.ajax({
@@ -71,23 +71,46 @@ function validarContrasena(etiqueta){
 
 $("#cuenta").click(function(){
 
-
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
-					 'txt-correo ='+ $("#txt-correo").val() + "&" +
-					 'txt-contraseña='+ $("#txt-contraseña").val();
+					         'txt-correo='+ $("#txt-correo").val() + "&" +
+					         'txt-contrasena='+ $("#txt-contrasena").val();
 alert(parametros);
    $.ajax({
-	   url: 'guardarUsuario.php',
+	   url: 'ajax/guardarUsuario.php',
 	   method: 'POST',
-	   data: parametros, //URLEncoded
+	   data: parametros,
+     dataType:'json',
 	   success: function (respuesta) {
 		   //Instrucciones a ejecutar cuando responda el servidor
 		 //  $("#respuesta").html(respuesta);
+     console.log(respuesta);
 
 	   }
-   })
+   });
 
 });
+
+$("#cuentaAbm").click(function(){
+
+	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
+					 'txt-correo ='+ $("#txt-correo").val() + "&" +
+					 'txt-contrasena='+ $("#txt-contrasena").val();
+alert(parametros);
+   $.ajax({
+	   url: 'ajax/guardarUsuario.php',
+	   method: 'POST',
+	   data: parametros,
+     dataType:'json',
+	   success: function (respuesta) {
+		   //Instrucciones a ejecutar cuando responda el servidor
+		 //  $("#respuesta").html(respuesta);
+     console.log(respuesta);
+
+	   }
+   });
+
+});
+
 
 /*function ValidarCategoria (id){
      if (document.getElementById(id).value == ""){
@@ -158,14 +181,14 @@ $("#slc-categoria").change(function(){
     else{
     	if($("#slc-categoria").val() == 0)
       document.getElementById("btn-categoria").setAttribute("disabled", "disabled");
-    } 
+    }
 
 });
 
 $("#btn-categoria").click(function(){
       parametrosGlobalesProyecto = "categoria="+$("#slc-categoria").val()+"&";
       alert(parametrosGlobalesProyecto);
-	
+
  });
 
 

@@ -11,7 +11,7 @@ include("../class/class-conexion.php");
                 // echo $fila["codigoCategoria"];
             }
 
-            
+
 
             echo json_encode($resultadoUsuarios);
             //echo $sql;
