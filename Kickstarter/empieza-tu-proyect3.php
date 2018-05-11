@@ -35,7 +35,7 @@
           <div  class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center">
               <select name="texp" id="texp" class="forma form-control col-center">
               <option value="0">Selecione su pais</option>
-              <option value="1">Honduras</option>
+           <!--   <option value="1">Honduras</option>
               <option value="2">guatemala</option>
               <option value="3">estado unidos</option>
               <option value="4">españa</option>
@@ -47,7 +47,7 @@
               <option value="10">canada</option>
               <option value="11">suiza</option>
               <option value="12">peru</option>
-              <option value="13">Argentina</option>
+              <option value="13">Argentina</option>-->
               </select>
           </div>
         </div>

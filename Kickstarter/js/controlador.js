@@ -1,22 +1,37 @@
 
-var categoria = $("#slc-categoria").val();
-
 
 $(document).ready(function(){
-//	alert("el dom se ha cargado");
+	alert("el dom se ha cargado");
 
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
 			dataType:'json',
 			success: function (respuesta) {
-			console.log(respuesta);
+			//console.log(respuesta);
             for (var i=0; i<respuesta.length ; i++){
-		    $("#slc-categoria").append('<option class="elementoLista" value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>');
+		    $("#slc-categoria").append('<option  value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>');
 			}
 	}
      });
 
-cargarUrlsSegunCat(localStorage.getItem("categoria"));
+cargarUrlsSegunCat(localStorage.getItem("CodigoCategoriaNumerico"));
+
+
+	$.ajax({
+			url:"ajax/mostrar-paises.php",
+			dataType:'json',
+			success: function (respuesta) {
+			console.log(respuesta);
+           for (var i=0; i<respuesta.length ; i++){
+		    $("#texp").append('<option  value="'+respuesta[i].codigoPais+'">'+respuesta[i].nombre+'</option>');
+			}
+	}
+     });
+
+
+
+
+
 
 });
 
@@ -77,10 +92,10 @@ $("#cuenta").click(function(){
 	   data: parametros,
        dataType:'json',
 	  success: function (respuesta) {
-		 console.log(respuesta);
-		 var codigoUsuario = "codigoUsuario="+respuesta[0].codigoUsuario;
+		 //console.log(respuesta);
+		 var codigoUsuario = "codigoUsuario="+respuesta[0].codigoUsuario+"&";
          localStorage.setItem("codigoUsuario", codigoUsuario);
-         concatenar();
+       
 
 	   }
    });
@@ -155,7 +170,7 @@ function validarChecks(id){
 $("#iniciar").click(function(){
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 				            'txt-contrasenia='+ $("#txt-contrasenia").val();
-	alert(parametros);
+	//alert(parametros);
 	$.ajax({
 
 		method: 'POST',
@@ -164,18 +179,18 @@ $("#iniciar").click(function(){
 		dataType:'json',
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
-			console.log(respuesta);
+			//console.log(respuesta);
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
             localStorage.setItem("codigoUsuario", codigoUsuario);
-            concatenar();
+            
             if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){
                 window.location.href = "creandoProyecto.php";//console.log("Usuario autorizado");
-								alert("Usuario correcto");
+							//	alert("Usuario correcto");
             }else{
 							 if (respuesta.codigoResultado==0 && respuesta.codigoTipoUsuario == 2){
 								 window.location.href = "administradores.php";//console.log("Usuario autorizado");
 							 }else {
-                  	alert("Usuario Incorrecto");
+                  	//alert("Usuario Incorrecto");
                }
             }
 
@@ -196,11 +211,10 @@ $("#slc-categoria").change(function(){
 });
 
 $("#btn-categoria").click(function(){
-      parametrosGlobalesProyecto = "categoria="+$("#slc-categoria").val()+"&";
-      alert(parametrosGlobalesProyecto);
-
      var categoria= "codigoCategoria="+$("#slc-categoria").val()+"&";
 	 localStorage.setItem("categoria", categoria);
+	 var CodigoCategoriaNumerico = $("#slc-categoria").val();
+      localStorage.setItem("CodigoCategoriaNumerico", CodigoCategoriaNumerico);
  });
 //////////////////////////////////////////////////////////
 
@@ -237,7 +251,7 @@ $("#texp").change(function(){
 $("#btn-pais").click(function(){
 	var codigoPais = "codigoPais="+$("#texp").val()+"&";
       localStorage.setItem("codigoPais", codigoPais);
-      concatenar();
+      
  });
  /////////////////////////////////////////////
 
@@ -249,7 +263,7 @@ $("#btn-pais").click(function(){
 	 url:"ajax/mostrar-categorias.php",
 	 dataType:'json',
 	 success: function (respuesta) {
-	console.log(respuesta);
+	//console.log(respuesta);
 	 /*	 for (var i=0; i<respuesta.length ; i++){
 		 $("#slc-categoria").append(
 											'<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'
@@ -264,14 +278,23 @@ $("#btn-pais").click(function(){
 
  $(".menu-programa").click(function(){
 	 var enlace = $(this).attr("href");
-	 console.log(enlace);
+	 //console.log(enlace);
 
  });
 
 function concatenar(){
-	var parametros = localStorage.getItem("categoria")+localStorage.getItem("descripcion")+localStorage.getItem("codigoPais")+localStorage.getItem("codigoUsuario");
-	alert(parametros);
-	console.log(parametros);
+	var parametros =localStorage.getItem("codigoUsuario")+"&"+
+					localStorage.getItem("categoria")+
+					localStorage.getItem("codigoPais")+
+					localStorage.getItem("descripcion")+
+                    "meta="+$("#txt-meta").val()+"&"+
+                    "plazo="+$("#txt-fecha").val()+"&"+
+                    "urlImagen="+ $("#slc-urlImagen").val()+"&"+
+                    "tituloProyecto="+$("#txt-titulo").val()+"&"+
+                    "Ubicacion="+$("#txta-ubicacion").val();
+   
+	return parametros;
+//	$("#probando").html('<img src="'+$("#slc-urlImagen").val()+'" >');
 }
 
 
@@ -279,18 +302,21 @@ function concatenar(){
 
 
 function cargarUrlsSegunCat(codigoCategoria){
+	//alert("entra a la funcion codigo:"+codigoCategoria);
 		$.ajax({
 			url:"ajax/mostrar-categorias.php",
 			dataType:'json',
 			success: function (respuesta) {
-			console.log(respuesta);
+			//console.log(respuesta);
             for (var i=0; i<respuesta.length ; i++){
             	if(respuesta[i].codigoCategoria == codigoCategoria){
-            		//aqui es imprimir el slc los url de imagenes, y cuando seleccione obtener la seleccionada y gaurdarla en el local storage
-            		for(){
-		       $("#slc-urlImagen").append( '<option value="../Proyectos/"'+respuesta[i].nombre+'">aqui iran urls de imagen segun categoria :(</option>');}
-
-}
+            		//alert("Categoria selecionada:"+respuesta[i].codigoCategoria);
+            		//aqui ;es imprimir el slc los url de imagenes, y cuando seleccione obtener la seleccionada y gaurdarla en el local storage
+            		for(var j=1; j<=5; j++){
+		       $("#slc-urlImagen").append( '<option value="Proyectos/'+respuesta[i].nombre+'/'+respuesta[i].nombre+j+'">'+respuesta[i].nombre+j+'</option>');
+		       //console.log('<option value="Proyectos/'+respuesta[i].nombre+'/'+respuesta[i].nombre+j+'">'+respuesta[i].nombre+j+'</option>');
+		        }
+                 }
 			}
 	}
      });
@@ -298,4 +324,19 @@ function cargarUrlsSegunCat(codigoCategoria){
 
 
 
+}
+
+function GuardarProyecto(){
+ var parametros = concatenar();
+// console.log(parametros);
+    $.ajax({
+	   url: 'ajax/guardarProyecto.php',
+	   method: 'GET',
+	   data: parametros,
+	  success: function (respuesta) {
+         // console.log(respuesta);
+       
+
+	   }
+   });
 }
