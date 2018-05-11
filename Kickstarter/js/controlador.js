@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 
 		function IdProyecto(valor){
-			alert(valor);
+			console.log(valor);
 				var parametros = 'txt-cat='+valor;
 
 			 $.ajax({
@@ -40,7 +40,14 @@ $(document).ready(function(){
 						data : parametros,
 						dataType: "json",
 						success: function (respuesta) {
-               console.log(respuesta);
+               console.log(respuesta[0].codigoCategoria);
+
+							 if (respuesta[0].codigoCategoria==9) {
+							 	var cat= "Juegos";
+							 }
+
+							 $("#categorias").html('<h3>'+ cat +'</h3>');
+
 						}
 
 					});

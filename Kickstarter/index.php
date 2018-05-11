@@ -59,9 +59,10 @@
              <a id="7" class=" nav-link" href="#diseño" onclick="IdProyecto(7);">Diseño & tecnología</a>
           </li>
        </ul>
-
     </div><br>
 
+    <div id="categorias" class=""></div>
+<!--
     <div id="cine" class="container-fluid">
        <h3>Cine</h3>
        <br><br>
@@ -159,7 +160,7 @@
     <br><br>
     <hr style="border: 0.4px solid gray;">
     <br><br>
-
+-->
     <div class="container-fluid">
       <div class="row">
           <div class="col-xl-2 col-lg-2  col-md-2 col-sm-12 col-12" >
