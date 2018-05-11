@@ -1,8 +1,6 @@
 
-
 $(document).ready(function(){
 	alert("el dom se ha cargado");
-
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
 			dataType:'json',
@@ -14,30 +12,51 @@ $(document).ready(function(){
 	}
      });
 
-cargarUrlsSegunCat(localStorage.getItem("CodigoCategoriaNumerico"));
+		 cargarUrlsSegunCat(localStorage.getItem("CodigoCategoriaNumerico"));
+
+		$.ajax({
+				url:"ajax/mostrar-paises.php",
+				dataType:'json',
+				success: function (respuesta) {
+				console.log(respuesta);
+							for (var i=0; i<respuesta.length ; i++){
+								$("#texp").append('<option  value="'+respuesta[i].codigoPais+'">'+respuesta[i].nombre+'</option>');
+						 }
+				}
+				});
+
+	});
+		 	//Debe hacer una petición AJAX para obtener los detalles del usuario y filtrar los tweets correspondientes.
 
 
-	$.ajax({
-			url:"ajax/mostrar-paises.php",
-			dataType:'json',
-			success: function (respuesta) {
-			console.log(respuesta);
-           for (var i=0; i<respuesta.length ; i++){
-		    $("#texp").append('<option  value="'+respuesta[i].codigoPais+'">'+respuesta[i].nombre+'</option>');
-			}
-	}
-     });
+
+		function IdProyecto(valor){
+			alert(valor);
+				var parametros = 'txt-cat='+valor;
+
+			 $.ajax({
+						url: "ajax/obtener-proyectos.php",
+						method : "POST",
+						data : parametros,
+						dataType: "json",
+						success: function (respuesta) {
+               console.log(respuesta);
+						}
+
+					});
+			 }
 
 
 
 
 
 
-});
+
 
   function validar(){
 	validarCampoVacio("txt-nombre");
 	validarContrasena("txt-contrasena");
+	validarContrasena("txt-contrasena2");
 	ValidarCategoria("slc-categoria");
 
 }
@@ -88,24 +107,17 @@ function validarContrasena(etiqueta){
 		 etiqueta.classList.add("is-valid");
 	}
 
-	if(contra1 == contra2){
-		etiqueta.classList.add("is-valid");
-	}else {
-		etiqueta.classList.add("is-invalid");
-	}
+
 }
 
 $("#cuenta").click(function(){
 
-
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					         'txt-correo='+ $("#txt-correo").val() + "&" +
 					         'txt-contrasena='+ $("#txt-contrasena").val();
-<<<<<<< HEAD
 
 alert(parametros);
-=======
->>>>>>> 0321ff1be6d56732059946e948defa1b0f1d4c0f
+
    $.ajax({
 	   url: 'ajax/guardarUsuario.php',
 	   method: 'POST',
@@ -115,7 +127,7 @@ alert(parametros);
 		 //console.log(respuesta);
 		 var codigoUsuario = "codigoUsuario="+respuesta[0].codigoUsuario+"&";
          localStorage.setItem("codigoUsuario", codigoUsuario);
-       
+
 
 	   }
    });
@@ -201,7 +213,7 @@ $("#iniciar").click(function(){
 			//console.log(respuesta);
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
             localStorage.setItem("codigoUsuario", codigoUsuario);
-            
+
             if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){
                 window.location.href = "creandoProyecto.php";//console.log("Usuario autorizado");
 							//	alert("Usuario correcto");
@@ -270,11 +282,9 @@ $("#texp").change(function(){
 $("#btn-pais").click(function(){
 	var codigoPais = "codigoPais="+$("#texp").val()+"&";
       localStorage.setItem("codigoPais", codigoPais);
-      
+
  });
  /////////////////////////////////////////////
-
-
 
  $("#mas").click(function(){
 
@@ -293,8 +303,6 @@ $("#btn-pais").click(function(){
  });
 });
 
-
-
  $(".menu-programa").click(function(){
 	 var enlace = $(this).attr("href");
 	 //console.log(enlace);
@@ -311,7 +319,7 @@ function concatenar(){
                     "urlImagen="+ $("#slc-urlImagen").val()+"&"+
                     "tituloProyecto="+$("#txt-titulo").val()+"&"+
                     "Ubicacion="+$("#txta-ubicacion").val();
-   
+
 	return parametros;
 //	$("#probando").html('<img src="'+$("#slc-urlImagen").val()+'" >');
 }
@@ -354,7 +362,7 @@ function GuardarProyecto(){
 	   data: parametros,
 	  success: function (respuesta) {
          // console.log(respuesta);
-       
+
 
 	   }
    });

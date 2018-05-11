@@ -36,27 +36,27 @@
     <hr class="esconder" style="border: 0.4px solid black;">
     <br>
     <div class="container-fluid">
-        <ul class="menu-programa nav nav-menu1">
+        <ul class=" menu-programa nav nav-menu1">
           <li class="nav-item">
-              <a class="nav-link active" href="#Cine">Cine</a>
+              <a  id="4"  class="nav-link active" href="#Cine" onclick="IdProyecto(4);" >Cine</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#publicaciones">Publicaciones</a>
+            <a id=""  class="nav-link " href="#publicaciones" >Publicaciones</a>
           </li>
           <li class="nav-item">
-             <a class="nav-link" href="#juegos">Juegos</a>
+             <a id="9" class="nav-link" href="#juegos" onclick="IdProyecto(9);">Juegos</a>
           </li>
           <li class="nav-item">
-            <a class=" nav-link " href="#comics">Cómics & ilustración</a>
+            <a id="5" class=" nav-link " href="#comics" onclick="IdProyecto(5);">Cómics & ilustración</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#comida ">Comida & creaciones</a>
+            <a id="6"  class="nav-link " href="#comida "  onclick="IdProyecto(6);">Comida & creaciones</a>
           </li>
           <li class="nav-item">
-            <a class=" nav-link " href="#musica">Música</a>
+            <aid="11"  class=" nav-link " href="#musica" onclick="IdProyecto(11);">Música</a>
           </li>
            <li class="nav-item">
-             <a class=" nav-link" href="#diseño">Diseño & tecnología</a>
+             <a id="7" class=" nav-link" href="#diseño" onclick="IdProyecto(7);">Diseño & tecnología</a>
           </li>
        </ul>
 
