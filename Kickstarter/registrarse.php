@@ -41,6 +41,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
                  <input type="email" name="txt-correo2" id="txt-correo2" class="form-control cuadrado" placeholder="Vuelva a ingresar el correo electronico" onkeydown="validarCorreo(this);">
                  <div class="invalid-feedback">Correo incorrecto</div>
+                 <div class="invalid-feedback">Correo no coinciden</div>
                 </div><br>
 
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
@@ -51,6 +52,7 @@
              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
                   <input type="password" name="txt-contrasena2" class="form-control cuadrado" id="txt-contrasena2"  placeholder="Vuelva a Ingresar la Contraseña" onkeydown="validarContrasena(this);">
                   <div class="invalid-feedback">Al menos 7 caracteres</div>
+                    <div class="invalid-feedback">Contraseñas no coinciden</div>
                 </div><br>
 
              <div class="col-xl-9 col-lg-9 col-md-9 col-sm-12 col-12 ">

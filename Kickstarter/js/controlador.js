@@ -19,10 +19,10 @@ $(document).ready(function(){
 });
 
   function validar(){
-
 	validarCampoVacio("txt-nombre");
 	validarContrasena("txt-contrasena");
 	ValidarCategoria("slc-categoria");
+
 }
 
 
@@ -44,31 +44,47 @@ function validarCorreo(email) {
     if (patron.test(String(email.value).toLowerCase())){
     	email.classList.remove("is-invalid");
 		email.classList.add("is-valid");
-
-
     }
     else{
     	email.classList.remove("is-valid");
     	email.classList.add("is-invalid");
     }
+
+		var correo1 = $("#txt-correo").val();
+		var correo2 = $("#txt-correo2").val();
+
+		if(correo1 == correo2){
+				etiqueta.classList.add("is-valid");
+		}else {
+				etiqueta.classList.remove("is-invalid");
+		}
 }
 
 function validarContrasena(etiqueta){
-	if (etiqueta.value.length<6) {
-		etiqueta.classList.remove("is-valid");
-		etiqueta.classList.add("is-invalid");
+	var contra1 = $("#txt-contrasena").val();
+	var contra2 = $("#txt-contrasena2").val();
+	if (etiqueta.value.length<6 ) {
+		  etiqueta.classList.remove("is-valid");
+	  	etiqueta.classList.add("is-invalid");
+	}	else{
+		 etiqueta.classList.remove("is-invalid");
+		 etiqueta.classList.add("is-valid");
 	}
-	else{
-		etiqueta.classList.remove("is-invalid");
+
+	if(contra1 == contra2){
 		etiqueta.classList.add("is-valid");
+	}else {
+		etiqueta.classList.add("is-invalid");
 	}
 }
 
 $("#cuenta").click(function(){
 
+
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					         'txt-correo='+ $("#txt-correo").val() + "&" +
 					         'txt-contrasena='+ $("#txt-contrasena").val();
+
 alert(parametros);
    $.ajax({
 	   url: 'ajax/guardarUsuario.php',
@@ -121,7 +137,6 @@ alert(parametros);
 	}
 
 }*/
-
 
 function validarProyecto(etiqueta){
 	if (etiqueta.value.length<20) {
