@@ -7,9 +7,9 @@
     $contasenia = $_POST["txt-contrasena"];
     $correo = $_POST["txt-correo"];
 
-    //$nombre = "hector lainez";
-  //  $contrasenia = "asd.456";
-  //  $correo = "hector lainez@gmail.com";
+    //$nombre = "eduardo lainez";
+    //$contrasenia = "asd.456";
+  //  $correo = "hectorlainez@gmail.com";
 
     $sql = sprintf("INSERT INTO tbl_usuario(codigoTipoUsuario, nombre, ".
            "correo, contrasenia) ".
@@ -28,9 +28,10 @@
             while($fila = $conexion->obtenerFila($resultado2)){
                 $resultadocodigo [] = $fila;
            }
-    echo json_encode($resultadocodigo);
 
-    $conexion->cerrarConexion($conexion);
+          echo json_encode($resultadocodigo);
+
+          $conexion->cerrarConexion($conexion);
 
 
 
