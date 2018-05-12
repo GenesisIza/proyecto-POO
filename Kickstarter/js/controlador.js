@@ -282,7 +282,7 @@ $("#iniciar").click(function(){
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
             localStorage.setItem("codigoUsuario", codigoUsuario);
             if(respuesta.codigoResultado == 1){
-							$("#respuestasecion").html('<h3 class="mensaje" >Correo o Usuario Incorrecto</h3>');
+							$("#respuestasecion").html('<h3 class="mensaje2" >Correo o Usuario Incorrecto</h3>');
 						}
 
             if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){
