@@ -35,9 +35,10 @@
     </div>
     <hr class="esconder" style="border: 0.4px solid black;">
     <br>
+    
     <div class="container-fluid">
         <ul class=" menu-programa nav nav-menu1">
-          
+
           <li class="nav-item">
             <a id="13"  class="nav-link " href="#publicaciones" onclick="IdProyecto(13);"  >Publicaciones</a>
           </li>
@@ -68,21 +69,21 @@
        <h3>Cine</h3>
        <br><br>-->
        <h6>Proyectos Destacados</h6>
-	        <div  class="row">
+	        <div  class="container-fluid row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
 	         		      	 <div id="mostrarProyecto1">
-                       <img class="imagendetabla img-fliud" src="img/01.png" alt="foto1"> 
+                       <img class="imagendetabla container-fluid img-fliud" src="img/01.png" alt="foto1">
                        </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-8 col-12">
                      <hr>
-                      <div id="mostrarProyecto2"></div>
+                      <div class="container-fluid" id="mostrarProyecto2"></div>
 
                     <!--  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                         <img class="img-fluid" src="'+respuesta[i].urlImagen+'">
                       </div>
                       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">
-                        +respuesta[i].tituloProyecto+' <br> 22 % financiado 
+                        +respuesta[i].tituloProyecto+' <br> 22 % financiado
                       </div>
                       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                         boton
@@ -91,7 +92,7 @@
 
 	         		   <!-- 	<table class="table ">
                     <tbody>
-                      
+
                       <tr >
                           <td><a href=""> <img class="img-fliud" src="img/cat-01.png"> </a>  </td>
                           <td> <a href="">Pandora </a> <br> 22 % financiado </td>
@@ -110,7 +111,7 @@
                       </tr>
                     </tbody>
                   </table>-->
-                  <button id="mas" class="btn btn-outline-dark" type="button" name="button">Ver Todos</button>
+                <div id="VerMas" class=""></div>
 	        </div>
 
           </div>
@@ -215,11 +216,11 @@
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
         <div class="card mb-3">
-				 <img class="card-img-top" src="img/h1.png" alt="Card image cap">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="">LERR MAS-></a>
-                    </div>
+				  <img class="card-img-top" src="img/h1.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="">LERR MAS-></a>
+          </div>
 			</div>
     </div>
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -277,7 +278,7 @@
                         <br>
                         <img src="img/cat-11">
                     </div>
-                  </div>  
+                  </div>
 			</div>
 		</div>
 </div>

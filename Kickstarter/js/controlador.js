@@ -1,6 +1,9 @@
 
 $(document).ready(function(){
 
+
+
+
 	IdProyecto(15);
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
@@ -33,7 +36,7 @@ $(document).ready(function(){
 
 		function IdProyecto(valor){
 			//alert(valor);
-				var parametros = 'txt-cat='+valor;
+				 var parametros = 'txt-cat='+valor;
 
 			 $.ajax({
 						url: "ajax/obtener-proyectos.php",
@@ -44,32 +47,80 @@ $(document).ready(function(){
 							limpiarSeccion();
                         console.log(respuesta);
                         for (var i =0; i<respuesta.length; i++) {
-                        	if(i==0){
-                         $("#mostrarProyecto1").append('<img  class="imagendetabla img-fliud" src="'+respuesta[i].urlImagen+'" alt="foto1">');
+                        if(i==0){
+                        $("#mostrarProyecto1").append('<img  class="imagendetabla img-fliud" src="'+respuesta[i].urlImagen+'" alt="foto1">');
                      		}
-                         else{
-                      
-                         	$("#mostrarProyecto2").append(
+                        else{
+
+                        $("#mostrarProyecto2").append(
                          						'<div  class="row">'+
                          						'<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">'+
                         						'<img class="img-fluid" src="'+respuesta[i].urlImagen+'">'+
                       							'</div>'+
                       							'<div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">'+
-                      							respuesta[i].tituloProyecto+' <br> 22 % financiado'+ 
+                      							respuesta[i].tituloProyecto+' <br> 22 % financiado'+
                       							'</div>'+
                       							'<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">'+
                       							'<img class="img-fluid" src="img/heart.png">'+
                       							'</div>'+
                    							    '</div>'+
                    							    '<hr>'
-
                          		);
+														if (i==4) {
+                                $("#VerMas").html('<button class="btn btn-outline-dark" type="button" name="button"  onclick="MasProyecos('+respuesta[i].codigoCategoria+');">Ver Todos</button>');
+
+														}
+
                          		}
-                          }
+
+                        }
+
 						}
+
 
 					});
 			 }
+
+       function MasProyecos(codigo){
+				 //alert(codigo);
+				 var parametros = 'txt-cat='+codigo;
+
+				 $.ajax({
+			 			 url: "ajax/ProyectoDetalles.php",
+			 			 method : "POST",
+			 			 data : parametros,
+			 			 dataType: "json",
+			 			 success: function (respuesta) {
+			 				 console.log(respuesta);
+			 				 for (var i = 0; i < respuesta.length; i++) {
+			 					 $("#proyectoscategorias").append(
+			 							'<div class="row">'+
+			 							 '   <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">'+
+			 							 '	     <div class="card">'+
+			 							 '          <img class="card-img-top" src="'+respuesta[i].urlImagen +'" alt="Card image cap">'+
+			 							 '          <div class="card-body">'+
+			 							 '              <p class="card-text">'+respuesta[i].nombre+'.</p>'+
+			 							 '              <p class="card-text">'+respuesta[i].descripcion+'.</p>'+
+			 							 '              <p class="card-text"> De Usuario.</p>'+
+			 							 '              <p class="card-text"> De '+respuesta[i].meta+'.</p>'+
+			 							 '              <p class="card-text"> De '+respuesta[i].plazoFinanciamiento+'.</p>'+
+			 							 '          </div>'+
+			 							 '       </div>'+
+			 							 '   </div>'+
+			 							'</div>'+
+			 							'<br>'
+			 					);
+              window.location.href = "proyectos.php";
+
+			 			 }
+			 			 }
+			 	});
+       }
+
+function limpiar(){
+	$("#proyectoscategorias").html(" ");
+}
+
 
 
 
@@ -145,7 +196,7 @@ $("#cuenta").click(function(){
 					         'txt-correo='+ $("#txt-correo").val() + "&" +
 					         'txt-contrasena='+ $("#txt-contrasena").val();
 
-alert(parametros);
+//alert(parametros);
 
    $.ajax({
 	   url: 'ajax/guardarUsuario.php',
