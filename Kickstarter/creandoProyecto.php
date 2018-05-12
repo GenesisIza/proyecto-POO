@@ -7,7 +7,7 @@
     $conexion = new Conexion();
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
             "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
+            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 2 ",
         $_SESSION["email"],
         $_SESSION["psw"]
     );
@@ -64,7 +64,7 @@
                   </div>
                   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
                   <select id="slc-urlImagen"  name="slc-urlImagen" class="forma form-control col-center" >
-              <option value="0">aqui iran urls de imagen segun categoria :(</option>
+              <option value="0">Elige la imegn de tu proyecto</option>
 
 
             </select><br>

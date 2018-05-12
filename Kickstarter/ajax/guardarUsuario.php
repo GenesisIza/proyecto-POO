@@ -2,7 +2,7 @@
 <?php
     include("../class/class-conexion.php");
     $conexion = new Conexion();
-    $tipoUsuario = 1;
+    $tipoUsuario = $_POST["tipoUsuario"];;
     $nombre = $_POST["txt-nombre"];
     $contrasenia = $_POST["txt-contrasena"];
     $correo = $_POST["txt-correo"];

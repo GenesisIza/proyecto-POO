@@ -131,9 +131,9 @@ function limpiarSeccion(){
 
 }
 
-$(".btn-correo").colorbox({inline:true, width :"50%"});
+/*$(".btn-correo").colorbox({inline:true, width :"50%"});*/
 
-var validarCampoVacio = function(id){
+/*var validarCampoVacio = function(id){
 	//alert("entra validar campos");
 	if (document.getElementById(id).value == " "){
 		document.getElementById(id).classList.remove('is-valid');
@@ -143,7 +143,7 @@ var validarCampoVacio = function(id){
 		document.getElementById(id).classList.remove('is-invalid');
 		document.getElementById(id).classList.add('is-valid');
 	}
-};
+};*/
 
 function validarCorreo(email) {
 
@@ -185,7 +185,8 @@ $("#cuenta").click(function(){
 
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					         'txt-correo='+ $("#txt-correo").val() + "&" +
-					         'txt-contrasena='+ $("#txt-contrasena").val();
+					         'txt-contrasena='+ $("#txt-contrasena").val()+"&" +
+					         'tipoUsuario='+ 2;
 //alert(parametros);
    $.ajax({
 	   url: 'ajax/guardarUsuario.php',
@@ -203,21 +204,22 @@ $("#cuenta").click(function(){
 
 });
 
-$("#cuentaAbm").click(function(){
+$("#cuentaAdm").click(function(){
 
-	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
-					 'txt-correo ='+ $("#txt-correo").val() + "&" +
-					 'txt-contrasena='+ $("#txt-contrasena").val();
+	var parametros = 'txt-nombre=' + $("#txt-nombreA").val() + "&" +
+					 'txt-correo='+ $("#txt-correoA").val() + "&" +
+					 'txt-contrasena='+ $("#txt-contrasenaA").val()+"&" +
+					 'tipoUsuario='+ 1;
 //alert(parametros);
    $.ajax({
-	   url: 'ajax/guardarAbministrador.php',
+	   url: 'ajax/guardarUsuario.php',
 	   method: 'POST',
 	   data: parametros,
      dataType:'json',
 	   success: function (respuesta) {
 		   console.log(respuesta);
-       window.location.href = "administradores.php"
-
+		   alert("Nuevo Administrador agregado con exito");
+console.log("Nuevo Administrador agregado con exito");
 
 	   }
    });
@@ -225,7 +227,7 @@ $("#cuentaAbm").click(function(){
 });
 
 
-/*function ValidarCategoria (id){
+function ValidarCategoria (id){
      if (document.getElementById(id).value == ""){
 		document.getElementById(id).classList.remove('is-valid');
 		document.getElementById(id).classList.add('is-invalid');
@@ -237,7 +239,7 @@ $("#cuentaAbm").click(function(){
 		document.getElementById("btn-idea").removeAttribute("disabled");
 	}
 
-}*/
+}
 
 function validarProyecto(etiqueta){
 	if (etiqueta.value.length<20) {
@@ -270,7 +272,7 @@ function validarChecks(id){
 $("#iniciar").click(function(){
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 				            'txt-contrasenia='+ $("#txt-contrasenia").val();
-	//alert(parametros);
+				            alert($("#txt-contrasenia").val());
 	$.ajax({
 		method: 'POST',
 		url: 'ajax/loginUsuario.php',
@@ -280,25 +282,29 @@ $("#iniciar").click(function(){
 			//Instrucciones a ejecutar cuando responda el servidor
 			console.log(respuesta);
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
+			alert(respuesta.codigoTipoUsuario);
+			console.log(respuesta.codigoUsuario);
             localStorage.setItem("codigoUsuario", codigoUsuario);
             if(respuesta.codigoResultado == 1){
 							$("#respuestasecion").html('<h3 class="mensaje2" >Correo o Usuario Incorrecto</h3>');
-						}
-
-            if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){
-                window.location.href = "creandoProyecto.php";//console.log("Usuario autorizado");
+			}
+			else{
+					if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 2){
+                		window.location.href = "creandoProyecto.php";//console.log("Usuario autorizado");
 							//	alert("Usuario correcto");
             }else{
-							 if (respuesta.codigoResultado== 0 && respuesta.codigoTipoUsuario == 2){
+                   if (respuesta.codigoResultado== 0 && respuesta.codigoTipoUsuario == 1){
 								 window.location.href = "administradores.php";//console.log("Usuario autorizado");
-							 }else {
-                  	//alert("Usuario Incorrecto");
-               }
+							 }
             }
-
+}
 						}
 	});
  });
+
+
+
+
 
 ////////empieza tu proyecto 1///////////////////////////
 

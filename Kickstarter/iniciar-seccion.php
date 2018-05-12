@@ -22,7 +22,7 @@
         <td><h2 class="text-inicio">Iniciar sesión</h2></td>
 
     </tr>
-    <form action="">
+<!--borre un form -->
 
     <tr>
        <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="text" id="txt-correo" name="txt-correo" placeholder="Correo Electronico" </td>
@@ -37,7 +37,9 @@
 
       <td ><input class=" btn btn-success inicio  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="button" id="iniciar"    value="Iniciar sesión" ></td>
     </tr>
-    </form>
+    
+    </tr>
+    
     <tr>
       <td style="  text-align: left;" >
         <label><input type="checkbox"  class="chk-recordar" name="chk-recordar">Recordarme</label>
