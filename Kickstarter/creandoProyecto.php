@@ -7,7 +7,7 @@
     $conexion = new Conexion();
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
             "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasenia = '%s' and codigoTipoUsuario = 1 ",
+            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
         $_SESSION["email"],
         $_SESSION["psw"]
     );
@@ -24,13 +24,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <?php
-      if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
-          include 'Plantillas/Header.php';
-      }else {
-          include 'Plantillas/HeaderReguistrado.php';
-      }
-     ?>
   <link rel="icon" type="image/png" href="img/logo3.png">
   <title>Kickstarter</title>
     <meta name="description" content="">
@@ -43,6 +36,14 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
   </head>
   <body style="background-color: #F0F0F0;">
+
+    <?php
+      if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
+          include 'Plantillas/Header.php';
+      }else {
+          include 'Plantillas/HeaderReguistrado.php';
+      }
+     ?>
 
      <br><br><br>
      <div>

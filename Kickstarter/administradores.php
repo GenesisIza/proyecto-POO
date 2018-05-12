@@ -58,9 +58,6 @@
   </div>
     <?php include 'Plantillas/footer.php'; ?>
 
-
-
-    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador.js"></script>

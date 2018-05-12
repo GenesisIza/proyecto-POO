@@ -1,3 +1,28 @@
+   <?php
+       session_start();
+       if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
+           header("Location: index.php");
+
+       include("class/class-conexion.php");
+       $conexion = new Conexion();
+       $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
+               "nombre, correo, contrasenia FROM tbl_usuario ".
+               "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
+           $_SESSION["email"],
+           $_SESSION["psw"]
+       );
+       //echo $sql;
+       //exit;
+       $resultado = $conexion->ejecutarConsulta($sql);
+       $respuesta = array();
+       if ($conexion->cantidadRegistros($resultado)<=0){
+              header("Location: iniciar-seccion.php");
+       }
+        $registro = $conexion->obtenerFila($resultado);
+
+
+    ?>
+
 
  <!DOCTYPE html>
     <html lang="en">
@@ -6,19 +31,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="image/png" href="img/logo3.png">
     <title>Kickstarter</title>
+    <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/signin.css">
-<<<<<<< HEAD
+    <link rel="stylesheet" href="css/signin.css"
   </head>
     <body>
-    <?php
-      if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
-          include 'Plantillas/Header.php';
-      }else {
-          include 'Plantillas/HeaderReguistrado.php';
-      }
-     ?>
+      <?php
+        if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
+            include 'Plantillas/Header.php';
+        }else {
+            include 'Plantillas/HeaderReguistrado.php';
+        }
+       ?>
     <div class"clearfix"> </div>
     <br>
     <div class="esconder">
@@ -70,10 +95,7 @@
     </div><br>
 
     <div id="categorias" class=""></div>
-<!--
-    <div id="cine" class="container-fluid">
-       <h3>Cine</h3>
-       <br><br>-->
+
        <h6>Proyectos Destacados</h6>
 	        <div  class="container-fluid row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
@@ -85,38 +107,7 @@
                      <hr>
                       <div class="container-fluid" id="mostrarProyecto2"></div>
 
-                    <!--  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
-                        <img class="img-fluid" src="'+respuesta[i].urlImagen+'">
-                      </div>
-                      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">
-                        +respuesta[i].tituloProyecto+' <br> 22 % financiado
-                      </div>
-                      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                        boton
-                      </div>
-                    </div>-->
 
-	         		   <!-- 	<table class="table ">
-                    <tbody>
-
-                      <tr >
-                          <td><a href=""> <img class="img-fliud" src="img/cat-01.png"> </a>  </td>
-                          <td> <a href="">Pandora </a> <br> 22 % financiado </td>
-                      </tr >
-                      <tr>
-                         <td><a href=""> <img class="img-fliud" src="img/cat-02.jpg" > </a></td>
-                         <td> <a href="">Knock Down The House: A Documentary</a> <br>52 % financiado</td>
-                      </tr>
-                      <tr >
-                         <td><a href=""> <img class="img-fliud" src="img/cat-03.png"> </a>  </td>
-                         <td> <a href="">The Grind - Pilot and Mini Series</a> <br> 0 % financiado</td>
-                      </tr >
-                      <tr>
-                        <td><a href=""> <img class="img-fliud" src="img/cat-04.jpg" > </a></td>
-                        <td> <a href="">El Proyeccionista - Documentary</a> <br> 11 % financiado</td>
-                      </tr>
-                    </tbody>
-                  </table>-->
                 <div id="VerMas" class=""></div>
 	        </div>
 
@@ -183,7 +174,7 @@
     <br><br>
     <hr style="border: 0.4px solid gray;">
     <br><br>
--->
+
     <div class="container-fluid">
       <div class="row">
           <div class="col-xl-2 col-lg-2  col-md-2 col-sm-12 col-12" >
@@ -291,19 +282,15 @@
     <div class="text-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
       <hr>
       <br><br>
-      <h6>SUSCRIBETE</h6>
+      <h5>Suscribete</h5>
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
-       <a href="#mc_embed_signup"  class="btn-correo  btn btn-outline-warning">SUSCRIBETE</a>
+       <a href="#mc_embed_signup"  class="btn-correo  btn btn-info">Suscribirse</a>
     </div
       <br><br>
       <hr>
   </div>
 
 
-
-
-=======
->>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
 <head>
 	<title>Kickstarted</title>
 </head>
@@ -324,10 +311,10 @@
       <a class="btn btn-primary" href="Principal.php" role="button">Ir a pagina Principal</a>
     </div>
   </div>
-<<<<<<< HEAD
+
   <?php include ("Plantillas/footer.php"); ?>
 
-<div style="display: none;" id="MailChimp" class="">
+<div style="display:none;" id="MailChimp" class="">
   <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -356,12 +343,6 @@
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-=======
->>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
-</div>
-
-</div>
-
 
  <script src="js/jquery.min.js"></script>
   <script src="js/jquery.colorbox-min.js"></script>

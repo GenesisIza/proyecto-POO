@@ -1,4 +1,27 @@
+<?php
+    session_start();
+    if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
+        header("Location: index.php");
 
+    include("class/class-conexion.php");
+    $conexion = new Conexion();
+    $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
+            "nombre, correo, contrasenia FROM tbl_usuario ".
+            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
+        $_SESSION["email"],
+        $_SESSION["psw"]
+    );
+    //echo $sql;
+    //exit;
+    $resultado = $conexion->ejecutarConsulta($sql);
+    $respuesta = array();
+    if ($conexion->cantidadRegistros($resultado)<=0){
+           header("Location: iniciar-seccion.php");
+    }
+     $registro = $conexion->obtenerFila($resultado);
+
+
+ ?>
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -16,7 +39,14 @@
     <link rel="stylesheet" href="css/signin.css">
   </head>
  <body>
-    <?php include 'Plantillas/headerEmpieza.php';   ?>
+   <?php
+     if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
+         include 'Plantillas/Header.php';
+     }else {
+         include 'Plantillas/HeaderReguistrado.php';
+     }
+    ?>
+
      <br><br><br>
      <div class="container">
         <div class="row">
@@ -96,7 +126,7 @@
             <a href="empieza-tu-proyecto2.php" class="empieza"> ← idea para el proyecto</a>
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
-            <form action="registrarse.php">
+            <form action="creandoProyecto.php">
                <input id="btn-pais" class="btn btn-dark btn1" type="submit" disabled="disabled" value="Continuar" type="button"   />
             </form>
           </div>

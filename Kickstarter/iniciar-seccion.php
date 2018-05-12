@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="css/signin.css">
   </head>
 <body>
-   <?php include 'Plantillas/header.php';   ?>
+   <?php include 'Plantillas/Header.php';   ?>
    <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >
-
+   <div id="respuestasecion"></div>
   <table align="center" cellpadding="15"  class="table-iniciar">
         <td><h2 class="text-inicio">Iniciar sesión</h2></td>
     </tr>
@@ -53,7 +53,6 @@
 
 </div>
 
-<div id="respuesta"></div>
   <?php include 'Plantillas/footer.php';   ?>
 <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

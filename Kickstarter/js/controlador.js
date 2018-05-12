@@ -1,7 +1,5 @@
 
 $(document).ready(function(){
-<<<<<<< HEAD
-=======
 				 $.ajax({
 			 			 url: "ajax/ProyectoDetalles.php",
 			 			 method : "POST",
@@ -11,7 +9,7 @@ $(document).ready(function(){
 			 				 console.log(respuesta);
 			 				 for (var i = 0; i < respuesta.length; i++) {
 			 					 $("#proyectoscategorias").append(
-			 					 	     
+
 			 							 '   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">'+
 			 							 '	     <div class="card">'+
 			 							 '          <img class="card-img-top" src="'+respuesta[i].urlImagen +'" alt="Card image cap">'+
@@ -24,15 +22,14 @@ $(document).ready(function(){
 			 							 '          </div>'+
 			 							 '       </div>'+
 			 							 '   </div>'
-			 							
+
 			 					);
-             
+
 			 			 }
 			 			 }
 			 	});
 
 
->>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
 
 	IdProyecto(15);
 	$.ajax({
@@ -61,15 +58,8 @@ $(document).ready(function(){
 
 	});
 
-$(".btn-correo").colorbox( {inline:true, width :"75%"} );
-
-
-
 
 		 	//Debe hacer una petición AJAX para obtener los detalles del usuario y filtrar los tweets correspondientes.
-
-
-
 		function IdProyecto(valor){
 			//alert(valor);
 				 var parametros = 'txt-cat='+valor;
@@ -105,7 +95,6 @@ $(".btn-correo").colorbox( {inline:true, width :"75%"} );
                          		);
 														if (i==4) {
                                 $("#VerMas").html('<button class="btn btn-outline-dark" type="button" name="button"  onclick="guardarCategoriaM('+respuesta[i].codigoCategoria+');">Ver Todos</button>');
-
 														}
 
                          		}
@@ -125,25 +114,14 @@ function guardarCategoriaM(codigo){
 	 window.location.href = "proyectos.php";
 }
 
-
-
-
-
 function limpiar(){
 	$("#proyectoscategorias").html(" ");
 }
-
-
-
-
 
 function limpiarSeccion(){
 	 $("#mostrarProyecto1").html("");
 	 $("#mostrarProyecto2").html("");
 }
-
-
-
 
   function validar(){
 	validarCampoVacio("txt-nombre");
@@ -153,6 +131,7 @@ function limpiarSeccion(){
 
 }
 
+//$(".btn-correo").colorbox( {inline:true, width :"50%"} );
 
 var validarCampoVacio = function(id){
 	//alert("entra validar campos");
@@ -207,9 +186,7 @@ $("#cuenta").click(function(){
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					         'txt-correo='+ $("#txt-correo").val() + "&" +
 					         'txt-contrasena='+ $("#txt-contrasena").val();
-
 //alert(parametros);
-
    $.ajax({
 	   url: 'ajax/guardarUsuario.php',
 	   method: 'POST',
@@ -295,22 +272,24 @@ $("#iniciar").click(function(){
 				            'txt-contrasenia='+ $("#txt-contrasenia").val();
 	alert(parametros);
 	$.ajax({
-
 		method: 'POST',
 		url: 'ajax/loginUsuario.php',
 		data: parametros, //URLEncoded
 		dataType:'json',
 		success: function (respuesta) {
 			//Instrucciones a ejecutar cuando responda el servidor
-			//console.log(respuesta);
+			console.log(respuesta);
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
             localStorage.setItem("codigoUsuario", codigoUsuario);
+            if(respuesta.codigoResultado == 1){
+							$("#respuestasecion").html("Incorrec");
+						}
 
             if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){
                 window.location.href = "creandoProyecto.php";//console.log("Usuario autorizado");
 							//	alert("Usuario correcto");
             }else{
-							 if (respuesta.codigoResultado==0 && respuesta.codigoTipoUsuario == 2){
+							 if (respuesta.codigoResultado== 0 && respuesta.codigoTipoUsuario == 2){
 								 window.location.href = "administradores.php";//console.log("Usuario autorizado");
 							 }else {
                   	//alert("Usuario Incorrecto");
@@ -395,12 +374,6 @@ $("#btn-pais").click(function(){
  });
 });
 
- $(".menu-programa").click(function(){
-	 var enlace = $(this).attr("href");
-	 //console.log(enlace);
-
- });
-
 function concatenar(){
 	var parametros =localStorage.getItem("codigoUsuario")+"&"+
 					localStorage.getItem("categoria")+
@@ -415,9 +388,6 @@ function concatenar(){
 	return parametros;
 //	$("#probando").html('<img src="'+$("#slc-urlImagen").val()+'" >');
 }
-
-
-
 
 
 function cargarUrlsSegunCat(codigoCategoria){
@@ -440,9 +410,6 @@ function cargarUrlsSegunCat(codigoCategoria){
 	}
      });
 
-
-
-
 }
 
 function GuardarProyecto(){
@@ -454,17 +421,11 @@ function GuardarProyecto(){
 	   data: parametros,
 	  success: function (respuesta) {
          alert("proyecto Guardado con exito");
-
-
 	   }
    });
 }
 
 $('.carousel').carousel({
-<<<<<<< HEAD
   interval: 2000
 })
-=======
-  interval: 4000
-})
->>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
+//})

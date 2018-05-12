@@ -10,7 +10,7 @@
           <a  class="logo text-center" href="index.php"> <img src="img/logo.png" alt="Logo" ></a>
         </div>
         <div class="col-lg-4 col-lg-4 col-md-6">
-          <a style=" float: right;" class=" esconder" href="#"> <img class="perfil" src="Proyectos/perfil/perfil.jpg" alt="logo"> </a>
+          <a style=" float: right;" class=" esconder" href="Miperfil.php"> <img class="perfil" src="Proyectos/perfil/perfil.jpg" alt="logo"> </a>
           <a style=" float: right;" class=" esconder" href="#"><i class="fas fa-search"></i></a>
           <a style=" float: right;" class=" Busqueda esconder" href="#"> Busqueda </a>
         </div>

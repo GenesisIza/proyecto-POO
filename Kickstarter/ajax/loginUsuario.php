@@ -9,7 +9,7 @@
 
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
                   "nombre, correo, contrasenia FROM tbl_usuario ".
-                  "WHERE correo = '%s' and contrasenia = '%s' ",
+                  "WHERE correo = '%s' and contrasenia = sha1('%s') ",
                   $correo,
                   $contrasenia
     );
