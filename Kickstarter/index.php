@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/colorbox.css">
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/signin.css"
+    <link rel="stylesheet" href="css/signin.css">
    </head>
     <body>
       <?php
@@ -18,7 +18,7 @@
         }
        ?>
 
-<body>
+
 	<div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active"  data-interval="50">
@@ -32,11 +32,10 @@
     </div>
     <div class="carousel-item">
       <img class="d-block w-100 imagenesLanding" src="img/landing3.jpg" alt="Third slide">
-      <a class="btn btn-primary" href="Principal.php" role="button">Ir a pagina Principal</a>
+
     </div>
   </div>
-
-
+  <a class="btn btn-primary" href="Principal.php" role="button">Ir a pagina Principal</a>
 
  <script src="js/jquery.min.js"></script>
   <script src="js/jquery.colorbox-min.js"></script>

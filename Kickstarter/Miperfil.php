@@ -48,7 +48,37 @@
           <h2> <?php echo $registro["nombre"] ; ?>  </h2>
       </div>
 
-
+       <br><br><br>
+      <hr style="border: 0.4px solid gray;">
+           <div class="container">
+                 <ul class="nav">
+                   <li class="nav-item">
+                     <a class="nav-link " href="#">Arte</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="#">Cómics & ilustración</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#">Diseño & tecnología</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link active" href="#">Cine</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="#">Comida & creaciones</a>
+                   </li>
+                   <li class="nav-item">
+                      <a class="nav-link" href="#">Juegos</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="#">Música</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="#">Publicaciones</a>
+                   </li>
+                </ul>
+          </div>
+          <hr style="border: 0.4px solid gray;">
       <?php include 'Plantillas/footer.php'; ?>
      <script src="js/jquery.min.js"></script>
      <script src="js/jquery.colorbox-min.js"></script>

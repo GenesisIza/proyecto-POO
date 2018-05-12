@@ -298,7 +298,7 @@
            <div class="text-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
              <br><br>
              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
-              <a href="#mc_embed_signup" id="btn-correo"  class=" btn btn-info">Suscribirse</a>
+              <a href="#mc_embed_signup" id="btn-correo"  class="btn-correo btn btn-info">Suscribirse</a>
            </div
              <br><br>
 
