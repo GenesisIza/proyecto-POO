@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/signin.css">
+<<<<<<< HEAD
   </head>
     <body>
     <?php
@@ -301,13 +302,15 @@
 
 
 
+=======
+>>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
 <head>
 	<title>Kickstarted</title>
 </head>
 <body>
 	<div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active"  data-interval="5">
+    <div class="carousel-item active"  data-interval="50">
       <img class="d-block w-100 imagenesLanding" src="img/landing.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
@@ -321,6 +324,7 @@
       <a class="btn btn-primary" href="Principal.php" role="button">Ir a pagina Principal</a>
     </div>
   </div>
+<<<<<<< HEAD
   <?php include ("Plantillas/footer.php"); ?>
 
 <div style="display: none;" id="MailChimp" class="">
@@ -352,6 +356,8 @@
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
+=======
+>>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
 </div>
 
 </div>

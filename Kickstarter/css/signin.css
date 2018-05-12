@@ -145,3 +145,8 @@ input {
   background-position: center center;
   height: 100vh
 }
+.tarjetitas{
+  font-size: 15px;
+  font-family: 'Dosis', sans-serif;
+  color: #034752;
+}

@@ -116,7 +116,7 @@
                       </tr>
                     </tbody>
                   </table>-->
-                  <button id="mas" class="btn btn-outline-dark" type="button" name="button">Ver Todos</button>
+                  <div id="VerMas"></div>
 	        </div>
 
           </div>

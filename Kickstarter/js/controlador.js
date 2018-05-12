@@ -1,5 +1,38 @@
 
 $(document).ready(function(){
+<<<<<<< HEAD
+=======
+				 $.ajax({
+			 			 url: "ajax/ProyectoDetalles.php",
+			 			 method : "POST",
+			 			 data : "txt-cat="+localStorage.getItem("CategoriaParaMostrar"),
+			 			 dataType: "json",
+			 			 success: function (respuesta) {
+			 				 console.log(respuesta);
+			 				 for (var i = 0; i < respuesta.length; i++) {
+			 					 $("#proyectoscategorias").append(
+			 					 	     
+			 							 '   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">'+
+			 							 '	     <div class="card">'+
+			 							 '          <img class="card-img-top" src="'+respuesta[i].urlImagen +'" alt="Card image cap">'+
+			 							 '          <div class="card-body">'+
+			 							 '            <h1>  <p class="card-text">'+respuesta[i].tituloProyecto+'.</p> </h1>'+
+			 							 '              <h3 class="card-text tarjetitas">'+respuesta[i].descripcion+'.</h3>'+
+			 							 '              <h3 class="card-text tarjetitas"> Propietario: '+respuesta[i].nombre+'</h3>'+
+			 							 '              <h3 class="card-text tarjetitas"> Meta: $'+respuesta[i].meta+'.</h3>'+
+			 							 '              <h3 class="card-text tarjetitas"> Plazo Financiamiento: '+respuesta[i].plazoFinanciamiento+'.</h3>'+
+			 							 '          </div>'+
+			 							 '       </div>'+
+			 							 '   </div>'
+			 							
+			 					);
+             
+			 			 }
+			 			 }
+			 	});
+
+
+>>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
 
 	IdProyecto(15);
 	$.ajax({
@@ -19,7 +52,7 @@ $(document).ready(function(){
 				url:"ajax/mostrar-paises.php",
 				dataType:'json',
 				success: function (respuesta) {
-				console.log(respuesta);
+				//console.log(respuesta);
 							for (var i=0; i<respuesta.length ; i++){
 								$("#texp").append('<option  value="'+respuesta[i].codigoPais+'">'+respuesta[i].nombre+'</option>');
 						 }
@@ -40,6 +73,7 @@ $(".btn-correo").colorbox( {inline:true, width :"75%"} );
 		function IdProyecto(valor){
 			//alert(valor);
 				 var parametros = 'txt-cat='+valor;
+				 //alert(parametros);
 
 			 $.ajax({
 						url: "ajax/obtener-proyectos.php",
@@ -48,7 +82,7 @@ $(".btn-correo").colorbox( {inline:true, width :"75%"} );
 						dataType: "json",
 						success: function (respuesta) {
 							limpiarSeccion();
-                        console.log(respuesta);
+                       //console.log(respuesta);
                         for (var i =0; i<respuesta.length; i++) {
                         if(i==0){
                         $("#mostrarProyecto1").append('<img  class="imagendetabla img-fliud" src="'+respuesta[i].urlImagen+'" alt="foto1">');
@@ -70,7 +104,7 @@ $(".btn-correo").colorbox( {inline:true, width :"75%"} );
                    							    '<hr>'
                          		);
 														if (i==4) {
-                                $("#VerMas").html('<button class="btn btn-outline-dark" type="button" name="button"  onclick="MasProyecos('+respuesta[i].codigoCategoria+');">Ver Todos</button>');
+                                $("#VerMas").html('<button class="btn btn-outline-dark" type="button" name="button"  onclick="guardarCategoriaM('+respuesta[i].codigoCategoria+');">Ver Todos</button>');
 
 														}
 
@@ -84,41 +118,16 @@ $(".btn-correo").colorbox( {inline:true, width :"75%"} );
 					});
 			 }
 
-       function MasProyecos(codigo){
-				 //alert(codigo);
-				 var parametros = 'txt-cat='+codigo;
+function guardarCategoriaM(codigo){
+	var CategoriaParaMostrar = codigo;
+	//alert(CategoriaParaMostrar);
+	localStorage.setItem("CategoriaParaMostrar", CategoriaParaMostrar);
+	 window.location.href = "proyectos.php";
+}
 
-				 $.ajax({
-			 			 url: "ajax/ProyectoDetalles.php",
-			 			 method : "POST",
-			 			 data : parametros,
-			 			 dataType: "json",
-			 			 success: function (respuesta) {
-			 				 console.log(respuesta);
-			 				 for (var i = 0; i < respuesta.length; i++) {
-			 					 $("#proyectoscategorias").append(
-			 							'<div class="row">'+
-			 							 '   <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">'+
-			 							 '	     <div class="card">'+
-			 							 '          <img class="card-img-top" src="'+respuesta[i].urlImagen +'" alt="Card image cap">'+
-			 							 '          <div class="card-body">'+
-			 							 '              <p class="card-text">'+respuesta[i].nombre+'.</p>'+
-			 							 '              <p class="card-text">'+respuesta[i].descripcion+'.</p>'+
-			 							 '              <p class="card-text"> De Usuario.</p>'+
-			 							 '              <p class="card-text"> De '+respuesta[i].meta+'.</p>'+
-			 							 '              <p class="card-text"> De '+respuesta[i].plazoFinanciamiento+'.</p>'+
-			 							 '          </div>'+
-			 							 '       </div>'+
-			 							 '   </div>'+
-			 							'</div>'+
-			 							'<br>'
-			 					);
-              window.location.href = "proyectos.php";
 
-			 			 }
-			 			 }
-			 	});
-       }
+
+
 
 function limpiar(){
 	$("#proyectoscategorias").html(" ");
@@ -452,5 +461,10 @@ function GuardarProyecto(){
 }
 
 $('.carousel').carousel({
+<<<<<<< HEAD
   interval: 2000
 })
+=======
+  interval: 4000
+})
+>>>>>>> 688ce63786cae1bdae52125db446e7002eb16787
