@@ -20,7 +20,7 @@
 
   <table align="center" cellpadding="15"  class="table-iniciar">
         <td><h2 class="text-inicio">Iniciar sesión</h2></td>
-        <div id="respuestasecion"></div>
+
     </tr>
     <form action="">
 
@@ -29,6 +29,7 @@
     </tr>
     <tr>
       <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="password" id="txt-contrasenia" name="txt-contrasenia" value="" placeholder="Contraseña"></t>
+      <br><br>  <div class="center" id="respuestasecion"></div>
     </tr>
     <tr>
       <td style="text-align: left;" class="olvidar"><a href="#">¿La olvidaste?</a></td>
