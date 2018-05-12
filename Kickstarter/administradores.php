@@ -1,3 +1,4 @@
+
 <?php
     session_start();
     if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
@@ -19,7 +20,7 @@
            header("Location: iniciar-seccion.php");
     }
     $registro = $conexion->obtenerFila($resultado);
-?>
+/*?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -41,7 +42,7 @@
           include 'Plantillas/HeaderReguistrado.php';
       }
       ?>
-      
+
    <div style=" background-color: black; padding: 100px;" class="">
      <h1 style="color: white;" >Bienvenido Señor <?php echo $registro["nombre"]; ?></h1>
    </div>
