@@ -60,7 +60,7 @@
                 </div><br>
 
              <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
-                  <input id="cuenta"  class="btn btn-success " style="width: 100%"  value="Crear cuenta" >
+              <a class="btn btn-success" id="cuenta" href="creandoProyecto.php" style="width: 100%" role="button">Crear cuenta</a>
                 </div><br>
 
 

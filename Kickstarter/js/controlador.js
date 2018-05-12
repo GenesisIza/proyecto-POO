@@ -161,9 +161,9 @@ function validarCorreo(email) {
 		var correo2 = $("#txt-correo2").val();
 
 		if(correo1 == correo2){
-				etiqueta.classList.add("is-valid");
+				email.classList.add("is-valid");
 		}else {
-				etiqueta.classList.remove("is-invalid");
+				email.classList.remove("is-invalid");
 		}
 }
 
