@@ -64,6 +64,7 @@ $(document).ready(function(){
 		function IdProyecto(valor){
 			//alert(valor);
 				 var parametros = 'txt-cat='+valor;
+				 //alert(parametros);
 
 			 $.ajax({
 						url: "ajax/obtener-proyectos.php",
@@ -110,7 +111,7 @@ $(document).ready(function(){
 
 function guardarCategoriaM(codigo){
 	var CategoriaParaMostrar = codigo;
-	alert(CategoriaParaMostrar);
+	//alert(CategoriaParaMostrar);
 	localStorage.setItem("CategoriaParaMostrar", CategoriaParaMostrar);
 	 window.location.href = "proyectos.php";
 }
