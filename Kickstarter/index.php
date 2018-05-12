@@ -37,11 +37,9 @@
     <br>
     <div class="container-fluid">
         <ul class=" menu-programa nav nav-menu1">
+          
           <li class="nav-item">
-              <a  id="4"  class="nav-link active" href="#Cine" onclick="IdProyecto(4);" >Cine</a>
-          </li>
-          <li class="nav-item">
-            <a id=""  class="nav-link " href="#publicaciones" >Publicaciones</a>
+            <a id="13"  class="nav-link " href="#publicaciones" onclick="IdProyecto(13);"  >Publicaciones</a>
           </li>
           <li class="nav-item">
              <a id="9" class="nav-link" href="#juegos" onclick="IdProyecto(9);">Juegos</a>
@@ -53,10 +51,13 @@
             <a id="6"  class="nav-link " href="#comida "  onclick="IdProyecto(6);">Comida & creaciones</a>
           </li>
           <li class="nav-item">
-            <aid="11"  class=" nav-link " href="#musica" onclick="IdProyecto(11);">Música</a>
+            <a id="11"  class=" nav-link " href="#musica" onclick="IdProyecto(11);">Música</a>
           </li>
            <li class="nav-item">
-             <a id="7" class=" nav-link" href="#diseño" onclick="IdProyecto(7);">Diseño & tecnología</a>
+             <a id="15" class=" nav-link" href="#diseño" onclick="IdProyecto(15);">Diseño & tecnología</a>
+             <li class="nav-item">
+              <a  id="4"  class="nav-link active" href="#Cine" onclick="IdProyecto(4);" >Cine</a>
+          </li>
           </li>
        </ul>
 
@@ -68,14 +69,29 @@
        <h6>Proyectos Destacados</h6>
 	        <div  class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
-	         		      	 <div>
-                         <img class="imagendetabla img-fliud" src="img/01.png" alt="foto1">
+	         		      	 <div id="mostrarProyecto1">
+                       <!--  <img class="imagendetabla img-fliud" src="img/01.png" alt="foto1"> -->
                        </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-8 col-12">
-	         		  	<table class="table ">
+                     <hr>
+                      <div id="mostrarProyecto2"></div>
+
+                    <!--  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
+                        <img class="img-fluid" src="'+respuesta[i].urlImagen+'">
+                      </div>
+                      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">
+                        +respuesta[i].tituloProyecto+' <br> 22 % financiado 
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
+                        boton
+                      </div>
+                    </div>-->
+
+	         		   <!-- 	<table class="table ">
                     <tbody>
-                        <tr >
+                      
+                      <tr >
                           <td><a href=""> <img class="img-fliud" src="img/cat-01.png"> </a>  </td>
                           <td> <a href="">Pandora </a> <br> 22 % financiado </td>
                       </tr >
@@ -92,7 +108,7 @@
                         <td> <a href="">El Proyeccionista - Documentary</a> <br> 11 % financiado</td>
                       </tr>
                     </tbody>
-                  </table>
+                  </table>-->
                   <button id="mas" class="btn btn-outline-dark" type="button" name="button">Ver Todos</button>
 	        </div>
 
@@ -166,7 +182,7 @@
               <img style="font-size: 1.2em; font-style: Cooper Light ;" src="img/logo2.png">
           </div>
           <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12" >
-              <h1 style="text-align: center;display: inline-flex;padding-left: 60px;">Lo unicos que puedes hacer es hacer todo lo <br> que puedas</h1>
+              <h1 class="aqua" style="   font-size: 48px; text-align: left;display: inline-flex;padding-left: 60px;">Lo unico que puedes hacer es hacer todo lo <br> que puedas</h1>
           </div>
       </div>
     </div>
@@ -192,28 +208,36 @@
     <hr style="border: 0.4px solid gray;">
     <br><br>
 
+
+
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+        <div class="card mb-3">
 				 <img class="card-img-top" src="img/h1.png" alt="Card image cap">
                     <div class="card-body">
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="">LERR MAS-></a>
                     </div>
 			</div>
+    </div>
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+        <div class="card mb-3">
 				<img class="card-img-top" src="img/h2.png" alt="Card image cap">
                    <div class="card-body">
                         <p class="card-text">Mas alla de las fronteras a traves de la optica de <br> Yoshua Akon  </p>
                         <a href="">LERR MAS-></a>
                    </div>
       </div>
+    </div>
       	<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+          <div class="card mb-3">
 				<img class="card-img-top" src="img/h3.png" alt="Card image cap">
                        <div class="card-body">
                           <p class="card-text">Voz Conyta es un homenaje a las obras de <br> grandes muralistas mexicanos atraves del rap</p>
                           <a href="">LERR MAS-></a>
                        </div>
+                     </div>
 			</div>
 		</div>
 	</div>
@@ -222,6 +246,7 @@
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+        <div class="card" style="width: 400px;">
 				  <div class="card-body">
                         <h6 class="card-title">Salon Acme-- un espacio que amplifica a artistas <br> emerguentes en CDMX</h6>
                         <br>
@@ -229,8 +254,10 @@
                         <br>
                         <img src="img/cat-09">
                     </div>
+                </div>
 			</div>
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+        <div class="card" style="width: 400px;">
 				 <div class="card-body">
                         <h6 class="card-title">Cuatro historias que exploran el interminable viaje de artista</h6>
                         <br>
@@ -238,9 +265,9 @@
                         <br>
                         <img src="img/cat-10">
                     </div>
+            </div>
       </div>
       <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-				<a href="">
                   <div class="card" style="width: 400px;">
                       <div class="card-body">
                         <h6 class="card-title">Cinco años de la principal feria de arte independiente  de latinoamerica</h6>
@@ -249,8 +276,7 @@
                         <br>
                         <img src="img/cat-11">
                     </div>
-                  </div>
-                </a>
+                  </div>  
 			</div>
 		</div>
 </div>

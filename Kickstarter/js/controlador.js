@@ -1,6 +1,7 @@
 
 $(document).ready(function(){
-	alert("el dom se ha cargado");
+
+	IdProyecto(15);
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
 			dataType:'json',
@@ -31,7 +32,7 @@ $(document).ready(function(){
 
 
 		function IdProyecto(valor){
-			alert(valor);
+			//alert(valor);
 				var parametros = 'txt-cat='+valor;
 
 			 $.ajax({
@@ -40,7 +41,31 @@ $(document).ready(function(){
 						data : parametros,
 						dataType: "json",
 						success: function (respuesta) {
-               console.log(respuesta);
+							limpiarSeccion();
+                        console.log(respuesta);
+                        for (var i =0; i<respuesta.length; i++) {
+                        	if(i==0){
+                         $("#mostrarProyecto1").append('<img  class="imagendetabla img-fliud" src="'+respuesta[i].urlImagen+'" alt="foto1">');
+                     		}
+                         else{
+                      
+                         	$("#mostrarProyecto2").append(
+                         						'<div  class="row">'+
+                         						'<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">'+
+                        						'<img class="img-fluid" src="'+respuesta[i].urlImagen+'">'+
+                      							'</div>'+
+                      							'<div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">'+
+                      							respuesta[i].tituloProyecto+' <br> 22 % financiado'+ 
+                      							'</div>'+
+                      							'<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">'+
+                      							'<img class="img-fluid" src="img/heart.png">'+
+                      							'</div>'+
+                   							    '</div>'+
+                   							    '<hr>'
+
+                         		);
+                         		}
+                          }
 						}
 
 					});
@@ -49,6 +74,10 @@ $(document).ready(function(){
 
 
 
+function limpiarSeccion(){
+	 $("#mostrarProyecto1").html("");
+	 $("#mostrarProyecto2").html("");
+}
 
 
 
@@ -361,7 +390,7 @@ function GuardarProyecto(){
 	   method: 'GET',
 	   data: parametros,
 	  success: function (respuesta) {
-         // console.log(respuesta);
+         alert("proyecto Guardado con exito");
 
 
 	   }

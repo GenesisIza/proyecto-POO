@@ -126,13 +126,18 @@ Estas palabras facilitarán la búsqueda de tu proyecto, ¡así que elígelas sa
 
                  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
                    <div class="row">
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
-                     <a href="cerrarsecion.php"  class="btn btn-outline-warning">Cerrar Sesion</a>
-                     
-                  </div>
-                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
+                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
                     <button type="button" class="btn btn-outline-success" onclick="GuardarProyecto();" >Guardar mi proyecto</button>
                   </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
+                     <form class="" action="empieza-tu-proyecto.php" method="post">
+                      <input   class="btn btn-outline-primary" type="submit" value="Nuevo Proyecto" >
+                    </form>
+                  </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
+                     <a href="cerrarsecion.php"  class="btn btn-outline-warning">Cerrar Sesion</a>
+                  </div>
+                  
                   </div>
 
                 </div><br>
