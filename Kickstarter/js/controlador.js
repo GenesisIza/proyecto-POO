@@ -131,7 +131,7 @@ function limpiarSeccion(){
 
 }
 
-//$(".btn-correo").colorbox({inline:true, width :"50%"});
+$(".btn-correo").colorbox({inline:true, width :"50%"});
 
 var validarCampoVacio = function(id){
 	//alert("entra validar campos");
@@ -208,17 +208,16 @@ $("#cuentaAbm").click(function(){
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					 'txt-correo ='+ $("#txt-correo").val() + "&" +
 					 'txt-contrasena='+ $("#txt-contrasena").val();
-alert(parametros);
+//alert(parametros);
    $.ajax({
 	   url: 'ajax/guardarAbministrador.php',
 	   method: 'POST',
 	   data: parametros,
      dataType:'json',
 	   success: function (respuesta) {
-		   //Instrucciones a ejecutar cuando responda el servidor
-		 //  $("#respuesta").html(respuesta);
-     console.log(respuesta);
-		 alert("Adm guardado");
+		   console.log(respuesta);
+       window.location.href = "administradores.php"
+
 
 	   }
    });
