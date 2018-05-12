@@ -18,8 +18,8 @@
       <br>
       <br>
       <hr style="border: 0.4px solid gray;">
-      <div class="row">
-        <div id="proyectoscategorias"></div>
+      <div class="row" id="proyectoscategorias">
+              
       </div>
 
     </div>
