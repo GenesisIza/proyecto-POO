@@ -80,7 +80,7 @@
 	        <div  class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
 	         		      	 <div id="mostrarProyecto1">
-                       <img class="imagendetabla img-fliud" src="img/01.png" alt="foto1">
+                      
                        </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-8 col-12">
