@@ -1,9 +1,6 @@
 
 $(document).ready(function(){
 
-
-
-
 	IdProyecto(15);
 	$.ajax({
 			url:"ajax/mostrar-categorias.php",
@@ -30,6 +27,12 @@ $(document).ready(function(){
 				});
 
 	});
+
+$(".btn-correo").colorbox( {inline:true, width :"75%"} );
+
+
+
+
 		 	//Debe hacer una petición AJAX para obtener los detalles del usuario y filtrar los tweets correspondientes.
 
 
@@ -281,7 +284,7 @@ function validarChecks(id){
 $("#iniciar").click(function(){
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 				            'txt-contrasenia='+ $("#txt-contrasenia").val();
-	//alert(parametros);
+	alert(parametros);
 	$.ajax({
 
 		method: 'POST',

@@ -48,11 +48,19 @@
     <h2>Usuarios</h2>
   </div>
 
- <a href="cerrarsecion.php">Cerrar Seccion</a>
- <a href="ingresarAdministrador.php">Agregar Administrador</a>
-
-
+  <div class="container-fluid row">
+    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
+     <a href="ingresarAdministrador.php"  class="btn btn-outline-warning">Agregar Administradors</a>
+   </div>
+   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
+    <a href="cerrarsecion.php"  class="btn btn-outline-warning">Cerrar Sesion</a>
+  </div>
+  </div>
     <?php include 'Plantillas/footer.php'; ?>
+
+
+
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador.js"></script>

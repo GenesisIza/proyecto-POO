@@ -11,7 +11,7 @@
         $_SESSION["email"],
         $_SESSION["psw"]
     );
-    
+
     $resultado = $conexion->ejecutarConsulta($sql);
     $respuesta = array();
     if ($conexion->cantidadRegistros($resultado)<=0){

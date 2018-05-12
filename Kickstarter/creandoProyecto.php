@@ -21,11 +21,16 @@
      $registro = $conexion->obtenerFila($resultado);
 ?>
 
-
-<input type="text" name="" value="">
 <!DOCTYPE html>
 <html>
   <head>
+    <?php
+      if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
+          include 'Plantillas/Header.php';
+      }else {
+          include 'Plantillas/HeaderReguistrado.php';
+      }
+     ?>
   <link rel="icon" type="image/png" href="img/logo3.png">
   <title>Kickstarter</title>
     <meta name="description" content="">
@@ -38,7 +43,7 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
   </head>
   <body style="background-color: #F0F0F0;">
-     <?php include 'Plantillas/header.php';   ?>
+
      <br><br><br>
      <div>
       <h3 class="primero" style="text-align: center; ">¡Vámonos! <?php echo $registro["nombre"] ; ?> </h3>
@@ -137,7 +142,7 @@ Estas palabras facilitarán la búsqueda de tu proyecto, ¡así que elígelas sa
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
                      <a href="cerrarsecion.php"  class="btn btn-outline-warning">Cerrar Sesion</a>
                   </div>
-                  
+
                   </div>
 
                 </div><br>

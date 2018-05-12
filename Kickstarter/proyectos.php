@@ -11,7 +11,14 @@
        <link rel="stylesheet" href="css/signin.css">
    </head>
   <body>
-    <?php include 'Plantillas/header.php'; ?>
+    
+    <?php
+      if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
+          include 'Plantillas/Header.php';
+      }else {
+          include 'Plantillas/HeaderReguistrado.php';
+      }
+      ?>
     <br><br>
     <div class="container-fluid">
       <br><h4>Nuevos y Destacados</h4>
