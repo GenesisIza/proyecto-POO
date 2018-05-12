@@ -14,7 +14,7 @@
 <body>
 	<div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active"  data-interval="50">
+    <div class="carousel-item active"  data-interval="5">
       <img class="d-block w-100 imagenesLanding" src="img/landing.jpg" alt="First slide">
     </div>
     <div class="carousel-item">
