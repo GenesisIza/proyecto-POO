@@ -18,9 +18,7 @@
     if ($conexion->cantidadRegistros($resultado)<=0){
            header("Location: iniciar-seccion.php");
     }
-
     $registro = $conexion->obtenerFila($resultado);
-
 ?>
 
 <!DOCTYPE html>
@@ -36,6 +34,14 @@
   <link rel="stylesheet" href="css/signin.css">
 </head>
   <body>
+    <?php
+      if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
+          include ("Plantillas/Header.php");
+      }else {
+          include 'Plantillas/HeaderReguistrado.php';
+      }
+      ?>
+      
    <div style=" background-color: black; padding: 100px;" class="">
      <h1 style="color: white;" >Bienvenido Señor <?php echo $registro["nombre"]; ?></h1>
    </div>

@@ -203,14 +203,14 @@ $("#cuenta").click(function(){
 
 });
 
-/*$("#cuentaAbm").click(function(){
+$("#cuentaAbm").click(function(){
 
 	var parametros = 'txt-nombre=' + $("#txt-nombre").val() + "&" +
 					 'txt-correo ='+ $("#txt-correo").val() + "&" +
 					 'txt-contrasena='+ $("#txt-contrasena").val();
 alert(parametros);
    $.ajax({
-	   url: 'ajax/guardarUsuario.php',
+	   url: 'ajax/guardarAbministrador.php',
 	   method: 'POST',
 	   data: parametros,
      dataType:'json',
@@ -218,11 +218,12 @@ alert(parametros);
 		   //Instrucciones a ejecutar cuando responda el servidor
 		 //  $("#respuesta").html(respuesta);
      console.log(respuesta);
+		 alert("Adm guardado");
 
 	   }
    });
 
-});*/
+});
 
 
 /*function ValidarCategoria (id){
@@ -282,7 +283,7 @@ $("#iniciar").click(function(){
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
             localStorage.setItem("codigoUsuario", codigoUsuario);
             if(respuesta.codigoResultado == 1){
-							$("#respuestasecion").html('<h3 class="mensaje" >Correo o Usuario Incorrecto</h3>');
+							$("#respuestasecion").html('<h3 class="mensaje2" >Correo o Usuario Incorrecto</h3>');
 						}
 
             if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){

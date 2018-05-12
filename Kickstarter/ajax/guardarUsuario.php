@@ -3,13 +3,13 @@
     include("../class/class-conexion.php");
     $conexion = new Conexion();
     $tipoUsuario = 1;
-  //  $nombre = $_POST["txt-nombre"];
-    //$contrasenia = $_POST["txt-contrasena"];
-    //$correo = $_POST["txt-correo"];
+    $nombre = $_POST["txt-nombre"];
+    $contrasenia = $_POST["txt-contrasena"];
+    $correo = $_POST["txt-correo"];
 
-    $nombre = "Andres";
-    $contrasenia = "asd.456";
-    $correo = "Andresvelasquez@gmail.com";
+    //$nombre = "Andres";
+  //  $contrasenia = "asd.456";
+    //$correo = "Andresvelasquez@gmail.com";
 
     $sql = sprintf("INSERT INTO tbl_usuario(codigoTipoUsuario, nombre, ".
            "correo, contrasenia) ".
@@ -20,7 +20,6 @@
            $conexion->antiInyeccion($contrasenia)
           );
     $resultado = $conexion->ejecutarConsulta($sql);
-
 
      $sql2 = sprintf("SELECT codigoUsuario FROM tbl_usuario WHERE nombre='%s'",
              $conexion->antiInyeccion($nombre)  );

@@ -11,10 +11,10 @@
        <link rel="stylesheet" href="css/signin.css">
    </head>
   <body>
-    
     <?php
+    session_start();
       if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
-          include 'Plantillas/Header.php';
+          include ("Plantillas/Header.php");
       }else {
           include 'Plantillas/HeaderReguistrado.php';
       }
@@ -26,14 +26,10 @@
       <br>
       <hr style="border: 0.4px solid gray;">
       <div class="row" id="proyectoscategorias">
-              
+
       </div>
 
     </div>
-
-
-
-
 
      <?php include 'Plantillas/footer.php'; ?>
     <script src="js/jquery.min.js"></script>

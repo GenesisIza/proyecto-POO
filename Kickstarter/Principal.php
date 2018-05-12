@@ -14,6 +14,7 @@
   </head>
     <body>
       <?php
+      session_start();
         if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
             include 'Plantillas/Header.php';
         }else {
@@ -69,8 +70,6 @@
        </ul>
     </div><br>
 
-
-
     <div id="categorias" class=""></div>
 <!--
     <div id="cine" class="container-fluid">
@@ -80,45 +79,12 @@
 	        <div  class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
 	         		      	 <div id="mostrarProyecto1">
-                      
                        </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-8 col-12">
                      <hr>
                       <div id="mostrarProyecto2"></div>
 
-                    <!--  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
-                        <img class="img-fluid" src="'+respuesta[i].urlImagen+'">
-                      </div>
-                      <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">
-                        +respuesta[i].tituloProyecto+' <br> 22 % financiado
-                      </div>
-                      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
-                        boton
-                      </div>
-                    </div>-->
-
-	         		   <!-- 	<table class="table ">
-                    <tbody>
-
-                      <tr >
-                          <td><a href=""> <img class="img-fliud" src="img/cat-01.png"> </a>  </td>
-                          <td> <a href="">Pandora </a> <br> 22 % financiado </td>
-                      </tr >
-                      <tr>
-                         <td><a href=""> <img class="img-fliud" src="img/cat-02.jpg" > </a></td>
-                         <td> <a href="">Knock Down The House: A Documentary</a> <br>52 % financiado</td>
-                      </tr>
-                      <tr >
-                         <td><a href=""> <img class="img-fliud" src="img/cat-03.png"> </a>  </td>
-                         <td> <a href="">The Grind - Pilot and Mini Series</a> <br> 0 % financiado</td>
-                      </tr >
-                      <tr>
-                        <td><a href=""> <img class="img-fliud" src="img/cat-04.jpg" > </a></td>
-                        <td> <a href="">El Proyeccionista - Documentary</a> <br> 11 % financiado</td>
-                      </tr>
-                    </tbody>
-                  </table>-->
                   <div id="VerMas"></div>
 	        </div>
 
@@ -300,10 +266,9 @@
            <div class="text-center col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
              <br><br>
              <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 col-center bloquesito" style="padding: 30px 0px 30px 0px;  border-radius: 0px">
-              <a href="#mc_embed_signup" id="btn-correo"  class="btn-correo btn btn-info">Suscribirse</a>
+              <a href="#" class="btn-correo btn btn-info">Suscribirse</a>
            </div
              <br><br>
-
          </div>
 </div>
 <br><br>
@@ -338,41 +303,12 @@
           </ul>
     </div>
 
-    <hr style="border: 0.4px solid gray;">
+     <hr style="border: 0.4px solid gray;">
      <?php include 'Plantillas/footer.php'; ?>
 
-     <div style="display:none;" id="MailChimp" class="">
-       <!-- Begin MailChimp Signup Form -->
-     <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
-     <style type="text/css">
-       #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-       /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-     </style>
-     <div id="mc_embed_signup">
-     <form action="https://kistarter.us18.list-manage.com/subscribe/post?u=1097316d2482376979ad26472&amp;id=53f279bb3b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-         <div id="mc_embed_signup_scroll">
-       <h2>Suscribete a Kistarter para mantenerte informado</h2>
-     <div class="indicates-required"><span class="asterisk">*</span> Obligatorio</div>
-     <div class="mc-field-group">
-       <label for="mce-EMAIL">Direccion de correo<span class="asterisk">*</span>
-     </label>
-       <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-     </div>
-       <div id="mce-responses" class="clear">
-         <div class="response" id="mce-error-response" style="display:none"></div>
-         <div class="response" id="mce-success-response" style="display:none"></div>
-       </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1097316d2482376979ad26472_53f279bb3b" tabindex="-1" value=""></div>
-         <div class="clear"><input type="submit" value="SUSCRIBETE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-         </div>
-     </form>
-     </div>
-     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-     <!--End mc_embed_signup-->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador.js"></script>
-    <script type='text/javascript' src="js/jquery.colorbox.js"></script>
+    <script src="js/jquery.colorbox.js"></script>
   </body>
 </html>
