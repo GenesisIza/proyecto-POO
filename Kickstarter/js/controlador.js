@@ -396,3 +396,8 @@ function GuardarProyecto(){
 	   }
    });
 }
+
+
+$(".carousel").carousel({
+  interval: 2000
+})
