@@ -1,7 +1,7 @@
 <?php
     session_start();
     if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
-        header("Location: index.php");
+        header("Location: iniciar-seccion.php");
 
     include("class/class-conexion.php");
     $conexion = new Conexion();
@@ -45,15 +45,13 @@
       <div class="text-center">
           <img class="perfil2" src="Proyectos/perfil/perfil.jpg">
           <br><br>
-           <h2> <?php echo $registro["nombre"] ; ?>  </h2>
-
-
+          <h2> <?php echo $registro["nombre"] ; ?>  </h2>
       </div>
 
 
-
+      <?php include 'Plantillas/footer.php'; ?>
      <script src="js/jquery.min.js"></script>
-      <script src="js/jquery.colorbox-min.js"></script>
+     <script src="js/jquery.colorbox-min.js"></script>
      <script src="js/bootstrap.min.js"></script>
      <script src="js/controlador.js"></script>
   </body>

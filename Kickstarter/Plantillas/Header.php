@@ -7,7 +7,7 @@
           <a class="esconder" href="empieza-tu-proyecto.php">Empieza Tu Proyecto</a>
         </div>
         <div class="text-center col-lg-4 col-lg-4 col-md-12">
-          <a  class="logo text-center" href="index.php"> <img src="img/logo.png" alt="Logo" ></a>
+          <a  class="logo text-center" href="Principal.php"> <img src="img/logo.png" alt="Logo" ></a>
         </div>
         <div class="col-lg-4 col-lg-4 col-md-6">
           <a style=" float: right;" class=" esconder" href="Iniciar-seccion.php">Registrarse</a>

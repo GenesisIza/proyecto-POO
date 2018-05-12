@@ -131,7 +131,7 @@ function limpiarSeccion(){
 
 }
 
-//$(".btn-correo").colorbox( {inline:true, width :"50%"} );
+$("#btn-correo").colorbox( {inline:true, width :"50%"} );
 
 var validarCampoVacio = function(id){
 	//alert("entra validar campos");
