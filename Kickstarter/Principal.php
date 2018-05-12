@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+
+    <!DOCTYPE html>
     <html lang="en">
     <head>
     <meta charset="utf-8">
@@ -7,8 +8,8 @@
     <title>Kickstarter</title>
     <link rel="stylesheet" href="css/fontawesome-all.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
     <link rel="stylesheet" href="css/signin.css">
-<<<<<<< HEAD
   </head>
     <body>
     <?php include 'Plantillas/header.php';   ?>
@@ -34,10 +35,9 @@
     </div>
     <hr class="esconder" style="border: 0.4px solid black;">
     <br>
-    
     <div class="container-fluid">
         <ul class=" menu-programa nav nav-menu1">
-
+          
           <li class="nav-item">
             <a id="13"  class="nav-link " href="#publicaciones" onclick="IdProyecto(13);"  >Publicaciones</a>
           </li>
@@ -68,21 +68,21 @@
        <h3>Cine</h3>
        <br><br>-->
        <h6>Proyectos Destacados</h6>
-	        <div  class="container-fluid row">
+	        <div  class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
 	         		      	 <div id="mostrarProyecto1">
-                       <img class="imagendetabla container-fluid img-fliud" src="img/01.png" alt="foto1">
+                       <img class="imagendetabla img-fliud" src="img/01.png" alt="foto1"> 
                        </div>
                    </div>
                    <div class="col-xl-6 col-lg-6 col-md-4 col-sm-8 col-12">
                      <hr>
-                      <div class="container-fluid" id="mostrarProyecto2"></div>
+                      <div id="mostrarProyecto2"></div>
 
                     <!--  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-12">
                         <img class="img-fluid" src="'+respuesta[i].urlImagen+'">
                       </div>
                       <div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-12">
-                        +respuesta[i].tituloProyecto+' <br> 22 % financiado
+                        +respuesta[i].tituloProyecto+' <br> 22 % financiado 
                       </div>
                       <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-12">
                         boton
@@ -91,7 +91,7 @@
 
 	         		   <!-- 	<table class="table ">
                     <tbody>
-
+                      
                       <tr >
                           <td><a href=""> <img class="img-fliud" src="img/cat-01.png"> </a>  </td>
                           <td> <a href="">Pandora </a> <br> 22 % financiado </td>
@@ -110,7 +110,7 @@
                       </tr>
                     </tbody>
                   </table>-->
-                <div id="VerMas" class=""></div>
+                  <button id="mas" class="btn btn-outline-dark" type="button" name="button">Ver Todos</button>
 	        </div>
 
           </div>
@@ -215,11 +215,11 @@
 		<div class="row">
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
         <div class="card mb-3">
-				  <img class="card-img-top" src="img/h1.png" alt="Card image cap">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="">LERR MAS-></a>
-          </div>
+				 <img class="card-img-top" src="img/h1.png" alt="Card image cap">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="">LERR MAS-></a>
+                    </div>
 			</div>
     </div>
 			<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
@@ -277,34 +277,63 @@
                         <br>
                         <img src="img/cat-11">
                     </div>
-                  </div>
+                  </div>  
 			</div>
 		</div>
-=======
-<head>
-	<title>Kickstarted</title>
-</head>
-<body>
-	<div id="carousel" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active"  data-interval="5">
-      <img class="d-block w-100 imagenesLanding" src="img/landing.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 imagenesLanding" src="img/landing1.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 imagenesLanding" src="img/landing2.jpg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 imagenesLanding" src="img/landing3.jpg" alt="Third slide">
-      <a class="btn btn-primary" href="Principal.php" role="button">Ir a pagina Principal</a>
-    </div>
-  </div>
->>>>>>> 3b9acfd543d94d99ec350c5075ef971913302e7b
 </div>
- <script src="js/jquery.min.js"></script>
- <script src="js/bootstrap.min.js"></script>
- <script src="js/controlador.js"></script>
-</body>
+<br>
+<hr style="border: 0.4px solid gray;">
+<br><br>
+
+<div class="container-fluid">
+      <h3 style="text-align: center;">Suscríbete a nuestro boletín semanal</h3><br><br>
+       <h6 style="text-align: center;">Semanalmente: Unos cuantos proyectos, seleccionados por el equipo de <br> Kickstarter.</h6><br>
+       <form  class="">
+            <div class="row">
+            <div class=" col-lg-2 col-md-12 col-sm-12"></div>
+              <div style="display: inline-block;" class="col-lg-8 col-md-12 col-sm-12 ">
+                  <input  class=" col-lg-5 col-md-5 col-sm-12 col-12 " name="txt-suscribir" id="txt-suscribir" style="width:400px;" type="email"  placeholder="Correo electronico" onkeydown="validarCorreo(this);">
+                  <button name="btn-suscribir" id="btn-suscribir" type="submit" class="col-lg-3 col-md-3 col-sm-12  col-12 btn btn-dark" >Suscribirte Ahora</button>
+              </div>
+            <div class="col-lg-2 col-md-12 col-sm-12 "></div>
+       </form>
+</div>
+<br><br>
+
+<hr style="border: 0.4px solid gray;">
+     <div class="container">
+           <ul class="nav">
+             <li class="nav-item">
+               <a class="nav-link " href="#">Arte</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link " href="#">Cómics & ilustración</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Diseño & tecnología</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link active" href="#">Cine</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link " href="#">Comida & creaciones</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Juegos</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link " href="#">Música</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link " href="#">Publicaciones</a>
+             </li>
+          </ul>
+    </div>
+    <hr style="border: 0.4px solid gray;">
+     <?php include 'Plantillas/footer.php'; ?>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/controlador.js"></script>
+  </body>
 </html>
