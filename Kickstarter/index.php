@@ -17,8 +17,7 @@
             include 'Plantillas/HeaderReguistrado.php';
         }
        ?>
-
-
+       
 	<div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active"  data-interval="50">

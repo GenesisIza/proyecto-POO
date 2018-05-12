@@ -1,25 +1,4 @@
-<?php
-    session_start();
-    if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
-        header("Location: index.php");
 
-    include("class/class-conexion.php");
-    $conexion = new Conexion();
-    $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
-            "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
-        $_SESSION["email"],
-        $_SESSION["psw"]
-    );
-    //echo $sql;
-    //exit;
-    $resultado = $conexion->ejecutarConsulta($sql);
-    $respuesta = array();
-    if ($conexion->cantidadRegistros($resultado)<=0){
-           header("Location: iniciar-seccion.php");
-    }
-     $registro = $conexion->obtenerFila($resultado);
- ?>
   <!DOCTYPE html>
   <html lang="en">
   <head>

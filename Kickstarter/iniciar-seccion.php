@@ -17,11 +17,13 @@
    <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >
-   <div id="respuestasecion"></div>
+
   <table align="center" cellpadding="15"  class="table-iniciar">
         <td><h2 class="text-inicio">Iniciar sesión</h2></td>
+        <div id="respuestasecion"></div>
     </tr>
     <form action="">
+
     <tr>
        <td><input class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="text" id="txt-correo" name="txt-correo" placeholder="Correo Electronico" </td>
     </tr>
@@ -31,6 +33,7 @@
     <tr>
       <td style="text-align: left;" class="olvidar"><a href="#">¿La olvidaste?</a></td>
     </tr>
+
       <td ><input class=" btn btn-success inicio  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="button" id="iniciar"    value="Iniciar sesión" ></td>
     </tr>
     </form>

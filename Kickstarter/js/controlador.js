@@ -131,7 +131,7 @@ function limpiarSeccion(){
 
 }
 
-$("#btn-correo").colorbox( {inline:true, width :"50%"} );
+//$(".btn-correo").colorbox({inline:true, width :"50%"});
 
 var validarCampoVacio = function(id){
 	//alert("entra validar campos");
@@ -270,7 +270,7 @@ function validarChecks(id){
 $("#iniciar").click(function(){
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 				            'txt-contrasenia='+ $("#txt-contrasenia").val();
-	alert(parametros);
+	//alert(parametros);
 	$.ajax({
 		method: 'POST',
 		url: 'ajax/loginUsuario.php',
@@ -282,7 +282,7 @@ $("#iniciar").click(function(){
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
             localStorage.setItem("codigoUsuario", codigoUsuario);
             if(respuesta.codigoResultado == 1){
-							$("#respuestasecion").html("Incorrec");
+							$("#respuestasecion").html('<h3 class="mensaje" >Correo o Usuario Incorrecto</h3>');
 						}
 
             if (respuesta.codigoResultado == 0 && respuesta.codigoTipoUsuario == 1){

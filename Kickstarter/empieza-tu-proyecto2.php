@@ -1,27 +1,4 @@
-<?php
-    session_start();
-    if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
-        header("Location: index.php");
 
-    include("class/class-conexion.php");
-    $conexion = new Conexion();
-    $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
-            "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
-        $_SESSION["email"],
-        $_SESSION["psw"]
-    );
-    //echo $sql;
-    //exit;
-    $resultado = $conexion->ejecutarConsulta($sql);
-    $respuesta = array();
-    if ($conexion->cantidadRegistros($resultado)<=0){
-           header("Location: iniciar-seccion.php");
-    }
-     $registro = $conexion->obtenerFila($resultado);
-
-
- ?>
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -46,7 +23,7 @@
           include 'Plantillas/HeaderReguistrado.php';
       }
      ?>
-     
+
     <br><br><br>
     <div class="container">
       <div class="row">
@@ -72,7 +49,7 @@
             <a href="empieza-tu-proyecto1.php" class="empieza"> ← Categoria</a>
           </div>
           <div class="col-xl-2   col-lg-3  col-md-3  col-sm-12 col-12 col-center">
-            <form action="empieza-tu-proyect3.php">
+            <form action="empieza-tu-proyecto3.php">
                <input id="btn-descripcion" disabled="disabled" class="btn btn-dark btn1" type="submit" value="Siguiente: Ubicacion" type="button" />
             </form>
           </div>

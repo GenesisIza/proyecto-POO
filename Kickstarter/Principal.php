@@ -69,12 +69,14 @@
        </ul>
     </div><br>
 
+
+
     <div id="categorias" class=""></div>
 <!--
     <div id="cine" class="container-fluid">
        <h3>Cine</h3>
        <br><br>-->
-       <h6>Proyectos Destacados</h6>
+       <h5>Proyectos Destacados</h5>
 	        <div  class="row">
 	         		    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-4 col-12">
 	         		      	 <div id="mostrarProyecto1">
@@ -368,10 +370,9 @@
      </div>
      <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
      <!--End mc_embed_signup-->
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/controlador.js"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
+    <script type='text/javascript' src="js/jquery.colorbox.js"></script>
   </body>
 </html>
