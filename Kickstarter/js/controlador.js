@@ -106,7 +106,6 @@ $(document).ready(function(){
 
 function guardarCategoriaM(codigo){
 	var CategoriaParaMostrar = codigo;
-	//alert(CategoriaParaMostrar);
 	localStorage.setItem("CategoriaParaMostrar", CategoriaParaMostrar);
 	 window.location.href = "proyectos.php";
 }
@@ -129,21 +128,6 @@ function limpiarSeccion(){
 }
 
 
-/*$(".btn-correo").colorbox({inline:true, width :"50%"});*/
-
-
-
-/*var validarCampoVacio = function(id){
-	//alert("entra validar campos");
-	if (document.getElementById(id).value == " "){
-		document.getElementById(id).classList.remove('is-valid');
-		document.getElementById(id).classList.add('is-invalid');
-	}
-	else{
-		document.getElementById(id).classList.remove('is-invalid');
-		document.getElementById(id).classList.add('is-valid');
-	}
-};*/
 
 function validarCorreo(email) {
 
@@ -397,7 +381,6 @@ function concatenar(){
 
 
 function cargarUrlsSegunCat(codigoCategoria){
-	//alert("entra a la funcion codigo:"+codigoCategoria);
 		$.ajax({
 			url:"ajax/mostrar-categorias.php",
 			dataType:'json',
@@ -405,7 +388,6 @@ function cargarUrlsSegunCat(codigoCategoria){
 			//console.log(respuesta);
             for (var i=0; i<respuesta.length ; i++){
             	if(respuesta[i].codigoCategoria == codigoCategoria){
-            		//alert("Categoria selecionada:"+respuesta[i].codigoCategoria);
             		//aqui ;es imprimir el slc los url de imagenes, y cuando seleccione obtener la seleccionada y gaurdarla en el local storage
             		for(var j=1; j<=5; j++){
 		       $("#slc-urlImagen").append( '<option value="Proyectos/'+respuesta[i].nombre+'/'+respuesta[i].nombre+j+'">'+respuesta[i].nombre+j+'</option>');
@@ -420,7 +402,6 @@ function cargarUrlsSegunCat(codigoCategoria){
 
 function GuardarProyecto(){
  var parametros = concatenar();
-// console.log(parametros);
     $.ajax({
 	   url: 'ajax/guardarProyecto.php',
 	   method: 'GET',
@@ -434,5 +415,4 @@ function GuardarProyecto(){
 $('.carousel').carousel({
   interval: 2000
 });
-//})
 $('.boton').colorbox({inline:true, width:"75%"});
