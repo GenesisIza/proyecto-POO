@@ -59,13 +59,10 @@ $(document).ready(function(){
 	});
 
 
-		 	//Debe hacer una petición AJAX para obtener los detalles del usuario y filtrar los tweets correspondientes.
+		 	
 		function IdProyecto(valor){
-			//alert(valor);
 				 var parametros = 'txt-cat='+valor;
-				 //alert(parametros);
-
-			 $.ajax({
+		     			 $.ajax({
 						url: "ajax/obtener-proyectos.php",
 						method : "POST",
 						data : parametros,
