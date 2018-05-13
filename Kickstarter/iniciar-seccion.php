@@ -13,7 +13,16 @@
     <link rel="stylesheet" href="css/signin.css">
   </head>
 <body>
-   <?php include 'Plantillas/Header.php';   ?>
+
+  <?php
+  session_start();
+    if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
+        include 'Plantillas/Header.php';
+    }else {
+        include 'Plantillas/HeaderReguistrado.php';
+    }
+   ?>
+
    <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >
@@ -37,9 +46,9 @@
 
       <td ><input class=" btn btn-success inicio  col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center" type="button" id="iniciar"    value="Iniciar sesión" ></td>
     </tr>
-    
+
     </tr>
-    
+
     <tr>
       <td style="  text-align: left;" >
         <label><input type="checkbox"  class="chk-recordar" name="chk-recordar">Recordarme</label>

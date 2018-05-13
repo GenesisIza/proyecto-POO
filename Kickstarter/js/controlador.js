@@ -195,8 +195,8 @@ $("#cuenta").click(function(){
 	   url: 'ajax/guardarUsuario.php',
 	   method: 'POST',
 	   data: parametros,
-       dataType:'json',
-	  success: function (respuesta) {
+     dataType:'json',
+	   success: function (respuesta) {
 		 //console.log(respuesta);
 		 var codigoUsuario = "codigoUsuario="+respuesta[0].codigoUsuario+"&";
          localStorage.setItem("codigoUsuario", codigoUsuario);
@@ -285,7 +285,7 @@ $("#iniciar").click(function(){
 			//Instrucciones a ejecutar cuando responda el servidor
 			console.log(respuesta);
 			var codigoUsuario = "codigoUsuario="+respuesta.codigoUsuario;
-			alert(respuesta.codigoTipoUsuario);
+			//alert(respuesta.codigoTipoUsuario);
 			console.log(respuesta.codigoUsuario);
             localStorage.setItem("codigoUsuario", codigoUsuario);
             if(respuesta.codigoResultado == 1){
@@ -438,4 +438,4 @@ $('.carousel').carousel({
   interval: 2000
 });
 //})
-$('.boton').colorbox({inline:true, width:"50%"});
+$('.boton').colorbox({inline:true, width:"75%"});

@@ -10,14 +10,8 @@
     <link rel="stylesheet" href="css/signin.css">
    </head>
     <body>
-      <?php
-        if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
-            include 'Plantillas/Header.php';
-        }else {
-            include 'Plantillas/HeaderReguistrado.php';
-        }
-       ?>
-       
+
+
 	<div id="carousel" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active"  data-interval="50">

@@ -19,6 +19,7 @@
   </head>
 <body>
   <?php
+  session_start();
     if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
         include 'Plantillas/Header.php';
     }else {
@@ -149,7 +150,7 @@
 
   <div class="seccion-video">
       <div class=" col-lg-12 col-md-12 col-sm-12 contenedor">
-        <video  class=" col-lg-12 col-md-12 col-sm-12 video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" lay="1" >  </video>
+        <video  class=" col-lg-12 col-md-12 col-sm-12 video" src="https://d3mlfyygrfdi2i.cloudfront.net/175c/startpage_20130916_supercut_hi.mp4" lay="1" autoplay >  </video>
       </div>
   </div>
 

@@ -7,7 +7,7 @@
     $conexion = new Conexion();
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
             "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
+            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 2 ",
         $_SESSION["email"],
         $_SESSION["psw"]
     );
@@ -35,6 +35,7 @@
 </head>
   <body>
     <?php
+
       if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
           include 'Plantillas/Header.php';
       }else {
@@ -49,6 +50,10 @@
       </div>
 
        <br><br><br>
+       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+          <a href="cerrarsecion.php"  class="btn btn-info">Cerrar Sesion</a>
+           </div>
+           <br>
       <hr style="border: 0.4px solid gray;">
            <div class="container">
                  <ul class="nav">

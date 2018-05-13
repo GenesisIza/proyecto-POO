@@ -10,7 +10,7 @@
           <a  class="logo text-center" href="Principal.php"> <img src="img/logo.png" alt="Logo" ></a>
         </div>
         <div class="col-lg-4 col-lg-4 col-md-6">
-          <a style=" float: right;" class=" esconder" href="Iniciar-seccion.php">Registrarse</a>
+          <a style=" float: right;" class=" esconder" href="iniciar-seccion.php">Registrarse</a>
           <a style=" float: right;" class=" esconder" href="#"><i class="fas fa-search"></i></a>
           <a style=" float: right;" class=" Busqueda esconder" href="#"> Busqueda </a>
         </div>

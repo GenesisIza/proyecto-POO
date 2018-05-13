@@ -13,7 +13,8 @@
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
   </head>
   <body style="background-color: #F0F0F0;">
-    <?php include 'Plantillas/Header.php';?>
+
+
      <br><br><br>
      <div>
         <div class="container-fluid" >
