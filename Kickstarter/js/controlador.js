@@ -353,13 +353,7 @@ $("#btn-pais").click(function(){
 	 url:"ajax/mostrar-categorias.php",
 	 dataType:'json',
 	 success: function (respuesta) {
-	//console.log(respuesta);
-	 /*	 for (var i=0; i<respuesta.length ; i++){
-		 $("#slc-categoria").append(
-											'<option value="'+respuesta[i].codigoCategoria+'">'+respuesta[i].nombre+'</option>'
 
-					 );
-			 }*/
 	 }
  });
 });
