@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 12-05-2018 a las 00:01:07
+-- Tiempo de generación: 13-05-2018 a las 00:13:28
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 5.6.31
 
@@ -118,7 +118,7 @@ CREATE TABLE IF NOT EXISTS `tbl_proyectos` (
   KEY `fk_tbl_proyectos_tbl_Usuario1_idx` (`codigoUsuario`),
   KEY `fk_tbl_proyectos_tbl_categoria1_idx` (`codigoCategoria`),
   KEY `fk_tbl_proyectos_tbl_pais1_idx` (`codigoPais`)
-) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=47 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tbl_proyectos`
@@ -140,7 +140,22 @@ INSERT INTO `tbl_proyectos` (`codigoProyecto`, `codigoUsuario`, `codigoCategoria
 (27, 2, 6, 8, 'la mejor comida casera, con sabores de tu tierra', '6979', '2018-06-10', 'Proyectos/Comida/Comida4', 'frijolitos con huevito', 'kennedy'),
 (28, 1, 6, 12, 'comida con tus formas favoritas', '868709', '2018-05-17', 'Proyectos/Comida/Comida1', 'Arte culinaria', 'col. cerro grande'),
 (29, 2, 6, 8, 'mantente en linea con frutas y yogurt', '6979', '2018-06-10', 'Proyectos/Comida/Comida2', 'Frescas frutas en forma', 'Pedregal'),
-(30, 2, 6, 8, 'comida gourmet con altos estandares de calidad', '6979', '2018-06-10', 'Proyectos/Comida/Comida5', 'restaurante Becker, Gourmetfood', 'Pedregal');
+(30, 2, 6, 8, 'comida gourmet con altos estandares de calidad', '6979', '2018-06-10', 'Proyectos/Comida/Comida5', 'restaurante Becker, Gourmetfood', 'Pedregal'),
+(31, 2, 5, 10, 'ya no mas po favo', '45670', '2018-10-06', 'Proyectos/Comics/Comics2', 'Avengers', 'san ignacio'),
+(32, 1, 5, 10, 'teetains lets goo los jovenes titanes en accion', '45670', '2018-10-06', 'Proyectos/Comics/Comics5', 'Jovenes Titanes', 'Pedregal'),
+(33, 6, 5, 10, 'geek Que va lee este buen comic ', '45670', '2018-10-06', 'Proyectos/Comics/Comics1', 'flash y su disfrash', 'Pedregal'),
+(34, 3, 5, 10, 'Hecho inspirado en el paliducho', '45670', '2018-10-06', 'Proyectos/Comics/Comics4', 'Donalisito Trup', 'Pedregal'),
+(35, 1, 5, 10, 'como olvidar no me quiero ir senior stark y volo revivelo', '45670', '2018-10-06', 'Proyectos/Comics/Comics3', ' Marvel', 'Pedregal'),
+(36, 9, 4, 6, 'La aventura mas esperada por todos, elastigirl a vuelto', '65768', '2018-10-06', 'Proyectos/Cine Y Video/Cine Y Video1', 'Los increibles', 'San miguel'),
+(37, 10, 4, 6, 'Diviertete con tus heroes favoritos', '65768', '2018-10-06', 'Proyectos/Cine Y Video/Cine Y Video2', 'Los Vengadores', 'San miguel'),
+(38, 11, 4, 6, 'siempre te sacara una sonrisa', '3464', '2018-10-06', 'Proyectos/Cine Y Video/Cine Y Video3', 'Deadpool', 'San miguel'),
+(39, 12, 4, 6, 'el tonto, el que no hace nada, el que dice que ayuda y no hace nada, el que hace todo', '3464', '2018-10-06', 'Proyectos/Cine Y Video/Cine Y Video4', 'que paso ayer', 'San miguel'),
+(40, 10, 4, 6, 'edita tus video profesionalmente', '3464', '2018-10-06', 'Proyectos/Cine Y Video/Cine Y Video5', 'videoeditor v4.0', 'Santa Fe'),
+(42, 12, 11, 6, 'disfruta de una agradable velada musical', '3464', '2018-10-06', 'Proyectos/Musica/Musica1', 'Musica Clasica', 'El hato'),
+(43, 10, 11, 6, 'Escuela especial para los consentidos de casa, ayudalos a desarrollar su ambito musical', '3464', '2018-10-06', 'Proyectos/Musica/Musica2', 'Escuela de musica', 'Miraflores'),
+(44, 9, 11, 6, 'para pasar un buen momento relajado', '3464', '2018-10-06', 'Proyectos/Musica/Musica3', 'Escuela de musica para adultos Mayores', 'Tres caminos'),
+(45, 9, 11, 6, 'Aprende a tocar musica de tus banda favoritas', '3464', '2018-10-06', 'Proyectos/Musica/Musica4', 'Escuela de musica para Rockeross', 'Col. Suyapa'),
+(46, 12, 11, 6, 'tus mascotas consentidas', '3464', '2018-10-06', 'Proyectos/Musica/Musica5', 'Escuela de musica para garrobitos', 'Col. Suyapa');
 
 -- --------------------------------------------------------
 
@@ -178,7 +193,7 @@ CREATE TABLE IF NOT EXISTS `tbl_usuario` (
   `contrasenia` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`codigoUsuario`),
   KEY `fk_tbl_Usuario_tbl_tipoUsuario_idx` (`codigoTipoUsuario`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 
 --
 -- Volcado de datos para la tabla `tbl_usuario`
@@ -191,7 +206,14 @@ INSERT INTO `tbl_usuario` (`codigoUsuario`, `codigoTipoUsuario`, `nombre`, `corr
 (4, 1, 'natalia', 'naty@gmail.com', 'asd.456'),
 (5, 1, 'dan', 'dan@gmail.com', 'asdasd'),
 (6, 1, 'derek', 'de@gmail.com', 'recvrev'),
-(7, 1, 'mario', 'mario@gmail.com', 'asdasdf');
+(7, 2, 'mario', 'mario@gmail.com', 'asdasdf'),
+(9, 1, 'Ana', 'ana@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
+(10, 1, 'Daniel', 'ana@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
+(11, 2, 'Pablo', 'pablo@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
+(12, 1, 'Cesar', 'pablo2@gmail.com', 'da39a3ee5e6b4b0d3255bfef95601890afd80709'),
+(18, 2, 'mary', 'mary@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
+(19, 1, 'UsuarioPromedio', 'hola@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
+(20, 1, 'nuevoAdmi', 'h@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9');
 
 --
 -- Restricciones para tablas volcadas

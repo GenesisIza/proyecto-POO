@@ -1,4 +1,3 @@
-
 <?php
     session_start();
     if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
@@ -8,7 +7,7 @@
     $conexion = new Conexion();
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
             "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasenia = '%s' and codigoTipoUsuario = 2 ",
+            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
         $_SESSION["email"],
         $_SESSION["psw"]
     );
@@ -19,9 +18,8 @@
     if ($conexion->cantidadRegistros($resultado)<=0){
            header("Location: iniciar-seccion.php");
     }
-    $registro = $conexion->obtenerFila($resultado);
+     $registro = $conexion->obtenerFila($resultado);
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -45,7 +43,7 @@
       ?>
 
    <div style=" background-color: black; padding: 100px;" class="">
-     <h1 style="color: white;" >Bienvenido Señor <?php echo $registro["nombre"]; ?></h1>//da el error por el nombre
+     <h1 style="color: white;" >Bienvenido Señor <?php echo $registro["nombre"]; ?></h1>
    </div>
      <div><br><br>
         <div class="container-fluid" >
