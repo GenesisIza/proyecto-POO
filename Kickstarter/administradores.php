@@ -1,4 +1,27 @@
 
+<?php
+    session_start();
+    if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"]))
+        header("Location: index.php");
+
+    include("class/class-conexion.php");
+    $conexion = new Conexion();
+    $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
+            "nombre, correo, contrasenia FROM tbl_usuario ".
+            "WHERE correo = '%s' and contrasenia = '%s' and codigoTipoUsuario = 2 ",
+        $_SESSION["email"],
+        $_SESSION["psw"]
+    );
+    //echo $sql;
+    //exit;
+    $resultado = $conexion->ejecutarConsulta($sql);
+    $respuesta = array();
+    if ($conexion->cantidadRegistros($resultado)<=0){
+           header("Location: iniciar-seccion.php");
+    }
+    $registro = $conexion->obtenerFila($resultado);
+?>
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -20,7 +43,7 @@
           include 'Plantillas/HeaderReguistrado.php';
       }
       ?>
-      
+
    <div style=" background-color: black; padding: 100px;" class="">
      <h1 style="color: white;" >Bienvenido Señor <?php echo $registro["nombre"]; ?></h1>//da el error por el nombre
    </div>
