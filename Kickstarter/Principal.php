@@ -25,7 +25,7 @@
     <div class"clearfix"> </div>
     <br>
     <div class="esconder">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row ">
             <div class="col-md-3 esconder">
               <h6>15 de febrero de 2018 <br> <b>Haciendo realidad proyectos creativos</b></h6>
