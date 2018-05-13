@@ -49,6 +49,10 @@
       </div>
 
        <br><br><br>
+       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 col-center">
+          <a href="cerrarsecion.php"  class="btn btn-info">Cerrar Sesion</a>
+           </div>
+           <br>
       <hr style="border: 0.4px solid gray;">
            <div class="container">
                  <ul class="nav">

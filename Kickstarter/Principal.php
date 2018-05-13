@@ -15,7 +15,7 @@
   </head>
     <body>
       <?php
-      session_start();
+        session_start();
         if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
             include 'Plantillas/Header.php';
         }else {
