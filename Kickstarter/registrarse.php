@@ -14,14 +14,7 @@
   </head>
   <body style="background-color: #F0F0F0;">
 
-    <?php
-    session_start();
-      if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
-          include 'Plantillas/Header.php';
-      }else {
-          include 'Plantillas/HeaderReguistrado.php';
-      }
-     ?>
+
      <br><br><br>
      <div>
         <div class="container-fluid" >

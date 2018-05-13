@@ -22,7 +22,7 @@
         include 'Plantillas/HeaderReguistrado.php';
     }
    ?>
-   
+
    <link rel="stylesheet" type="text/css" href="css/signin.css">
 
      <div class="formulario-reguistro" >

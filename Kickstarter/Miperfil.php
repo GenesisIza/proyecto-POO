@@ -7,7 +7,7 @@
     $conexion = new Conexion();
     $sql = sprintf("SELECT codigoUsuario, codigoTipoUsuario, ".
             "nombre, correo, contrasenia FROM tbl_usuario ".
-            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 1 ",
+            "WHERE correo = '%s' and contrasenia = sha1('%s') and codigoTipoUsuario = 2 ",
         $_SESSION["email"],
         $_SESSION["psw"]
     );
@@ -35,6 +35,7 @@
 </head>
   <body>
     <?php
+
       if (!isset($_SESSION["email"]) || !isset($_SESSION["psw"])){
           include 'Plantillas/Header.php';
       }else {
