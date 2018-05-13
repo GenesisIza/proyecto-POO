@@ -113,8 +113,7 @@ a {
   padding-left:  0;
   font-size: 0.9em;
 }
-/*-----------------------contenido-------------------------
-----------------------------------------------------------*/
+
 .contenido{
   padding: 60px;
   border-bottom: solid black;
@@ -127,8 +126,7 @@ a {
     border-bottom: solid 1px gray;
 }
 
-/*-----------------------Formulario -reguistro--------------
-----------------------------------------------------------*/
+
 .formulario-reguistro{
   text-align: center;
   padding: 10px;
@@ -141,11 +139,7 @@ a {
   padding: 10px;
 }
 
-/*-----------------------Formulario -reguistro--------------
---------------------------------------------------------
-input{
-width: 350px;
-padding: 5px;--*/
+
 }
 
 .inicio1{
@@ -187,8 +181,7 @@ p{
   color: black;
   font-family: 'Roboto', sans-serif !important;
 }
-/*-----------------------Empieza Tu Proyecto--------------
-----------------------------------------------------------*/
+
 .imagenes{
   width: 90%;
   padding: 60px;
