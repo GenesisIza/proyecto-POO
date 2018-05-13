@@ -20,3 +20,4 @@ ver suscriptores en Mailchimp:
 Usuario 	                        Contraseña
 bcalixvelasquez@yahoo.es            Calix+1994
  
+OB: importar carpeta que esta en este mismo nivel, a www, (kickstarter)
