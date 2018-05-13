@@ -275,7 +275,7 @@ function validarChecks(id){
 $("#iniciar").click(function(){
 	 var parametros = 'txt-correo='+ $("#txt-correo").val() + "&" +
 				            'txt-contrasenia='+ $("#txt-contrasenia").val();
-				            alert($("#txt-contrasenia").val());
+				            //alert($("#txt-contrasenia").val());
 	$.ajax({
 		method: 'POST',
 		url: 'ajax/loginUsuario.php',
