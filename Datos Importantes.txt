@@ -16,3 +16,7 @@ usuario@gmail.com            asd.456
 mary@gmail.com	             asd.456
 pablo@gmail.com	             asd.456
 
+ver suscriptores en Mailchimp:
+Usuario 	                        Contraseña
+bcalixvelasquez@gmail.com           calix1994
+ 
