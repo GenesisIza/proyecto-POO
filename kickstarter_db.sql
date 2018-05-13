@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1:3306
--- Tiempo de generación: 13-05-2018 a las 00:13:28
+-- Tiempo de generación: 13-05-2018 a las 04:06:38
 -- Versión del servidor: 5.7.19
 -- Versión de PHP: 5.6.31
 
@@ -208,12 +208,12 @@ INSERT INTO `tbl_usuario` (`codigoUsuario`, `codigoTipoUsuario`, `nombre`, `corr
 (6, 1, 'derek', 'de@gmail.com', 'recvrev'),
 (7, 2, 'mario', 'mario@gmail.com', 'asdasdf'),
 (9, 1, 'Ana', 'ana@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
-(10, 1, 'Daniel', 'ana@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
+(10, 1, 'Daniel', 'daniel@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
 (11, 2, 'Pablo', 'pablo@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
-(12, 1, 'Cesar', 'pablo2@gmail.com', 'da39a3ee5e6b4b0d3255bfef95601890afd80709'),
+(12, 1, 'Cesar', 'cesar@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
 (18, 2, 'mary', 'mary@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
-(19, 1, 'UsuarioPromedio', 'hola@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
-(20, 1, 'nuevoAdmi', 'h@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9');
+(19, 2, 'UsuarioPromedio', 'usuario@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9'),
+(20, 1, 'administrador', 'admi@gmail.com', 'bcdcb29ed2aab16d48c11485264df665e906bdd9');
 
 --
 -- Restricciones para tablas volcadas
