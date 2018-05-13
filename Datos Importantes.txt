@@ -1,0 +1,18 @@
+
+Nombre de base datos:  kickstarter_db
+
+
+Credenciales de acceso:
+
+Ingresar como administrador:
+Usuario 	            Contraseña
+admi@gmail.com	         asd.456
+cesar@gmail.com     	asd.456
+daniel@gmail.com	    asd.456
+
+Ingresar como usuario común:
+Usuario 	                Contraseña
+usuario@gmail.com            asd.456
+mary@gmail.com	             asd.456
+pablo@gmail.com	             asd.456
+
