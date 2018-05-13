@@ -438,4 +438,4 @@ $('.carousel').carousel({
   interval: 2000
 });
 //})
-$('.boton').colorbox({inline:true, width:"50%"});
+$('.boton').colorbox({inline:true, width:"75%"});
